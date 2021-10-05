@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari.dir/main.cpp.o -o Mastering_Data_Stuctures_and_Algorithms_Abdul_bari 
