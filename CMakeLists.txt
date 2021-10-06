@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(main main.cpp)
 add_executable(struct section02_essential_c_and_cpp_concepts/struct.cpp)
+add_executable(pointer section02_essential_c_and_cpp_concepts/pointer.cpp)

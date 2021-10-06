@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
 # Target rules for targets named struct
 
 # Build rule for target.
@@ -143,17 +156,17 @@ struct/fast:
 .PHONY : struct/fast
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named pointer
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+pointer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pointer
+.PHONY : pointer
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+pointer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
+.PHONY : pointer/fast
 
 main.o: main.cpp.o
 
@@ -181,6 +194,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+section02_essential_c_and_cpp_concepts/pointer.o: section02_essential_c_and_cpp_concepts/pointer.cpp.o
+
+.PHONY : section02_essential_c_and_cpp_concepts/pointer.o
+
+# target to build an object file
+section02_essential_c_and_cpp_concepts/pointer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/section02_essential_c_and_cpp_concepts/pointer.cpp.o
+.PHONY : section02_essential_c_and_cpp_concepts/pointer.cpp.o
+
+section02_essential_c_and_cpp_concepts/pointer.i: section02_essential_c_and_cpp_concepts/pointer.cpp.i
+
+.PHONY : section02_essential_c_and_cpp_concepts/pointer.i
+
+# target to preprocess a source file
+section02_essential_c_and_cpp_concepts/pointer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/section02_essential_c_and_cpp_concepts/pointer.cpp.i
+.PHONY : section02_essential_c_and_cpp_concepts/pointer.cpp.i
+
+section02_essential_c_and_cpp_concepts/pointer.s: section02_essential_c_and_cpp_concepts/pointer.cpp.s
+
+.PHONY : section02_essential_c_and_cpp_concepts/pointer.s
+
+# target to generate assembly for a file
+section02_essential_c_and_cpp_concepts/pointer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/section02_essential_c_and_cpp_concepts/pointer.cpp.s
+.PHONY : section02_essential_c_and_cpp_concepts/pointer.cpp.s
 
 section02_essential_c_and_cpp_concepts/struct.o: section02_essential_c_and_cpp_concepts/struct.cpp.o
 
@@ -218,10 +258,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... pointer"
 	@echo "... struct"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... section02_essential_c_and_cpp_concepts/pointer.o"
+	@echo "... section02_essential_c_and_cpp_concepts/pointer.i"
+	@echo "... section02_essential_c_and_cpp_concepts/pointer.s"
 	@echo "... section02_essential_c_and_cpp_concepts/struct.o"
 	@echo "... section02_essential_c_and_cpp_concepts/struct.i"
 	@echo "... section02_essential_c_and_cpp_concepts/struct.s"
