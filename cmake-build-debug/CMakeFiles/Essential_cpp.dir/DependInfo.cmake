@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/Essential_c_and_cpp_concepts/struct.cpp" "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.o"
+  "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section02_essential_c_and_cpp_concepts/struct.cpp" "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

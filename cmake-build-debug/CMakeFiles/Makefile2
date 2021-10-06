@@ -72,7 +72,7 @@ CMAKE_BINARY_DIR = /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorith
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Essential_cpp.dir/all
+all: CMakeFiles/struct.dir/all
 all: CMakeFiles/main.dir/all
 
 .PHONY : all
@@ -83,37 +83,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Essential_cpp.dir/clean
+clean: CMakeFiles/struct.dir/clean
 clean: CMakeFiles/main.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Essential_cpp.dir
+# Target rules for target CMakeFiles/struct.dir
 
 # All Build rule for target.
-CMakeFiles/Essential_cpp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Essential_cpp.dir/build.make CMakeFiles/Essential_cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Essential_cpp.dir/build.make CMakeFiles/Essential_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Essential_cpp"
-.PHONY : CMakeFiles/Essential_cpp.dir/all
+CMakeFiles/struct.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target struct"
+.PHONY : CMakeFiles/struct.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Essential_cpp.dir/rule: cmake_check_build_system
+CMakeFiles/struct.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Essential_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/struct.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Essential_cpp.dir/rule
+.PHONY : CMakeFiles/struct.dir/rule
 
 # Convenience name for target.
-Essential_cpp: CMakeFiles/Essential_cpp.dir/rule
+struct: CMakeFiles/struct.dir/rule
 
-.PHONY : Essential_cpp
+.PHONY : struct
 
 # clean rule for target.
-CMakeFiles/Essential_cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Essential_cpp.dir/build.make CMakeFiles/Essential_cpp.dir/clean
-.PHONY : CMakeFiles/Essential_cpp.dir/clean
+CMakeFiles/struct.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/clean
+.PHONY : CMakeFiles/struct.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main.dir
@@ -122,7 +122,7 @@ CMakeFiles/Essential_cpp.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.

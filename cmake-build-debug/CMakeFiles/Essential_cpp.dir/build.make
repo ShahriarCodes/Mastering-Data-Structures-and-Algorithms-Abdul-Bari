@@ -76,27 +76,27 @@ include CMakeFiles/Essential_cpp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Essential_cpp.dir/flags.make
 
-CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.o: CMakeFiles/Essential_cpp.dir/flags.make
-CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.o: ../Essential_c_and_cpp_concepts/struct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.o -c /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/Essential_c_and_cpp_concepts/struct.cpp
+CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.o: CMakeFiles/Essential_cpp.dir/flags.make
+CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.o: ../section02_essential_c_and_cpp_concepts/struct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.o -c /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section02_essential_c_and_cpp_concepts/struct.cpp
 
-CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/Essential_c_and_cpp_concepts/struct.cpp > CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.i
+CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section02_essential_c_and_cpp_concepts/struct.cpp > CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.i
 
-CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/Essential_c_and_cpp_concepts/struct.cpp -o CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.s
+CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section02_essential_c_and_cpp_concepts/struct.cpp -o CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.s
 
 # Object files for target Essential_cpp
 Essential_cpp_OBJECTS = \
-"CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.o"
+"CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.o"
 
 # External object files for target Essential_cpp
 Essential_cpp_EXTERNAL_OBJECTS =
 
-Essential_cpp: CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.o
+Essential_cpp: CMakeFiles/Essential_cpp.dir/section02_essential_c_and_cpp_concepts/struct.cpp.o
 Essential_cpp: CMakeFiles/Essential_cpp.dir/build.make
 Essential_cpp: CMakeFiles/Essential_cpp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Essential_cpp"

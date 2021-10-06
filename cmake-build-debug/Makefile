@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Essential_cpp
+# Target rules for targets named struct
 
 # Build rule for target.
-Essential_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Essential_cpp
-.PHONY : Essential_cpp
+struct: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 struct
+.PHONY : struct
 
 # fast build rule for target.
-Essential_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Essential_cpp.dir/build.make CMakeFiles/Essential_cpp.dir/build
-.PHONY : Essential_cpp/fast
+struct/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/build
+.PHONY : struct/fast
 
 #=============================================================================
 # Target rules for targets named main
@@ -154,33 +154,6 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
-
-Essential_c_and_cpp_concepts/struct.o: Essential_c_and_cpp_concepts/struct.cpp.o
-
-.PHONY : Essential_c_and_cpp_concepts/struct.o
-
-# target to build an object file
-Essential_c_and_cpp_concepts/struct.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Essential_cpp.dir/build.make CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.o
-.PHONY : Essential_c_and_cpp_concepts/struct.cpp.o
-
-Essential_c_and_cpp_concepts/struct.i: Essential_c_and_cpp_concepts/struct.cpp.i
-
-.PHONY : Essential_c_and_cpp_concepts/struct.i
-
-# target to preprocess a source file
-Essential_c_and_cpp_concepts/struct.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Essential_cpp.dir/build.make CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.i
-.PHONY : Essential_c_and_cpp_concepts/struct.cpp.i
-
-Essential_c_and_cpp_concepts/struct.s: Essential_c_and_cpp_concepts/struct.cpp.s
-
-.PHONY : Essential_c_and_cpp_concepts/struct.s
-
-# target to generate assembly for a file
-Essential_c_and_cpp_concepts/struct.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Essential_cpp.dir/build.make CMakeFiles/Essential_cpp.dir/Essential_c_and_cpp_concepts/struct.cpp.s
-.PHONY : Essential_c_and_cpp_concepts/struct.cpp.s
 
 main.o: main.cpp.o
 
@@ -209,6 +182,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+section02_essential_c_and_cpp_concepts/struct.o: section02_essential_c_and_cpp_concepts/struct.cpp.o
+
+.PHONY : section02_essential_c_and_cpp_concepts/struct.o
+
+# target to build an object file
+section02_essential_c_and_cpp_concepts/struct.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/section02_essential_c_and_cpp_concepts/struct.cpp.o
+.PHONY : section02_essential_c_and_cpp_concepts/struct.cpp.o
+
+section02_essential_c_and_cpp_concepts/struct.i: section02_essential_c_and_cpp_concepts/struct.cpp.i
+
+.PHONY : section02_essential_c_and_cpp_concepts/struct.i
+
+# target to preprocess a source file
+section02_essential_c_and_cpp_concepts/struct.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/section02_essential_c_and_cpp_concepts/struct.cpp.i
+.PHONY : section02_essential_c_and_cpp_concepts/struct.cpp.i
+
+section02_essential_c_and_cpp_concepts/struct.s: section02_essential_c_and_cpp_concepts/struct.cpp.s
+
+.PHONY : section02_essential_c_and_cpp_concepts/struct.s
+
+# target to generate assembly for a file
+section02_essential_c_and_cpp_concepts/struct.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/section02_essential_c_and_cpp_concepts/struct.cpp.s
+.PHONY : section02_essential_c_and_cpp_concepts/struct.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -217,14 +217,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Essential_cpp"
 	@echo "... main"
-	@echo "... Essential_c_and_cpp_concepts/struct.o"
-	@echo "... Essential_c_and_cpp_concepts/struct.i"
-	@echo "... Essential_c_and_cpp_concepts/struct.s"
+	@echo "... struct"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... section02_essential_c_and_cpp_concepts/struct.o"
+	@echo "... section02_essential_c_and_cpp_concepts/struct.i"
+	@echo "... section02_essential_c_and_cpp_concepts/struct.s"
 .PHONY : help
 
 
