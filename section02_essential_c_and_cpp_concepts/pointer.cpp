@@ -69,4 +69,17 @@ int main() {
     cout << sizeof(p3) << endl;
     cout << sizeof(p4) << endl;
     // pointer size is independent of variable type
+
+    // pointer to a structure
+    struct Rectangle rec = {10, 5};
+    struct Rectangle *ptr_rec=  &rec;
+    (*ptr_rec).length = 20;
+    ptr_rec->breadth = 20; // also does the job done
+
+    // pointer to a structure - dynamic memory allocation
+    struct Rectangle *ptr_rec_dynamic;
+    ptr_rec_dynamic = (struct Rectangle *)malloc(sizeof(struct Rectangle));
+    ptr_rec_dynamic->length = 100;
+    ptr_rec_dynamic->breadth =  200;
+
 }
