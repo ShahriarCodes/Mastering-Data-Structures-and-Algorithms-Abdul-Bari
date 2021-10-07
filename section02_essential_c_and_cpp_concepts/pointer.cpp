@@ -6,6 +6,11 @@
 
 using namespace std;
 
+struct Rectangle {
+    int length;
+    int breadth;
+};
+
 int main() {
     int a = 10;
     int *p; // declaration

@@ -168,6 +168,19 @@ pointer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
 .PHONY : pointer/fast
 
+#=============================================================================
+# Target rules for targets named reference
+
+# Build rule for target.
+reference: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reference
+.PHONY : reference
+
+# fast build rule for target.
+reference/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/build
+.PHONY : reference/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -222,6 +235,33 @@ section02_essential_c_and_cpp_concepts/pointer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/section02_essential_c_and_cpp_concepts/pointer.cpp.s
 .PHONY : section02_essential_c_and_cpp_concepts/pointer.cpp.s
 
+section02_essential_c_and_cpp_concepts/reference.o: section02_essential_c_and_cpp_concepts/reference.cpp.o
+
+.PHONY : section02_essential_c_and_cpp_concepts/reference.o
+
+# target to build an object file
+section02_essential_c_and_cpp_concepts/reference.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/section02_essential_c_and_cpp_concepts/reference.cpp.o
+.PHONY : section02_essential_c_and_cpp_concepts/reference.cpp.o
+
+section02_essential_c_and_cpp_concepts/reference.i: section02_essential_c_and_cpp_concepts/reference.cpp.i
+
+.PHONY : section02_essential_c_and_cpp_concepts/reference.i
+
+# target to preprocess a source file
+section02_essential_c_and_cpp_concepts/reference.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/section02_essential_c_and_cpp_concepts/reference.cpp.i
+.PHONY : section02_essential_c_and_cpp_concepts/reference.cpp.i
+
+section02_essential_c_and_cpp_concepts/reference.s: section02_essential_c_and_cpp_concepts/reference.cpp.s
+
+.PHONY : section02_essential_c_and_cpp_concepts/reference.s
+
+# target to generate assembly for a file
+section02_essential_c_and_cpp_concepts/reference.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/section02_essential_c_and_cpp_concepts/reference.cpp.s
+.PHONY : section02_essential_c_and_cpp_concepts/reference.cpp.s
+
 section02_essential_c_and_cpp_concepts/struct.o: section02_essential_c_and_cpp_concepts/struct.cpp.o
 
 .PHONY : section02_essential_c_and_cpp_concepts/struct.o
@@ -259,6 +299,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... pointer"
+	@echo "... reference"
 	@echo "... struct"
 	@echo "... main.o"
 	@echo "... main.i"
@@ -266,6 +307,9 @@ help:
 	@echo "... section02_essential_c_and_cpp_concepts/pointer.o"
 	@echo "... section02_essential_c_and_cpp_concepts/pointer.i"
 	@echo "... section02_essential_c_and_cpp_concepts/pointer.s"
+	@echo "... section02_essential_c_and_cpp_concepts/reference.o"
+	@echo "... section02_essential_c_and_cpp_concepts/reference.i"
+	@echo "... section02_essential_c_and_cpp_concepts/reference.s"
 	@echo "... section02_essential_c_and_cpp_concepts/struct.o"
 	@echo "... section02_essential_c_and_cpp_concepts/struct.i"
 	@echo "... section02_essential_c_and_cpp_concepts/struct.s"
