@@ -169,6 +169,19 @@ pointer/fast:
 .PHONY : pointer/fast
 
 #=============================================================================
+# Target rules for targets named function
+
+# Build rule for target.
+function: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 function
+.PHONY : function
+
+# fast build rule for target.
+function/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/build
+.PHONY : function/fast
+
+#=============================================================================
 # Target rules for targets named reference
 
 # Build rule for target.
@@ -207,6 +220,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+section02_essential_c_and_cpp_concepts/function.o: section02_essential_c_and_cpp_concepts/function.cpp.o
+
+.PHONY : section02_essential_c_and_cpp_concepts/function.o
+
+# target to build an object file
+section02_essential_c_and_cpp_concepts/function.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/section02_essential_c_and_cpp_concepts/function.cpp.o
+.PHONY : section02_essential_c_and_cpp_concepts/function.cpp.o
+
+section02_essential_c_and_cpp_concepts/function.i: section02_essential_c_and_cpp_concepts/function.cpp.i
+
+.PHONY : section02_essential_c_and_cpp_concepts/function.i
+
+# target to preprocess a source file
+section02_essential_c_and_cpp_concepts/function.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/section02_essential_c_and_cpp_concepts/function.cpp.i
+.PHONY : section02_essential_c_and_cpp_concepts/function.cpp.i
+
+section02_essential_c_and_cpp_concepts/function.s: section02_essential_c_and_cpp_concepts/function.cpp.s
+
+.PHONY : section02_essential_c_and_cpp_concepts/function.s
+
+# target to generate assembly for a file
+section02_essential_c_and_cpp_concepts/function.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/section02_essential_c_and_cpp_concepts/function.cpp.s
+.PHONY : section02_essential_c_and_cpp_concepts/function.cpp.s
 
 section02_essential_c_and_cpp_concepts/pointer.o: section02_essential_c_and_cpp_concepts/pointer.cpp.o
 
@@ -297,6 +337,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... function"
 	@echo "... main"
 	@echo "... pointer"
 	@echo "... reference"
@@ -304,6 +345,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... section02_essential_c_and_cpp_concepts/function.o"
+	@echo "... section02_essential_c_and_cpp_concepts/function.i"
+	@echo "... section02_essential_c_and_cpp_concepts/function.s"
 	@echo "... section02_essential_c_and_cpp_concepts/pointer.o"
 	@echo "... section02_essential_c_and_cpp_concepts/pointer.i"
 	@echo "... section02_essential_c_and_cpp_concepts/pointer.s"
