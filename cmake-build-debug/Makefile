@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named array_as_parameter
+
+# Build rule for target.
+array_as_parameter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_as_parameter
+.PHONY : array_as_parameter
+
+# fast build rule for target.
+array_as_parameter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/build
+.PHONY : array_as_parameter/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -221,32 +234,59 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-section02_essential_c_and_cpp_concepts/function.o: section02_essential_c_and_cpp_concepts/function.cpp.o
+section02_essential_c_and_cpp_concepts/array_as_parameter.o: section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.o
 
-.PHONY : section02_essential_c_and_cpp_concepts/function.o
+.PHONY : section02_essential_c_and_cpp_concepts/array_as_parameter.o
 
 # target to build an object file
-section02_essential_c_and_cpp_concepts/function.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/section02_essential_c_and_cpp_concepts/function.cpp.o
-.PHONY : section02_essential_c_and_cpp_concepts/function.cpp.o
+section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.o
+.PHONY : section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.o
 
-section02_essential_c_and_cpp_concepts/function.i: section02_essential_c_and_cpp_concepts/function.cpp.i
+section02_essential_c_and_cpp_concepts/array_as_parameter.i: section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.i
 
-.PHONY : section02_essential_c_and_cpp_concepts/function.i
+.PHONY : section02_essential_c_and_cpp_concepts/array_as_parameter.i
 
 # target to preprocess a source file
-section02_essential_c_and_cpp_concepts/function.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/section02_essential_c_and_cpp_concepts/function.cpp.i
-.PHONY : section02_essential_c_and_cpp_concepts/function.cpp.i
+section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.i
+.PHONY : section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.i
 
-section02_essential_c_and_cpp_concepts/function.s: section02_essential_c_and_cpp_concepts/function.cpp.s
+section02_essential_c_and_cpp_concepts/array_as_parameter.s: section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.s
 
-.PHONY : section02_essential_c_and_cpp_concepts/function.s
+.PHONY : section02_essential_c_and_cpp_concepts/array_as_parameter.s
 
 # target to generate assembly for a file
-section02_essential_c_and_cpp_concepts/function.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/section02_essential_c_and_cpp_concepts/function.cpp.s
-.PHONY : section02_essential_c_and_cpp_concepts/function.cpp.s
+section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.s
+.PHONY : section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.s
+
+section02_essential_c_and_cpp_concepts/parameter_passing.o: section02_essential_c_and_cpp_concepts/parameter_passing.cpp.o
+
+.PHONY : section02_essential_c_and_cpp_concepts/parameter_passing.o
+
+# target to build an object file
+section02_essential_c_and_cpp_concepts/parameter_passing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/section02_essential_c_and_cpp_concepts/parameter_passing.cpp.o
+.PHONY : section02_essential_c_and_cpp_concepts/parameter_passing.cpp.o
+
+section02_essential_c_and_cpp_concepts/parameter_passing.i: section02_essential_c_and_cpp_concepts/parameter_passing.cpp.i
+
+.PHONY : section02_essential_c_and_cpp_concepts/parameter_passing.i
+
+# target to preprocess a source file
+section02_essential_c_and_cpp_concepts/parameter_passing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/section02_essential_c_and_cpp_concepts/parameter_passing.cpp.i
+.PHONY : section02_essential_c_and_cpp_concepts/parameter_passing.cpp.i
+
+section02_essential_c_and_cpp_concepts/parameter_passing.s: section02_essential_c_and_cpp_concepts/parameter_passing.cpp.s
+
+.PHONY : section02_essential_c_and_cpp_concepts/parameter_passing.s
+
+# target to generate assembly for a file
+section02_essential_c_and_cpp_concepts/parameter_passing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/section02_essential_c_and_cpp_concepts/parameter_passing.cpp.s
+.PHONY : section02_essential_c_and_cpp_concepts/parameter_passing.cpp.s
 
 section02_essential_c_and_cpp_concepts/pointer.o: section02_essential_c_and_cpp_concepts/pointer.cpp.o
 
@@ -337,6 +377,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... array_as_parameter"
 	@echo "... function"
 	@echo "... main"
 	@echo "... pointer"
@@ -345,9 +386,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... section02_essential_c_and_cpp_concepts/function.o"
-	@echo "... section02_essential_c_and_cpp_concepts/function.i"
-	@echo "... section02_essential_c_and_cpp_concepts/function.s"
+	@echo "... section02_essential_c_and_cpp_concepts/array_as_parameter.o"
+	@echo "... section02_essential_c_and_cpp_concepts/array_as_parameter.i"
+	@echo "... section02_essential_c_and_cpp_concepts/array_as_parameter.s"
+	@echo "... section02_essential_c_and_cpp_concepts/parameter_passing.o"
+	@echo "... section02_essential_c_and_cpp_concepts/parameter_passing.i"
+	@echo "... section02_essential_c_and_cpp_concepts/parameter_passing.s"
 	@echo "... section02_essential_c_and_cpp_concepts/pointer.o"
 	@echo "... section02_essential_c_and_cpp_concepts/pointer.i"
 	@echo "... section02_essential_c_and_cpp_concepts/pointer.s"
