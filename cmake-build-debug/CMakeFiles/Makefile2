@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorith
 
 # The main recursive "all" target.
 all: CMakeFiles/array_as_parameter.dir/all
+all: CMakeFiles/structure_as_parameter.dir/all
 all: CMakeFiles/main.dir/all
 all: CMakeFiles/struct.dir/all
 all: CMakeFiles/pointer.dir/all
@@ -88,6 +89,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/array_as_parameter.dir/clean
+clean: CMakeFiles/structure_as_parameter.dir/clean
 clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/struct.dir/clean
 clean: CMakeFiles/pointer.dir/clean
@@ -122,6 +124,33 @@ array_as_parameter: CMakeFiles/array_as_parameter.dir/rule
 CMakeFiles/array_as_parameter.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/clean
 .PHONY : CMakeFiles/array_as_parameter.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/structure_as_parameter.dir
+
+# All Build rule for target.
+CMakeFiles/structure_as_parameter.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target structure_as_parameter"
+.PHONY : CMakeFiles/structure_as_parameter.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/structure_as_parameter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/structure_as_parameter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/structure_as_parameter.dir/rule
+
+# Convenience name for target.
+structure_as_parameter: CMakeFiles/structure_as_parameter.dir/rule
+
+.PHONY : structure_as_parameter
+
+# clean rule for target.
+CMakeFiles/structure_as_parameter.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/clean
+.PHONY : CMakeFiles/structure_as_parameter.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main.dir

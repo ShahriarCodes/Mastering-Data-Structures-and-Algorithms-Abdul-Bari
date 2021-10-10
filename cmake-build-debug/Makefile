@@ -143,6 +143,19 @@ array_as_parameter/fast:
 .PHONY : array_as_parameter/fast
 
 #=============================================================================
+# Target rules for targets named structure_as_parameter
+
+# Build rule for target.
+structure_as_parameter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 structure_as_parameter
+.PHONY : structure_as_parameter
+
+# fast build rule for target.
+structure_as_parameter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/build
+.PHONY : structure_as_parameter/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -369,6 +382,33 @@ section02_essential_c_and_cpp_concepts/struct.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/section02_essential_c_and_cpp_concepts/struct.cpp.s
 .PHONY : section02_essential_c_and_cpp_concepts/struct.cpp.s
 
+section02_essential_c_and_cpp_concepts/structure_as_parameter.o: section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.o
+
+.PHONY : section02_essential_c_and_cpp_concepts/structure_as_parameter.o
+
+# target to build an object file
+section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.o
+.PHONY : section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.o
+
+section02_essential_c_and_cpp_concepts/structure_as_parameter.i: section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.i
+
+.PHONY : section02_essential_c_and_cpp_concepts/structure_as_parameter.i
+
+# target to preprocess a source file
+section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.i
+.PHONY : section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.i
+
+section02_essential_c_and_cpp_concepts/structure_as_parameter.s: section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.s
+
+.PHONY : section02_essential_c_and_cpp_concepts/structure_as_parameter.s
+
+# target to generate assembly for a file
+section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.s
+.PHONY : section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -383,6 +423,7 @@ help:
 	@echo "... pointer"
 	@echo "... reference"
 	@echo "... struct"
+	@echo "... structure_as_parameter"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -401,6 +442,9 @@ help:
 	@echo "... section02_essential_c_and_cpp_concepts/struct.o"
 	@echo "... section02_essential_c_and_cpp_concepts/struct.i"
 	@echo "... section02_essential_c_and_cpp_concepts/struct.s"
+	@echo "... section02_essential_c_and_cpp_concepts/structure_as_parameter.o"
+	@echo "... section02_essential_c_and_cpp_concepts/structure_as_parameter.i"
+	@echo "... section02_essential_c_and_cpp_concepts/structure_as_parameter.s"
 .PHONY : help
 
 
