@@ -46,12 +46,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/structure_and_functions.dir/DependInfo.cmake"
-  "CMakeFiles/array_as_parameter.dir/DependInfo.cmake"
-  "CMakeFiles/structure_as_parameter.dir/DependInfo.cmake"
-  "CMakeFiles/main.dir/DependInfo.cmake"
-  "CMakeFiles/struct.dir/DependInfo.cmake"
-  "CMakeFiles/pointer.dir/DependInfo.cmake"
-  "CMakeFiles/function.dir/DependInfo.cmake"
   "CMakeFiles/reference.dir/DependInfo.cmake"
+  "CMakeFiles/function.dir/DependInfo.cmake"
+  "CMakeFiles/pointer.dir/DependInfo.cmake"
+  "CMakeFiles/structure_as_parameter.dir/DependInfo.cmake"
+  "CMakeFiles/array_as_parameter.dir/DependInfo.cmake"
+  "CMakeFiles/struct.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/structure_and_functions.dir/DependInfo.cmake"
+  "CMakeFiles/converting_c_to_cpp_class.dir/DependInfo.cmake"
   )

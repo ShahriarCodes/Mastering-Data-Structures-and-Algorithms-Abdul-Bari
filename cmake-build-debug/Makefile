@@ -130,82 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named structure_and_functions
+# Target rules for targets named reference
 
 # Build rule for target.
-structure_and_functions: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 structure_and_functions
-.PHONY : structure_and_functions
+reference: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reference
+.PHONY : reference
 
 # fast build rule for target.
-structure_and_functions/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_and_functions.dir/build.make CMakeFiles/structure_and_functions.dir/build
-.PHONY : structure_and_functions/fast
-
-#=============================================================================
-# Target rules for targets named array_as_parameter
-
-# Build rule for target.
-array_as_parameter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_as_parameter
-.PHONY : array_as_parameter
-
-# fast build rule for target.
-array_as_parameter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/build
-.PHONY : array_as_parameter/fast
-
-#=============================================================================
-# Target rules for targets named structure_as_parameter
-
-# Build rule for target.
-structure_as_parameter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 structure_as_parameter
-.PHONY : structure_as_parameter
-
-# fast build rule for target.
-structure_as_parameter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/build
-.PHONY : structure_as_parameter/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named struct
-
-# Build rule for target.
-struct: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 struct
-.PHONY : struct
-
-# fast build rule for target.
-struct/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/build
-.PHONY : struct/fast
-
-#=============================================================================
-# Target rules for targets named pointer
-
-# Build rule for target.
-pointer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pointer
-.PHONY : pointer
-
-# fast build rule for target.
-pointer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
-.PHONY : pointer/fast
+reference/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/build
+.PHONY : reference/fast
 
 #=============================================================================
 # Target rules for targets named function
@@ -221,17 +156,95 @@ function/fast:
 .PHONY : function/fast
 
 #=============================================================================
-# Target rules for targets named reference
+# Target rules for targets named pointer
 
 # Build rule for target.
-reference: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reference
-.PHONY : reference
+pointer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pointer
+.PHONY : pointer
 
 # fast build rule for target.
-reference/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/build
-.PHONY : reference/fast
+pointer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
+.PHONY : pointer/fast
+
+#=============================================================================
+# Target rules for targets named structure_as_parameter
+
+# Build rule for target.
+structure_as_parameter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 structure_as_parameter
+.PHONY : structure_as_parameter
+
+# fast build rule for target.
+structure_as_parameter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/build
+.PHONY : structure_as_parameter/fast
+
+#=============================================================================
+# Target rules for targets named array_as_parameter
+
+# Build rule for target.
+array_as_parameter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_as_parameter
+.PHONY : array_as_parameter
+
+# fast build rule for target.
+array_as_parameter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/build
+.PHONY : array_as_parameter/fast
+
+#=============================================================================
+# Target rules for targets named struct
+
+# Build rule for target.
+struct: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 struct
+.PHONY : struct
+
+# fast build rule for target.
+struct/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/build
+.PHONY : struct/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named structure_and_functions
+
+# Build rule for target.
+structure_and_functions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 structure_and_functions
+.PHONY : structure_and_functions
+
+# fast build rule for target.
+structure_and_functions/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_and_functions.dir/build.make CMakeFiles/structure_and_functions.dir/build
+.PHONY : structure_and_functions/fast
+
+#=============================================================================
+# Target rules for targets named converting_c_to_cpp_class
+
+# Build rule for target.
+converting_c_to_cpp_class: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 converting_c_to_cpp_class
+.PHONY : converting_c_to_cpp_class
+
+# fast build rule for target.
+converting_c_to_cpp_class/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/converting_c_to_cpp_class.dir/build.make CMakeFiles/converting_c_to_cpp_class.dir/build
+.PHONY : converting_c_to_cpp_class/fast
 
 main.o: main.cpp.o
 
@@ -286,6 +299,33 @@ section02_essential_c_and_cpp_concepts/array_as_parameter.s: section02_essential
 section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.s
 .PHONY : section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.s
+
+section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.o: section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.o
+
+.PHONY : section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.o
+
+# target to build an object file
+section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/converting_c_to_cpp_class.dir/build.make CMakeFiles/converting_c_to_cpp_class.dir/section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.o
+.PHONY : section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.o
+
+section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.i: section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.i
+
+.PHONY : section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.i
+
+# target to preprocess a source file
+section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/converting_c_to_cpp_class.dir/build.make CMakeFiles/converting_c_to_cpp_class.dir/section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.i
+.PHONY : section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.i
+
+section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.s: section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.s
+
+.PHONY : section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.s
+
+# target to generate assembly for a file
+section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/converting_c_to_cpp_class.dir/build.make CMakeFiles/converting_c_to_cpp_class.dir/section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.s
+.PHONY : section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp.s
 
 section02_essential_c_and_cpp_concepts/parameter_passing.o: section02_essential_c_and_cpp_concepts/parameter_passing.cpp.o
 
@@ -458,6 +498,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... array_as_parameter"
+	@echo "... converting_c_to_cpp_class"
 	@echo "... function"
 	@echo "... main"
 	@echo "... pointer"
@@ -471,6 +512,9 @@ help:
 	@echo "... section02_essential_c_and_cpp_concepts/array_as_parameter.o"
 	@echo "... section02_essential_c_and_cpp_concepts/array_as_parameter.i"
 	@echo "... section02_essential_c_and_cpp_concepts/array_as_parameter.s"
+	@echo "... section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.o"
+	@echo "... section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.i"
+	@echo "... section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.s"
 	@echo "... section02_essential_c_and_cpp_concepts/parameter_passing.o"
 	@echo "... section02_essential_c_and_cpp_concepts/parameter_passing.i"
 	@echo "... section02_essential_c_and_cpp_concepts/parameter_passing.s"
