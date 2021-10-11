@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named structure_and_functions
+
+# Build rule for target.
+structure_and_functions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 structure_and_functions
+.PHONY : structure_and_functions
+
+# fast build rule for target.
+structure_and_functions/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_and_functions.dir/build.make CMakeFiles/structure_and_functions.dir/build
+.PHONY : structure_and_functions/fast
+
+#=============================================================================
 # Target rules for targets named array_as_parameter
 
 # Build rule for target.
@@ -382,6 +395,33 @@ section02_essential_c_and_cpp_concepts/struct.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/section02_essential_c_and_cpp_concepts/struct.cpp.s
 .PHONY : section02_essential_c_and_cpp_concepts/struct.cpp.s
 
+section02_essential_c_and_cpp_concepts/structure_and_functions.o: section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.o
+
+.PHONY : section02_essential_c_and_cpp_concepts/structure_and_functions.o
+
+# target to build an object file
+section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_and_functions.dir/build.make CMakeFiles/structure_and_functions.dir/section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.o
+.PHONY : section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.o
+
+section02_essential_c_and_cpp_concepts/structure_and_functions.i: section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.i
+
+.PHONY : section02_essential_c_and_cpp_concepts/structure_and_functions.i
+
+# target to preprocess a source file
+section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_and_functions.dir/build.make CMakeFiles/structure_and_functions.dir/section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.i
+.PHONY : section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.i
+
+section02_essential_c_and_cpp_concepts/structure_and_functions.s: section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.s
+
+.PHONY : section02_essential_c_and_cpp_concepts/structure_and_functions.s
+
+# target to generate assembly for a file
+section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_and_functions.dir/build.make CMakeFiles/structure_and_functions.dir/section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.s
+.PHONY : section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.s
+
 section02_essential_c_and_cpp_concepts/structure_as_parameter.o: section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.o
 
 .PHONY : section02_essential_c_and_cpp_concepts/structure_as_parameter.o
@@ -423,6 +463,7 @@ help:
 	@echo "... pointer"
 	@echo "... reference"
 	@echo "... struct"
+	@echo "... structure_and_functions"
 	@echo "... structure_as_parameter"
 	@echo "... main.o"
 	@echo "... main.i"
@@ -442,6 +483,9 @@ help:
 	@echo "... section02_essential_c_and_cpp_concepts/struct.o"
 	@echo "... section02_essential_c_and_cpp_concepts/struct.i"
 	@echo "... section02_essential_c_and_cpp_concepts/struct.s"
+	@echo "... section02_essential_c_and_cpp_concepts/structure_and_functions.o"
+	@echo "... section02_essential_c_and_cpp_concepts/structure_and_functions.i"
+	@echo "... section02_essential_c_and_cpp_concepts/structure_and_functions.s"
 	@echo "... section02_essential_c_and_cpp_concepts/structure_as_parameter.o"
 	@echo "... section02_essential_c_and_cpp_concepts/structure_as_parameter.i"
 	@echo "... section02_essential_c_and_cpp_concepts/structure_as_parameter.s"
