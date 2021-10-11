@@ -43,6 +43,16 @@ void fun(struct Test t1) {
     t1.n = 100;
 }
 
+// returning a pointer from the heap to access a struct object created in heap
+struct Rectangle *fun2() {
+    struct Rectangle *p;
+    p = new Rectangle;
+//    p = (struct Rectangle *)malloc(sizeof(struct Rectangle));
+    p->height = 15;
+    p->breadth = 20;
+    return p;
+}
+
 int main() {
     struct Rectangle r = {10, 5};
     printf("area: %d \n", area(r));
@@ -60,6 +70,7 @@ int main() {
     }
     cout << endl;
 
-
+    struct Rectangle *ptr = fun2();
+    cout << "Length: " <<ptr->height << " " << "Breadth: " << ptr->breadth << endl;
 }
 
