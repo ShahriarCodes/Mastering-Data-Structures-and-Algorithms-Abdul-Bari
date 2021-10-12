@@ -55,4 +55,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/main.dir/DependInfo.cmake"
   "CMakeFiles/structure_and_functions.dir/DependInfo.cmake"
   "CMakeFiles/converting_c_to_cpp_class.dir/DependInfo.cmake"
+  "CMakeFiles/template_class.dir/DependInfo.cmake"
   )

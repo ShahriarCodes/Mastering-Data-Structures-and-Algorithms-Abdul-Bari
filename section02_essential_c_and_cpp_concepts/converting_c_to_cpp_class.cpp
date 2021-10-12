@@ -9,9 +9,13 @@ using namespace std;
 // followed by structure_and_function.cpp
 
 class Rectangle {
-public:
+private:
     int length;
     int breadth;
+
+public:
+    // default constructor, if no value passed set to 1
+    Rectangle() { length = breadth = 1; }
 
     // instead of initialize function, make it constructor
     Rectangle(int l, int b) {
@@ -23,19 +27,37 @@ public:
         return this->length * this->breadth;
     }
 
-    void changeLength(int l) {
+    int perimeter();
+
+    void setLength(int l) {
         this->length = l;
     }
+
+    int getLength() {
+        return this->length;
+    }
+
+    // using destructor to destroy any dynamic memory allocation an the created object itself when the main function finishes
+    ~Rectangle();
 };
 
+// using scope resolution operator
+int Rectangle::perimeter() {
+    return 2 * (this->length + this->breadth);
+}
+
+Rectangle::~Rectangle() {
+    cout << "Destructor" << endl;
+}
+
 int main() {
-    Rectangle rect(10,5);
+    Rectangle rect = Rectangle(10, 5);
 
     cout << "Area: " << rect.area() << endl;
+    cout << "Perimeter: " << rect.perimeter() << endl;
 
-    rect.changeLength(20);
-    cout << "changed length: " << rect.length << endl;
-
+    rect.setLength(20);
+    cout << "changed length: " << rect.getLength() << endl;
 }
 
 

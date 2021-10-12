@@ -246,6 +246,19 @@ converting_c_to_cpp_class/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/converting_c_to_cpp_class.dir/build.make CMakeFiles/converting_c_to_cpp_class.dir/build
 .PHONY : converting_c_to_cpp_class/fast
 
+#=============================================================================
+# Target rules for targets named template_class
+
+# Build rule for target.
+template_class: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 template_class
+.PHONY : template_class
+
+# fast build rule for target.
+template_class/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/build
+.PHONY : template_class/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -489,6 +502,33 @@ section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.s
 .PHONY : section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.s
 
+section02_essential_c_and_cpp_concepts/template_class.o: section02_essential_c_and_cpp_concepts/template_class.cpp.o
+
+.PHONY : section02_essential_c_and_cpp_concepts/template_class.o
+
+# target to build an object file
+section02_essential_c_and_cpp_concepts/template_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/section02_essential_c_and_cpp_concepts/template_class.cpp.o
+.PHONY : section02_essential_c_and_cpp_concepts/template_class.cpp.o
+
+section02_essential_c_and_cpp_concepts/template_class.i: section02_essential_c_and_cpp_concepts/template_class.cpp.i
+
+.PHONY : section02_essential_c_and_cpp_concepts/template_class.i
+
+# target to preprocess a source file
+section02_essential_c_and_cpp_concepts/template_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/section02_essential_c_and_cpp_concepts/template_class.cpp.i
+.PHONY : section02_essential_c_and_cpp_concepts/template_class.cpp.i
+
+section02_essential_c_and_cpp_concepts/template_class.s: section02_essential_c_and_cpp_concepts/template_class.cpp.s
+
+.PHONY : section02_essential_c_and_cpp_concepts/template_class.s
+
+# target to generate assembly for a file
+section02_essential_c_and_cpp_concepts/template_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/section02_essential_c_and_cpp_concepts/template_class.cpp.s
+.PHONY : section02_essential_c_and_cpp_concepts/template_class.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -506,6 +546,7 @@ help:
 	@echo "... struct"
 	@echo "... structure_and_functions"
 	@echo "... structure_as_parameter"
+	@echo "... template_class"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -533,6 +574,9 @@ help:
 	@echo "... section02_essential_c_and_cpp_concepts/structure_as_parameter.o"
 	@echo "... section02_essential_c_and_cpp_concepts/structure_as_parameter.i"
 	@echo "... section02_essential_c_and_cpp_concepts/structure_as_parameter.s"
+	@echo "... section02_essential_c_and_cpp_concepts/template_class.o"
+	@echo "... section02_essential_c_and_cpp_concepts/template_class.i"
+	@echo "... section02_essential_c_and_cpp_concepts/template_class.s"
 .PHONY : help
 
 
