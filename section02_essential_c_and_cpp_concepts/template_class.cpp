@@ -45,5 +45,8 @@ int main() {
 
     Arithmetic<double> arm2(10, 5);
     cout << arm2.add() << endl;
+
+    Arithmetic<char> arm3('A', 'B');
+    cout << (int)arm3.add() << endl;
 }
 

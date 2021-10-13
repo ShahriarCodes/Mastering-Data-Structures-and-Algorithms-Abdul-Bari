@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named intro
+
+# Build rule for target.
+intro: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro
+.PHONY : intro
+
+# fast build rule for target.
+intro/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/build
+.PHONY : intro/fast
+
+#=============================================================================
 # Target rules for targets named reference
 
 # Build rule for target.
@@ -529,6 +542,33 @@ section02_essential_c_and_cpp_concepts/template_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/section02_essential_c_and_cpp_concepts/template_class.cpp.s
 .PHONY : section02_essential_c_and_cpp_concepts/template_class.cpp.s
 
+section05_recursion/intro.o: section05_recursion/intro.cpp.o
+
+.PHONY : section05_recursion/intro.o
+
+# target to build an object file
+section05_recursion/intro.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section05_recursion/intro.cpp.o
+.PHONY : section05_recursion/intro.cpp.o
+
+section05_recursion/intro.i: section05_recursion/intro.cpp.i
+
+.PHONY : section05_recursion/intro.i
+
+# target to preprocess a source file
+section05_recursion/intro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section05_recursion/intro.cpp.i
+.PHONY : section05_recursion/intro.cpp.i
+
+section05_recursion/intro.s: section05_recursion/intro.cpp.s
+
+.PHONY : section05_recursion/intro.s
+
+# target to generate assembly for a file
+section05_recursion/intro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section05_recursion/intro.cpp.s
+.PHONY : section05_recursion/intro.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -540,6 +580,7 @@ help:
 	@echo "... array_as_parameter"
 	@echo "... converting_c_to_cpp_class"
 	@echo "... function"
+	@echo "... intro"
 	@echo "... main"
 	@echo "... pointer"
 	@echo "... reference"
@@ -577,6 +618,9 @@ help:
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.o"
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.i"
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.s"
+	@echo "... section05_recursion/intro.o"
+	@echo "... section05_recursion/intro.i"
+	@echo "... section05_recursion/intro.s"
 .PHONY : help
 
 
