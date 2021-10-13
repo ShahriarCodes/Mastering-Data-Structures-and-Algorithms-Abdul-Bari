@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named static_global_variables
+
+# Build rule for target.
+static_global_variables: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 static_global_variables
+.PHONY : static_global_variables
+
+# fast build rule for target.
+static_global_variables/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/build
+.PHONY : static_global_variables/fast
+
+#=============================================================================
 # Target rules for targets named intro
 
 # Build rule for target.
@@ -569,6 +582,33 @@ section05_recursion/intro.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section05_recursion/intro.cpp.s
 .PHONY : section05_recursion/intro.cpp.s
 
+section05_recursion/static_global_variables.o: section05_recursion/static_global_variables.cpp.o
+
+.PHONY : section05_recursion/static_global_variables.o
+
+# target to build an object file
+section05_recursion/static_global_variables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/section05_recursion/static_global_variables.cpp.o
+.PHONY : section05_recursion/static_global_variables.cpp.o
+
+section05_recursion/static_global_variables.i: section05_recursion/static_global_variables.cpp.i
+
+.PHONY : section05_recursion/static_global_variables.i
+
+# target to preprocess a source file
+section05_recursion/static_global_variables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/section05_recursion/static_global_variables.cpp.i
+.PHONY : section05_recursion/static_global_variables.cpp.i
+
+section05_recursion/static_global_variables.s: section05_recursion/static_global_variables.cpp.s
+
+.PHONY : section05_recursion/static_global_variables.s
+
+# target to generate assembly for a file
+section05_recursion/static_global_variables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/section05_recursion/static_global_variables.cpp.s
+.PHONY : section05_recursion/static_global_variables.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -584,6 +624,7 @@ help:
 	@echo "... main"
 	@echo "... pointer"
 	@echo "... reference"
+	@echo "... static_global_variables"
 	@echo "... struct"
 	@echo "... structure_and_functions"
 	@echo "... structure_as_parameter"
@@ -621,6 +662,9 @@ help:
 	@echo "... section05_recursion/intro.o"
 	@echo "... section05_recursion/intro.i"
 	@echo "... section05_recursion/intro.s"
+	@echo "... section05_recursion/static_global_variables.o"
+	@echo "... section05_recursion/static_global_variables.i"
+	@echo "... section05_recursion/static_global_variables.s"
 .PHONY : help
 
 

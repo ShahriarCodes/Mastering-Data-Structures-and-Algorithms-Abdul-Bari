@@ -72,6 +72,7 @@ CMAKE_BINARY_DIR = /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorith
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/static_global_variables.dir/all
 all: CMakeFiles/intro.dir/all
 all: CMakeFiles/reference.dir/all
 all: CMakeFiles/function.dir/all
@@ -92,6 +93,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/static_global_variables.dir/clean
 clean: CMakeFiles/intro.dir/clean
 clean: CMakeFiles/reference.dir/clean
 clean: CMakeFiles/function.dir/clean
@@ -105,6 +107,33 @@ clean: CMakeFiles/converting_c_to_cpp_class.dir/clean
 clean: CMakeFiles/template_class.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/static_global_variables.dir
+
+# All Build rule for target.
+CMakeFiles/static_global_variables.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target static_global_variables"
+.PHONY : CMakeFiles/static_global_variables.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/static_global_variables.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/static_global_variables.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/static_global_variables.dir/rule
+
+# Convenience name for target.
+static_global_variables: CMakeFiles/static_global_variables.dir/rule
+
+.PHONY : static_global_variables
+
+# clean rule for target.
+CMakeFiles/static_global_variables.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/clean
+.PHONY : CMakeFiles/static_global_variables.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/intro.dir
@@ -221,7 +250,7 @@ CMakeFiles/pointer.dir/clean:
 CMakeFiles/structure_as_parameter.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target structure_as_parameter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target structure_as_parameter"
 .PHONY : CMakeFiles/structure_as_parameter.dir/all
 
 # Build rule for subdir invocation for target.
@@ -275,7 +304,7 @@ CMakeFiles/array_as_parameter.dir/clean:
 CMakeFiles/struct.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target struct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target struct"
 .PHONY : CMakeFiles/struct.dir/all
 
 # Build rule for subdir invocation for target.
@@ -329,7 +358,7 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/structure_and_functions.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_and_functions.dir/build.make CMakeFiles/structure_and_functions.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_and_functions.dir/build.make CMakeFiles/structure_and_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target structure_and_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target structure_and_functions"
 .PHONY : CMakeFiles/structure_and_functions.dir/all
 
 # Build rule for subdir invocation for target.
@@ -383,7 +412,7 @@ CMakeFiles/converting_c_to_cpp_class.dir/clean:
 CMakeFiles/template_class.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target template_class"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target template_class"
 .PHONY : CMakeFiles/template_class.dir/all
 
 # Build rule for subdir invocation for target.
