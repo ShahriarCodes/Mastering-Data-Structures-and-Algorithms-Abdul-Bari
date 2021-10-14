@@ -18,3 +18,4 @@ add_executable(static_global_variables section05_recursion/static_global_variabl
 add_executable(tail_recursion section05_recursion/tail_recursion.cpp)
 add_executable(head_recursion section05_recursion/head_recursion.cpp)
 add_executable(tree_recursion section05_recursion/tree_recursion.cpp)
+add_executable(indirect_recursion section05_recursion/indirect_recursion.cpp)

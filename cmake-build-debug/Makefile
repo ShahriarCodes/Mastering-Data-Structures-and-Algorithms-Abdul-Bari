@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named indirect_recursion
+
+# Build rule for target.
+indirect_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 indirect_recursion
+.PHONY : indirect_recursion
+
+# fast build rule for target.
+indirect_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/build
+.PHONY : indirect_recursion/fast
+
+#=============================================================================
 # Target rules for targets named head_recursion
 
 # Build rule for target.
@@ -621,6 +634,33 @@ section05_recursion/head_recursion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/section05_recursion/head_recursion.cpp.s
 .PHONY : section05_recursion/head_recursion.cpp.s
 
+section05_recursion/indirect_recursion.o: section05_recursion/indirect_recursion.cpp.o
+
+.PHONY : section05_recursion/indirect_recursion.o
+
+# target to build an object file
+section05_recursion/indirect_recursion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/section05_recursion/indirect_recursion.cpp.o
+.PHONY : section05_recursion/indirect_recursion.cpp.o
+
+section05_recursion/indirect_recursion.i: section05_recursion/indirect_recursion.cpp.i
+
+.PHONY : section05_recursion/indirect_recursion.i
+
+# target to preprocess a source file
+section05_recursion/indirect_recursion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/section05_recursion/indirect_recursion.cpp.i
+.PHONY : section05_recursion/indirect_recursion.cpp.i
+
+section05_recursion/indirect_recursion.s: section05_recursion/indirect_recursion.cpp.s
+
+.PHONY : section05_recursion/indirect_recursion.s
+
+# target to generate assembly for a file
+section05_recursion/indirect_recursion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/section05_recursion/indirect_recursion.cpp.s
+.PHONY : section05_recursion/indirect_recursion.cpp.s
+
 section05_recursion/intro.o: section05_recursion/intro.cpp.o
 
 .PHONY : section05_recursion/intro.o
@@ -741,6 +781,7 @@ help:
 	@echo "... converting_c_to_cpp_class"
 	@echo "... function"
 	@echo "... head_recursion"
+	@echo "... indirect_recursion"
 	@echo "... intro"
 	@echo "... main"
 	@echo "... pointer"
@@ -785,6 +826,9 @@ help:
 	@echo "... section05_recursion/head_recursion.o"
 	@echo "... section05_recursion/head_recursion.i"
 	@echo "... section05_recursion/head_recursion.s"
+	@echo "... section05_recursion/indirect_recursion.o"
+	@echo "... section05_recursion/indirect_recursion.i"
+	@echo "... section05_recursion/indirect_recursion.s"
 	@echo "... section05_recursion/intro.o"
 	@echo "... section05_recursion/intro.i"
 	@echo "... section05_recursion/intro.s"
