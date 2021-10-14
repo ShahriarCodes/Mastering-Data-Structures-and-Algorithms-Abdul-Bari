@@ -208,6 +208,19 @@ function/fast:
 .PHONY : function/fast
 
 #=============================================================================
+# Target rules for targets named tree_recursion
+
+# Build rule for target.
+tree_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tree_recursion
+.PHONY : tree_recursion
+
+# fast build rule for target.
+tree_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/build
+.PHONY : tree_recursion/fast
+
+#=============================================================================
 # Target rules for targets named pointer
 
 # Build rule for target.
@@ -689,6 +702,33 @@ section05_recursion/tail_recursion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/section05_recursion/tail_recursion.cpp.s
 .PHONY : section05_recursion/tail_recursion.cpp.s
 
+section05_recursion/tree_recursion.o: section05_recursion/tree_recursion.cpp.o
+
+.PHONY : section05_recursion/tree_recursion.o
+
+# target to build an object file
+section05_recursion/tree_recursion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/section05_recursion/tree_recursion.cpp.o
+.PHONY : section05_recursion/tree_recursion.cpp.o
+
+section05_recursion/tree_recursion.i: section05_recursion/tree_recursion.cpp.i
+
+.PHONY : section05_recursion/tree_recursion.i
+
+# target to preprocess a source file
+section05_recursion/tree_recursion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/section05_recursion/tree_recursion.cpp.i
+.PHONY : section05_recursion/tree_recursion.cpp.i
+
+section05_recursion/tree_recursion.s: section05_recursion/tree_recursion.cpp.s
+
+.PHONY : section05_recursion/tree_recursion.s
+
+# target to generate assembly for a file
+section05_recursion/tree_recursion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/section05_recursion/tree_recursion.cpp.s
+.PHONY : section05_recursion/tree_recursion.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -711,6 +751,7 @@ help:
 	@echo "... structure_as_parameter"
 	@echo "... tail_recursion"
 	@echo "... template_class"
+	@echo "... tree_recursion"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -753,6 +794,9 @@ help:
 	@echo "... section05_recursion/tail_recursion.o"
 	@echo "... section05_recursion/tail_recursion.i"
 	@echo "... section05_recursion/tail_recursion.s"
+	@echo "... section05_recursion/tree_recursion.o"
+	@echo "... section05_recursion/tree_recursion.i"
+	@echo "... section05_recursion/tree_recursion.s"
 .PHONY : help
 
 

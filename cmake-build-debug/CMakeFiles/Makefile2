@@ -78,6 +78,7 @@ all: CMakeFiles/static_global_variables.dir/all
 all: CMakeFiles/intro.dir/all
 all: CMakeFiles/reference.dir/all
 all: CMakeFiles/function.dir/all
+all: CMakeFiles/tree_recursion.dir/all
 all: CMakeFiles/pointer.dir/all
 all: CMakeFiles/structure_as_parameter.dir/all
 all: CMakeFiles/array_as_parameter.dir/all
@@ -101,6 +102,7 @@ clean: CMakeFiles/static_global_variables.dir/clean
 clean: CMakeFiles/intro.dir/clean
 clean: CMakeFiles/reference.dir/clean
 clean: CMakeFiles/function.dir/clean
+clean: CMakeFiles/tree_recursion.dir/clean
 clean: CMakeFiles/pointer.dir/clean
 clean: CMakeFiles/structure_as_parameter.dir/clean
 clean: CMakeFiles/array_as_parameter.dir/clean
@@ -273,6 +275,33 @@ function: CMakeFiles/function.dir/rule
 CMakeFiles/function.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/clean
 .PHONY : CMakeFiles/function.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tree_recursion.dir
+
+# All Build rule for target.
+CMakeFiles/tree_recursion.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target tree_recursion"
+.PHONY : CMakeFiles/tree_recursion.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tree_recursion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tree_recursion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tree_recursion.dir/rule
+
+# Convenience name for target.
+tree_recursion: CMakeFiles/tree_recursion.dir/rule
+
+.PHONY : tree_recursion
+
+# clean rule for target.
+CMakeFiles/tree_recursion.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/clean
+.PHONY : CMakeFiles/tree_recursion.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/pointer.dir
