@@ -15,9 +15,9 @@ void fun1(int n) {
 
 void fun2(int n) {
     if (n > 0) {
-        cout << "h" << " ";
+        cout << "h" << " "; // print on calling time -> ascending
         fun2(n - 1);
-        cout << n << " ";
+        cout << n << " "; // print on returning time -> descending
     }
 }
 

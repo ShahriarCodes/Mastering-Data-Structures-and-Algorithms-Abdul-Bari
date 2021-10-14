@@ -130,6 +130,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named head_recursion
+
+# Build rule for target.
+head_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 head_recursion
+.PHONY : head_recursion
+
+# fast build rule for target.
+head_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/build
+.PHONY : head_recursion/fast
+
+#=============================================================================
+# Target rules for targets named tail_recursion
+
+# Build rule for target.
+tail_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tail_recursion
+.PHONY : tail_recursion
+
+# fast build rule for target.
+tail_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/build
+.PHONY : tail_recursion/fast
+
+#=============================================================================
 # Target rules for targets named static_global_variables
 
 # Build rule for target.
@@ -555,6 +581,33 @@ section02_essential_c_and_cpp_concepts/template_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/section02_essential_c_and_cpp_concepts/template_class.cpp.s
 .PHONY : section02_essential_c_and_cpp_concepts/template_class.cpp.s
 
+section05_recursion/head_recursion.o: section05_recursion/head_recursion.cpp.o
+
+.PHONY : section05_recursion/head_recursion.o
+
+# target to build an object file
+section05_recursion/head_recursion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/section05_recursion/head_recursion.cpp.o
+.PHONY : section05_recursion/head_recursion.cpp.o
+
+section05_recursion/head_recursion.i: section05_recursion/head_recursion.cpp.i
+
+.PHONY : section05_recursion/head_recursion.i
+
+# target to preprocess a source file
+section05_recursion/head_recursion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/section05_recursion/head_recursion.cpp.i
+.PHONY : section05_recursion/head_recursion.cpp.i
+
+section05_recursion/head_recursion.s: section05_recursion/head_recursion.cpp.s
+
+.PHONY : section05_recursion/head_recursion.s
+
+# target to generate assembly for a file
+section05_recursion/head_recursion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/section05_recursion/head_recursion.cpp.s
+.PHONY : section05_recursion/head_recursion.cpp.s
+
 section05_recursion/intro.o: section05_recursion/intro.cpp.o
 
 .PHONY : section05_recursion/intro.o
@@ -609,6 +662,33 @@ section05_recursion/static_global_variables.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/section05_recursion/static_global_variables.cpp.s
 .PHONY : section05_recursion/static_global_variables.cpp.s
 
+section05_recursion/tail_recursion.o: section05_recursion/tail_recursion.cpp.o
+
+.PHONY : section05_recursion/tail_recursion.o
+
+# target to build an object file
+section05_recursion/tail_recursion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/section05_recursion/tail_recursion.cpp.o
+.PHONY : section05_recursion/tail_recursion.cpp.o
+
+section05_recursion/tail_recursion.i: section05_recursion/tail_recursion.cpp.i
+
+.PHONY : section05_recursion/tail_recursion.i
+
+# target to preprocess a source file
+section05_recursion/tail_recursion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/section05_recursion/tail_recursion.cpp.i
+.PHONY : section05_recursion/tail_recursion.cpp.i
+
+section05_recursion/tail_recursion.s: section05_recursion/tail_recursion.cpp.s
+
+.PHONY : section05_recursion/tail_recursion.s
+
+# target to generate assembly for a file
+section05_recursion/tail_recursion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/section05_recursion/tail_recursion.cpp.s
+.PHONY : section05_recursion/tail_recursion.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -620,6 +700,7 @@ help:
 	@echo "... array_as_parameter"
 	@echo "... converting_c_to_cpp_class"
 	@echo "... function"
+	@echo "... head_recursion"
 	@echo "... intro"
 	@echo "... main"
 	@echo "... pointer"
@@ -628,6 +709,7 @@ help:
 	@echo "... struct"
 	@echo "... structure_and_functions"
 	@echo "... structure_as_parameter"
+	@echo "... tail_recursion"
 	@echo "... template_class"
 	@echo "... main.o"
 	@echo "... main.i"
@@ -659,12 +741,18 @@ help:
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.o"
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.i"
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.s"
+	@echo "... section05_recursion/head_recursion.o"
+	@echo "... section05_recursion/head_recursion.i"
+	@echo "... section05_recursion/head_recursion.s"
 	@echo "... section05_recursion/intro.o"
 	@echo "... section05_recursion/intro.i"
 	@echo "... section05_recursion/intro.s"
 	@echo "... section05_recursion/static_global_variables.o"
 	@echo "... section05_recursion/static_global_variables.i"
 	@echo "... section05_recursion/static_global_variables.s"
+	@echo "... section05_recursion/tail_recursion.o"
+	@echo "... section05_recursion/tail_recursion.i"
+	@echo "... section05_recursion/tail_recursion.s"
 .PHONY : help
 
 

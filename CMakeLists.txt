@@ -15,3 +15,5 @@ add_executable(converting_c_to_cpp_class section02_essential_c_and_cpp_concepts/
 add_executable(template_class section02_essential_c_and_cpp_concepts/template_class.cpp)
 add_executable(intro section05_recursion/intro.cpp)
 add_executable(static_global_variables section05_recursion/static_global_variables.cpp)
+add_executable(tail_recursion section05_recursion/tail_recursion.cpp)
+add_executable(head_recursion section05_recursion/head_recursion.cpp)
