@@ -57,6 +57,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tree_recursion.dir/DependInfo.cmake"
   "CMakeFiles/pointer.dir/DependInfo.cmake"
   "CMakeFiles/structure_as_parameter.dir/DependInfo.cmake"
+  "CMakeFiles/sum_of_natural_numbers.dir/DependInfo.cmake"
   "CMakeFiles/array_as_parameter.dir/DependInfo.cmake"
   "CMakeFiles/struct.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"

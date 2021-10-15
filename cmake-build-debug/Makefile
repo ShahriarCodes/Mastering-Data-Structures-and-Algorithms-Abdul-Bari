@@ -273,6 +273,19 @@ structure_as_parameter/fast:
 .PHONY : structure_as_parameter/fast
 
 #=============================================================================
+# Target rules for targets named sum_of_natural_numbers
+
+# Build rule for target.
+sum_of_natural_numbers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sum_of_natural_numbers
+.PHONY : sum_of_natural_numbers
+
+# fast build rule for target.
+sum_of_natural_numbers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/build
+.PHONY : sum_of_natural_numbers/fast
+
+#=============================================================================
 # Target rules for targets named array_as_parameter
 
 # Build rule for target.
@@ -755,6 +768,33 @@ section05_recursion/static_global_variables.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/section05_recursion/static_global_variables.cpp.s
 .PHONY : section05_recursion/static_global_variables.cpp.s
 
+section05_recursion/sum_of_natural_numbers.o: section05_recursion/sum_of_natural_numbers.cpp.o
+
+.PHONY : section05_recursion/sum_of_natural_numbers.o
+
+# target to build an object file
+section05_recursion/sum_of_natural_numbers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/section05_recursion/sum_of_natural_numbers.cpp.o
+.PHONY : section05_recursion/sum_of_natural_numbers.cpp.o
+
+section05_recursion/sum_of_natural_numbers.i: section05_recursion/sum_of_natural_numbers.cpp.i
+
+.PHONY : section05_recursion/sum_of_natural_numbers.i
+
+# target to preprocess a source file
+section05_recursion/sum_of_natural_numbers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/section05_recursion/sum_of_natural_numbers.cpp.i
+.PHONY : section05_recursion/sum_of_natural_numbers.cpp.i
+
+section05_recursion/sum_of_natural_numbers.s: section05_recursion/sum_of_natural_numbers.cpp.s
+
+.PHONY : section05_recursion/sum_of_natural_numbers.s
+
+# target to generate assembly for a file
+section05_recursion/sum_of_natural_numbers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/section05_recursion/sum_of_natural_numbers.cpp.s
+.PHONY : section05_recursion/sum_of_natural_numbers.cpp.s
+
 section05_recursion/tail_recursion.o: section05_recursion/tail_recursion.cpp.o
 
 .PHONY : section05_recursion/tail_recursion.o
@@ -831,6 +871,7 @@ help:
 	@echo "... struct"
 	@echo "... structure_and_functions"
 	@echo "... structure_as_parameter"
+	@echo "... sum_of_natural_numbers"
 	@echo "... tail_recursion"
 	@echo "... template_class"
 	@echo "... tree_recursion"
@@ -879,6 +920,9 @@ help:
 	@echo "... section05_recursion/static_global_variables.o"
 	@echo "... section05_recursion/static_global_variables.i"
 	@echo "... section05_recursion/static_global_variables.s"
+	@echo "... section05_recursion/sum_of_natural_numbers.o"
+	@echo "... section05_recursion/sum_of_natural_numbers.i"
+	@echo "... section05_recursion/sum_of_natural_numbers.s"
 	@echo "... section05_recursion/tail_recursion.o"
 	@echo "... section05_recursion/tail_recursion.i"
 	@echo "... section05_recursion/tail_recursion.s"

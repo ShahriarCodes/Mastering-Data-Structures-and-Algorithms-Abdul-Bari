@@ -83,6 +83,7 @@ all: CMakeFiles/function.dir/all
 all: CMakeFiles/tree_recursion.dir/all
 all: CMakeFiles/pointer.dir/all
 all: CMakeFiles/structure_as_parameter.dir/all
+all: CMakeFiles/sum_of_natural_numbers.dir/all
 all: CMakeFiles/array_as_parameter.dir/all
 all: CMakeFiles/struct.dir/all
 all: CMakeFiles/main.dir/all
@@ -109,6 +110,7 @@ clean: CMakeFiles/function.dir/clean
 clean: CMakeFiles/tree_recursion.dir/clean
 clean: CMakeFiles/pointer.dir/clean
 clean: CMakeFiles/structure_as_parameter.dir/clean
+clean: CMakeFiles/sum_of_natural_numbers.dir/clean
 clean: CMakeFiles/array_as_parameter.dir/clean
 clean: CMakeFiles/struct.dir/clean
 clean: CMakeFiles/main.dir/clean
@@ -206,7 +208,7 @@ CMakeFiles/head_recursion.dir/clean:
 CMakeFiles/tail_recursion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target tail_recursion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target tail_recursion"
 .PHONY : CMakeFiles/tail_recursion.dir/all
 
 # Build rule for subdir invocation for target.
@@ -341,7 +343,7 @@ CMakeFiles/function.dir/clean:
 CMakeFiles/tree_recursion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target tree_recursion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target tree_recursion"
 .PHONY : CMakeFiles/tree_recursion.dir/all
 
 # Build rule for subdir invocation for target.
@@ -414,6 +416,33 @@ structure_as_parameter: CMakeFiles/structure_as_parameter.dir/rule
 CMakeFiles/structure_as_parameter.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/clean
 .PHONY : CMakeFiles/structure_as_parameter.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sum_of_natural_numbers.dir
+
+# All Build rule for target.
+CMakeFiles/sum_of_natural_numbers.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target sum_of_natural_numbers"
+.PHONY : CMakeFiles/sum_of_natural_numbers.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sum_of_natural_numbers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sum_of_natural_numbers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/sum_of_natural_numbers.dir/rule
+
+# Convenience name for target.
+sum_of_natural_numbers: CMakeFiles/sum_of_natural_numbers.dir/rule
+
+.PHONY : sum_of_natural_numbers
+
+# clean rule for target.
+CMakeFiles/sum_of_natural_numbers.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/clean
+.PHONY : CMakeFiles/sum_of_natural_numbers.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/array_as_parameter.dir
@@ -557,7 +586,7 @@ CMakeFiles/converting_c_to_cpp_class.dir/clean:
 CMakeFiles/template_class.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target template_class"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target template_class"
 .PHONY : CMakeFiles/template_class.dir/all
 
 # Build rule for subdir invocation for target.
