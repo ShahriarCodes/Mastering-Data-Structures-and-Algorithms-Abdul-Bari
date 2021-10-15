@@ -46,6 +46,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/factorial_of_a_number.dir/DependInfo.cmake"
   "CMakeFiles/nested_recursion.dir/DependInfo.cmake"
   "CMakeFiles/indirect_recursion.dir/DependInfo.cmake"
   "CMakeFiles/head_recursion.dir/DependInfo.cmake"

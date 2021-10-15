@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named factorial_of_a_number
+
+# Build rule for target.
+factorial_of_a_number: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 factorial_of_a_number
+.PHONY : factorial_of_a_number
+
+# fast build rule for target.
+factorial_of_a_number/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/build
+.PHONY : factorial_of_a_number/fast
+
+#=============================================================================
 # Target rules for targets named nested_recursion
 
 # Build rule for target.
@@ -633,6 +646,33 @@ section02_essential_c_and_cpp_concepts/template_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/section02_essential_c_and_cpp_concepts/template_class.cpp.s
 .PHONY : section02_essential_c_and_cpp_concepts/template_class.cpp.s
 
+section05_recursion/factorial_of_a_number.o: section05_recursion/factorial_of_a_number.cpp.o
+
+.PHONY : section05_recursion/factorial_of_a_number.o
+
+# target to build an object file
+section05_recursion/factorial_of_a_number.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/section05_recursion/factorial_of_a_number.cpp.o
+.PHONY : section05_recursion/factorial_of_a_number.cpp.o
+
+section05_recursion/factorial_of_a_number.i: section05_recursion/factorial_of_a_number.cpp.i
+
+.PHONY : section05_recursion/factorial_of_a_number.i
+
+# target to preprocess a source file
+section05_recursion/factorial_of_a_number.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/section05_recursion/factorial_of_a_number.cpp.i
+.PHONY : section05_recursion/factorial_of_a_number.cpp.i
+
+section05_recursion/factorial_of_a_number.s: section05_recursion/factorial_of_a_number.cpp.s
+
+.PHONY : section05_recursion/factorial_of_a_number.s
+
+# target to generate assembly for a file
+section05_recursion/factorial_of_a_number.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/section05_recursion/factorial_of_a_number.cpp.s
+.PHONY : section05_recursion/factorial_of_a_number.cpp.s
+
 section05_recursion/head_recursion.o: section05_recursion/head_recursion.cpp.o
 
 .PHONY : section05_recursion/head_recursion.o
@@ -859,6 +899,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... array_as_parameter"
 	@echo "... converting_c_to_cpp_class"
+	@echo "... factorial_of_a_number"
 	@echo "... function"
 	@echo "... head_recursion"
 	@echo "... indirect_recursion"
@@ -905,6 +946,9 @@ help:
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.o"
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.i"
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.s"
+	@echo "... section05_recursion/factorial_of_a_number.o"
+	@echo "... section05_recursion/factorial_of_a_number.i"
+	@echo "... section05_recursion/factorial_of_a_number.s"
 	@echo "... section05_recursion/head_recursion.o"
 	@echo "... section05_recursion/head_recursion.i"
 	@echo "... section05_recursion/head_recursion.s"
