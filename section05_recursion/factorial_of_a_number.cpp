@@ -24,6 +24,6 @@ int factorial(int n) {
 }
 
 int main() {
-    cout << factorial(6) << endl;
+    cout << factorial(5) << endl;
 }
 

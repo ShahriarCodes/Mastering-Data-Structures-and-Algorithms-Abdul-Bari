@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named power_function_with_recursion
+
+# Build rule for target.
+power_function_with_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 power_function_with_recursion
+.PHONY : power_function_with_recursion
+
+# fast build rule for target.
+power_function_with_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/build
+.PHONY : power_function_with_recursion/fast
+
+#=============================================================================
 # Target rules for targets named factorial_of_a_number
 
 # Build rule for target.
@@ -781,6 +794,33 @@ section05_recursion/nested_recursion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nested_recursion.dir/build.make CMakeFiles/nested_recursion.dir/section05_recursion/nested_recursion.cpp.s
 .PHONY : section05_recursion/nested_recursion.cpp.s
 
+section05_recursion/power_function_with_recursion.o: section05_recursion/power_function_with_recursion.cpp.o
+
+.PHONY : section05_recursion/power_function_with_recursion.o
+
+# target to build an object file
+section05_recursion/power_function_with_recursion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/section05_recursion/power_function_with_recursion.cpp.o
+.PHONY : section05_recursion/power_function_with_recursion.cpp.o
+
+section05_recursion/power_function_with_recursion.i: section05_recursion/power_function_with_recursion.cpp.i
+
+.PHONY : section05_recursion/power_function_with_recursion.i
+
+# target to preprocess a source file
+section05_recursion/power_function_with_recursion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/section05_recursion/power_function_with_recursion.cpp.i
+.PHONY : section05_recursion/power_function_with_recursion.cpp.i
+
+section05_recursion/power_function_with_recursion.s: section05_recursion/power_function_with_recursion.cpp.s
+
+.PHONY : section05_recursion/power_function_with_recursion.s
+
+# target to generate assembly for a file
+section05_recursion/power_function_with_recursion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/section05_recursion/power_function_with_recursion.cpp.s
+.PHONY : section05_recursion/power_function_with_recursion.cpp.s
+
 section05_recursion/static_global_variables.o: section05_recursion/static_global_variables.cpp.o
 
 .PHONY : section05_recursion/static_global_variables.o
@@ -907,6 +947,7 @@ help:
 	@echo "... main"
 	@echo "... nested_recursion"
 	@echo "... pointer"
+	@echo "... power_function_with_recursion"
 	@echo "... reference"
 	@echo "... static_global_variables"
 	@echo "... struct"
@@ -961,6 +1002,9 @@ help:
 	@echo "... section05_recursion/nested_recursion.o"
 	@echo "... section05_recursion/nested_recursion.i"
 	@echo "... section05_recursion/nested_recursion.s"
+	@echo "... section05_recursion/power_function_with_recursion.o"
+	@echo "... section05_recursion/power_function_with_recursion.i"
+	@echo "... section05_recursion/power_function_with_recursion.s"
 	@echo "... section05_recursion/static_global_variables.o"
 	@echo "... section05_recursion/static_global_variables.i"
 	@echo "... section05_recursion/static_global_variables.s"
