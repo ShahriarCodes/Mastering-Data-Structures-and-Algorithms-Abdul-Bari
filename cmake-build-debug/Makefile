@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorith
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/sal/CLion-2021.1/clion-2021.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -96,6 +85,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/sal/CLion-2021.1/clion-2021.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -141,6 +141,19 @@ template_class: cmake_check_build_system
 template_class/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/build
 .PHONY : template_class/fast
+
+#=============================================================================
+# Target rules for targets named taylor_series_horners_rule
+
+# Build rule for target.
+taylor_series_horners_rule: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 taylor_series_horners_rule
+.PHONY : taylor_series_horners_rule
+
+# fast build rule for target.
+taylor_series_horners_rule/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_horners_rule.dir/build.make CMakeFiles/taylor_series_horners_rule.dir/build
+.PHONY : taylor_series_horners_rule/fast
 
 #=============================================================================
 # Target rules for targets named struct
@@ -286,6 +299,19 @@ taylor_series_recursion/fast:
 .PHONY : taylor_series_recursion/fast
 
 #=============================================================================
+# Target rules for targets named tail_recursion
+
+# Build rule for target.
+tail_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tail_recursion
+.PHONY : tail_recursion
+
+# fast build rule for target.
+tail_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/build
+.PHONY : tail_recursion/fast
+
+#=============================================================================
 # Target rules for targets named tree_recursion
 
 # Build rule for target.
@@ -362,19 +388,6 @@ factorial_of_a_number: cmake_check_build_system
 factorial_of_a_number/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/build
 .PHONY : factorial_of_a_number/fast
-
-#=============================================================================
-# Target rules for targets named tail_recursion
-
-# Build rule for target.
-tail_recursion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tail_recursion
-.PHONY : tail_recursion
-
-# fast build rule for target.
-tail_recursion/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/build
-.PHONY : tail_recursion/fast
 
 #=============================================================================
 # Target rules for targets named sum_of_natural_numbers
@@ -915,6 +928,33 @@ section05_recursion/tail_recursion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/section05_recursion/tail_recursion.cpp.s
 .PHONY : section05_recursion/tail_recursion.cpp.s
 
+section05_recursion/taylor_series_horners_rule.o: section05_recursion/taylor_series_horners_rule.cpp.o
+
+.PHONY : section05_recursion/taylor_series_horners_rule.o
+
+# target to build an object file
+section05_recursion/taylor_series_horners_rule.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_horners_rule.dir/build.make CMakeFiles/taylor_series_horners_rule.dir/section05_recursion/taylor_series_horners_rule.cpp.o
+.PHONY : section05_recursion/taylor_series_horners_rule.cpp.o
+
+section05_recursion/taylor_series_horners_rule.i: section05_recursion/taylor_series_horners_rule.cpp.i
+
+.PHONY : section05_recursion/taylor_series_horners_rule.i
+
+# target to preprocess a source file
+section05_recursion/taylor_series_horners_rule.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_horners_rule.dir/build.make CMakeFiles/taylor_series_horners_rule.dir/section05_recursion/taylor_series_horners_rule.cpp.i
+.PHONY : section05_recursion/taylor_series_horners_rule.cpp.i
+
+section05_recursion/taylor_series_horners_rule.s: section05_recursion/taylor_series_horners_rule.cpp.s
+
+.PHONY : section05_recursion/taylor_series_horners_rule.s
+
+# target to generate assembly for a file
+section05_recursion/taylor_series_horners_rule.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_horners_rule.dir/build.make CMakeFiles/taylor_series_horners_rule.dir/section05_recursion/taylor_series_horners_rule.cpp.s
+.PHONY : section05_recursion/taylor_series_horners_rule.cpp.s
+
 section05_recursion/taylor_series_recursion.o: section05_recursion/taylor_series_recursion.cpp.o
 
 .PHONY : section05_recursion/taylor_series_recursion.o
@@ -995,6 +1035,7 @@ help:
 	@echo "... structure_as_parameter"
 	@echo "... sum_of_natural_numbers"
 	@echo "... tail_recursion"
+	@echo "... taylor_series_horners_rule"
 	@echo "... taylor_series_recursion"
 	@echo "... template_class"
 	@echo "... tree_recursion"
@@ -1055,6 +1096,9 @@ help:
 	@echo "... section05_recursion/tail_recursion.o"
 	@echo "... section05_recursion/tail_recursion.i"
 	@echo "... section05_recursion/tail_recursion.s"
+	@echo "... section05_recursion/taylor_series_horners_rule.o"
+	@echo "... section05_recursion/taylor_series_horners_rule.i"
+	@echo "... section05_recursion/taylor_series_horners_rule.s"
 	@echo "... section05_recursion/taylor_series_recursion.o"
 	@echo "... section05_recursion/taylor_series_recursion.i"
 	@echo "... section05_recursion/taylor_series_recursion.s"

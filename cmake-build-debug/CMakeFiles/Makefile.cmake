@@ -47,6 +47,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/template_class.dir/DependInfo.cmake"
+  "CMakeFiles/taylor_series_horners_rule.dir/DependInfo.cmake"
   "CMakeFiles/struct.dir/DependInfo.cmake"
   "CMakeFiles/structure_as_parameter.dir/DependInfo.cmake"
   "CMakeFiles/structure_and_functions.dir/DependInfo.cmake"
@@ -58,13 +59,13 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/static_global_variables.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
   "CMakeFiles/taylor_series_recursion.dir/DependInfo.cmake"
+  "CMakeFiles/tail_recursion.dir/DependInfo.cmake"
   "CMakeFiles/tree_recursion.dir/DependInfo.cmake"
   "CMakeFiles/head_recursion.dir/DependInfo.cmake"
   "CMakeFiles/converting_c_to_cpp_class.dir/DependInfo.cmake"
   "CMakeFiles/indirect_recursion.dir/DependInfo.cmake"
   "CMakeFiles/nested_recursion.dir/DependInfo.cmake"
   "CMakeFiles/factorial_of_a_number.dir/DependInfo.cmake"
-  "CMakeFiles/tail_recursion.dir/DependInfo.cmake"
   "CMakeFiles/sum_of_natural_numbers.dir/DependInfo.cmake"
   "CMakeFiles/power_function_with_recursion.dir/DependInfo.cmake"
   )

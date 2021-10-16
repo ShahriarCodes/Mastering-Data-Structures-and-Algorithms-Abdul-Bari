@@ -7,8 +7,8 @@
 using namespace std;
 
 // e^x = 1 + x / 1 + x^2 / 2! + x^3 / 3! + .... n times
-// taylor(x, n) = 1 + x / 1 + x^2 / 2! + x^3 / 3! + .... + x^(n-1) / (n-1)! + x^(n) / (n)!
-// taylor(x, n) = taylor(x, n-1) + x^(n) / (n)!
+// e(x, n) = 1 + x / 1 + x^2 / 2! + x^3 / 3! + .... + x^(n-1) / (n-1)! + x^(n) / (n)!
+// e(x, n) = e(x, n-1) + x^(n) / (n)!
 // combination of sum(n-1) + n, fact(n-1) * n and pow(x, n-1) * x
 
 double factorial(int n) {
@@ -45,8 +45,8 @@ double e(int x, int n) {
     return r + p / f;
 }
 
-// From lecture
-double eFast(int x, int n) {
+// From lecture -> Time O(n^2)
+double e2(int x, int n) {
     static double p = 1, f = 1;
     double r;
 
