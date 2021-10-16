@@ -45,6 +45,20 @@ double e(int x, int n) {
     return r + p / f;
 }
 
+double eIterative(int x, int n) {
+    double s = 1;
+    int i;
+    double num = 1;
+    double den = 1;
+
+    for (i = 1; i <= n; i++) {
+        num *= x;
+        den *= i;
+        s += num / den;
+    }
+    return s;
+}
+
 // From lecture -> Time O(n^2)
 double e2(int x, int n) {
     static double p = 1, f = 1;
