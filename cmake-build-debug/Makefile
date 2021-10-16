@@ -130,199 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named power_function_with_recursion
+# Target rules for targets named template_class
 
 # Build rule for target.
-power_function_with_recursion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 power_function_with_recursion
-.PHONY : power_function_with_recursion
+template_class: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 template_class
+.PHONY : template_class
 
 # fast build rule for target.
-power_function_with_recursion/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/build
-.PHONY : power_function_with_recursion/fast
-
-#=============================================================================
-# Target rules for targets named factorial_of_a_number
-
-# Build rule for target.
-factorial_of_a_number: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 factorial_of_a_number
-.PHONY : factorial_of_a_number
-
-# fast build rule for target.
-factorial_of_a_number/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/build
-.PHONY : factorial_of_a_number/fast
-
-#=============================================================================
-# Target rules for targets named nested_recursion
-
-# Build rule for target.
-nested_recursion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nested_recursion
-.PHONY : nested_recursion
-
-# fast build rule for target.
-nested_recursion/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nested_recursion.dir/build.make CMakeFiles/nested_recursion.dir/build
-.PHONY : nested_recursion/fast
-
-#=============================================================================
-# Target rules for targets named indirect_recursion
-
-# Build rule for target.
-indirect_recursion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 indirect_recursion
-.PHONY : indirect_recursion
-
-# fast build rule for target.
-indirect_recursion/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/build
-.PHONY : indirect_recursion/fast
-
-#=============================================================================
-# Target rules for targets named head_recursion
-
-# Build rule for target.
-head_recursion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 head_recursion
-.PHONY : head_recursion
-
-# fast build rule for target.
-head_recursion/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/build
-.PHONY : head_recursion/fast
-
-#=============================================================================
-# Target rules for targets named tail_recursion
-
-# Build rule for target.
-tail_recursion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tail_recursion
-.PHONY : tail_recursion
-
-# fast build rule for target.
-tail_recursion/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/build
-.PHONY : tail_recursion/fast
-
-#=============================================================================
-# Target rules for targets named static_global_variables
-
-# Build rule for target.
-static_global_variables: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 static_global_variables
-.PHONY : static_global_variables
-
-# fast build rule for target.
-static_global_variables/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/build
-.PHONY : static_global_variables/fast
-
-#=============================================================================
-# Target rules for targets named intro
-
-# Build rule for target.
-intro: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro
-.PHONY : intro
-
-# fast build rule for target.
-intro/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/build
-.PHONY : intro/fast
-
-#=============================================================================
-# Target rules for targets named reference
-
-# Build rule for target.
-reference: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reference
-.PHONY : reference
-
-# fast build rule for target.
-reference/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/build
-.PHONY : reference/fast
-
-#=============================================================================
-# Target rules for targets named function
-
-# Build rule for target.
-function: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 function
-.PHONY : function
-
-# fast build rule for target.
-function/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/build
-.PHONY : function/fast
-
-#=============================================================================
-# Target rules for targets named tree_recursion
-
-# Build rule for target.
-tree_recursion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tree_recursion
-.PHONY : tree_recursion
-
-# fast build rule for target.
-tree_recursion/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/build
-.PHONY : tree_recursion/fast
-
-#=============================================================================
-# Target rules for targets named pointer
-
-# Build rule for target.
-pointer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pointer
-.PHONY : pointer
-
-# fast build rule for target.
-pointer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
-.PHONY : pointer/fast
-
-#=============================================================================
-# Target rules for targets named structure_as_parameter
-
-# Build rule for target.
-structure_as_parameter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 structure_as_parameter
-.PHONY : structure_as_parameter
-
-# fast build rule for target.
-structure_as_parameter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/build
-.PHONY : structure_as_parameter/fast
-
-#=============================================================================
-# Target rules for targets named sum_of_natural_numbers
-
-# Build rule for target.
-sum_of_natural_numbers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sum_of_natural_numbers
-.PHONY : sum_of_natural_numbers
-
-# fast build rule for target.
-sum_of_natural_numbers/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/build
-.PHONY : sum_of_natural_numbers/fast
-
-#=============================================================================
-# Target rules for targets named array_as_parameter
-
-# Build rule for target.
-array_as_parameter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_as_parameter
-.PHONY : array_as_parameter
-
-# fast build rule for target.
-array_as_parameter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/build
-.PHONY : array_as_parameter/fast
+template_class/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/build
+.PHONY : template_class/fast
 
 #=============================================================================
 # Target rules for targets named struct
@@ -338,17 +156,17 @@ struct/fast:
 .PHONY : struct/fast
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named structure_as_parameter
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+structure_as_parameter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 structure_as_parameter
+.PHONY : structure_as_parameter
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+structure_as_parameter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/build
+.PHONY : structure_as_parameter/fast
 
 #=============================================================================
 # Target rules for targets named structure_and_functions
@@ -364,6 +182,136 @@ structure_and_functions/fast:
 .PHONY : structure_and_functions/fast
 
 #=============================================================================
+# Target rules for targets named pointer
+
+# Build rule for target.
+pointer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pointer
+.PHONY : pointer
+
+# fast build rule for target.
+pointer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
+.PHONY : pointer/fast
+
+#=============================================================================
+# Target rules for targets named function
+
+# Build rule for target.
+function: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 function
+.PHONY : function
+
+# fast build rule for target.
+function/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/build
+.PHONY : function/fast
+
+#=============================================================================
+# Target rules for targets named reference
+
+# Build rule for target.
+reference: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reference
+.PHONY : reference
+
+# fast build rule for target.
+reference/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/build
+.PHONY : reference/fast
+
+#=============================================================================
+# Target rules for targets named array_as_parameter
+
+# Build rule for target.
+array_as_parameter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_as_parameter
+.PHONY : array_as_parameter
+
+# fast build rule for target.
+array_as_parameter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/build
+.PHONY : array_as_parameter/fast
+
+#=============================================================================
+# Target rules for targets named intro
+
+# Build rule for target.
+intro: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intro
+.PHONY : intro
+
+# fast build rule for target.
+intro/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/build
+.PHONY : intro/fast
+
+#=============================================================================
+# Target rules for targets named static_global_variables
+
+# Build rule for target.
+static_global_variables: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 static_global_variables
+.PHONY : static_global_variables
+
+# fast build rule for target.
+static_global_variables/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/build
+.PHONY : static_global_variables/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named taylor_series_recursion
+
+# Build rule for target.
+taylor_series_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 taylor_series_recursion
+.PHONY : taylor_series_recursion
+
+# fast build rule for target.
+taylor_series_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_recursion.dir/build.make CMakeFiles/taylor_series_recursion.dir/build
+.PHONY : taylor_series_recursion/fast
+
+#=============================================================================
+# Target rules for targets named tree_recursion
+
+# Build rule for target.
+tree_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tree_recursion
+.PHONY : tree_recursion
+
+# fast build rule for target.
+tree_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/build
+.PHONY : tree_recursion/fast
+
+#=============================================================================
+# Target rules for targets named head_recursion
+
+# Build rule for target.
+head_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 head_recursion
+.PHONY : head_recursion
+
+# fast build rule for target.
+head_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/build
+.PHONY : head_recursion/fast
+
+#=============================================================================
 # Target rules for targets named converting_c_to_cpp_class
 
 # Build rule for target.
@@ -377,17 +325,82 @@ converting_c_to_cpp_class/fast:
 .PHONY : converting_c_to_cpp_class/fast
 
 #=============================================================================
-# Target rules for targets named template_class
+# Target rules for targets named indirect_recursion
 
 # Build rule for target.
-template_class: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 template_class
-.PHONY : template_class
+indirect_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 indirect_recursion
+.PHONY : indirect_recursion
 
 # fast build rule for target.
-template_class/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/build
-.PHONY : template_class/fast
+indirect_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/build
+.PHONY : indirect_recursion/fast
+
+#=============================================================================
+# Target rules for targets named nested_recursion
+
+# Build rule for target.
+nested_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nested_recursion
+.PHONY : nested_recursion
+
+# fast build rule for target.
+nested_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nested_recursion.dir/build.make CMakeFiles/nested_recursion.dir/build
+.PHONY : nested_recursion/fast
+
+#=============================================================================
+# Target rules for targets named factorial_of_a_number
+
+# Build rule for target.
+factorial_of_a_number: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 factorial_of_a_number
+.PHONY : factorial_of_a_number
+
+# fast build rule for target.
+factorial_of_a_number/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/build
+.PHONY : factorial_of_a_number/fast
+
+#=============================================================================
+# Target rules for targets named tail_recursion
+
+# Build rule for target.
+tail_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tail_recursion
+.PHONY : tail_recursion
+
+# fast build rule for target.
+tail_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/build
+.PHONY : tail_recursion/fast
+
+#=============================================================================
+# Target rules for targets named sum_of_natural_numbers
+
+# Build rule for target.
+sum_of_natural_numbers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sum_of_natural_numbers
+.PHONY : sum_of_natural_numbers
+
+# fast build rule for target.
+sum_of_natural_numbers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/build
+.PHONY : sum_of_natural_numbers/fast
+
+#=============================================================================
+# Target rules for targets named power_function_with_recursion
+
+# Build rule for target.
+power_function_with_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 power_function_with_recursion
+.PHONY : power_function_with_recursion
+
+# fast build rule for target.
+power_function_with_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/build
+.PHONY : power_function_with_recursion/fast
 
 main.o: main.cpp.o
 
@@ -902,6 +915,33 @@ section05_recursion/tail_recursion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/section05_recursion/tail_recursion.cpp.s
 .PHONY : section05_recursion/tail_recursion.cpp.s
 
+section05_recursion/taylor_series_recursion.o: section05_recursion/taylor_series_recursion.cpp.o
+
+.PHONY : section05_recursion/taylor_series_recursion.o
+
+# target to build an object file
+section05_recursion/taylor_series_recursion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_recursion.dir/build.make CMakeFiles/taylor_series_recursion.dir/section05_recursion/taylor_series_recursion.cpp.o
+.PHONY : section05_recursion/taylor_series_recursion.cpp.o
+
+section05_recursion/taylor_series_recursion.i: section05_recursion/taylor_series_recursion.cpp.i
+
+.PHONY : section05_recursion/taylor_series_recursion.i
+
+# target to preprocess a source file
+section05_recursion/taylor_series_recursion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_recursion.dir/build.make CMakeFiles/taylor_series_recursion.dir/section05_recursion/taylor_series_recursion.cpp.i
+.PHONY : section05_recursion/taylor_series_recursion.cpp.i
+
+section05_recursion/taylor_series_recursion.s: section05_recursion/taylor_series_recursion.cpp.s
+
+.PHONY : section05_recursion/taylor_series_recursion.s
+
+# target to generate assembly for a file
+section05_recursion/taylor_series_recursion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_recursion.dir/build.make CMakeFiles/taylor_series_recursion.dir/section05_recursion/taylor_series_recursion.cpp.s
+.PHONY : section05_recursion/taylor_series_recursion.cpp.s
+
 section05_recursion/tree_recursion.o: section05_recursion/tree_recursion.cpp.o
 
 .PHONY : section05_recursion/tree_recursion.o
@@ -955,6 +995,7 @@ help:
 	@echo "... structure_as_parameter"
 	@echo "... sum_of_natural_numbers"
 	@echo "... tail_recursion"
+	@echo "... taylor_series_recursion"
 	@echo "... template_class"
 	@echo "... tree_recursion"
 	@echo "... main.o"
@@ -1014,6 +1055,9 @@ help:
 	@echo "... section05_recursion/tail_recursion.o"
 	@echo "... section05_recursion/tail_recursion.i"
 	@echo "... section05_recursion/tail_recursion.s"
+	@echo "... section05_recursion/taylor_series_recursion.o"
+	@echo "... section05_recursion/taylor_series_recursion.i"
+	@echo "... section05_recursion/taylor_series_recursion.s"
 	@echo "... section05_recursion/tree_recursion.o"
 	@echo "... section05_recursion/tree_recursion.i"
 	@echo "... section05_recursion/tree_recursion.s"

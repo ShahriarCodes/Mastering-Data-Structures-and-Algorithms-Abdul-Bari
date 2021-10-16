@@ -72,26 +72,27 @@ CMAKE_BINARY_DIR = /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorith
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/power_function_with_recursion.dir/all
-all: CMakeFiles/factorial_of_a_number.dir/all
-all: CMakeFiles/nested_recursion.dir/all
-all: CMakeFiles/indirect_recursion.dir/all
-all: CMakeFiles/head_recursion.dir/all
-all: CMakeFiles/tail_recursion.dir/all
-all: CMakeFiles/static_global_variables.dir/all
-all: CMakeFiles/intro.dir/all
-all: CMakeFiles/reference.dir/all
-all: CMakeFiles/function.dir/all
-all: CMakeFiles/tree_recursion.dir/all
-all: CMakeFiles/pointer.dir/all
-all: CMakeFiles/structure_as_parameter.dir/all
-all: CMakeFiles/sum_of_natural_numbers.dir/all
-all: CMakeFiles/array_as_parameter.dir/all
-all: CMakeFiles/struct.dir/all
-all: CMakeFiles/main.dir/all
-all: CMakeFiles/structure_and_functions.dir/all
-all: CMakeFiles/converting_c_to_cpp_class.dir/all
 all: CMakeFiles/template_class.dir/all
+all: CMakeFiles/struct.dir/all
+all: CMakeFiles/structure_as_parameter.dir/all
+all: CMakeFiles/structure_and_functions.dir/all
+all: CMakeFiles/pointer.dir/all
+all: CMakeFiles/function.dir/all
+all: CMakeFiles/reference.dir/all
+all: CMakeFiles/array_as_parameter.dir/all
+all: CMakeFiles/intro.dir/all
+all: CMakeFiles/static_global_variables.dir/all
+all: CMakeFiles/main.dir/all
+all: CMakeFiles/taylor_series_recursion.dir/all
+all: CMakeFiles/tree_recursion.dir/all
+all: CMakeFiles/head_recursion.dir/all
+all: CMakeFiles/converting_c_to_cpp_class.dir/all
+all: CMakeFiles/indirect_recursion.dir/all
+all: CMakeFiles/nested_recursion.dir/all
+all: CMakeFiles/factorial_of_a_number.dir/all
+all: CMakeFiles/tail_recursion.dir/all
+all: CMakeFiles/sum_of_natural_numbers.dir/all
+all: CMakeFiles/power_function_with_recursion.dir/all
 
 .PHONY : all
 
@@ -101,433 +102,56 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/power_function_with_recursion.dir/clean
-clean: CMakeFiles/factorial_of_a_number.dir/clean
-clean: CMakeFiles/nested_recursion.dir/clean
-clean: CMakeFiles/indirect_recursion.dir/clean
-clean: CMakeFiles/head_recursion.dir/clean
-clean: CMakeFiles/tail_recursion.dir/clean
-clean: CMakeFiles/static_global_variables.dir/clean
-clean: CMakeFiles/intro.dir/clean
-clean: CMakeFiles/reference.dir/clean
-clean: CMakeFiles/function.dir/clean
-clean: CMakeFiles/tree_recursion.dir/clean
-clean: CMakeFiles/pointer.dir/clean
-clean: CMakeFiles/structure_as_parameter.dir/clean
-clean: CMakeFiles/sum_of_natural_numbers.dir/clean
-clean: CMakeFiles/array_as_parameter.dir/clean
-clean: CMakeFiles/struct.dir/clean
-clean: CMakeFiles/main.dir/clean
-clean: CMakeFiles/structure_and_functions.dir/clean
-clean: CMakeFiles/converting_c_to_cpp_class.dir/clean
 clean: CMakeFiles/template_class.dir/clean
+clean: CMakeFiles/struct.dir/clean
+clean: CMakeFiles/structure_as_parameter.dir/clean
+clean: CMakeFiles/structure_and_functions.dir/clean
+clean: CMakeFiles/pointer.dir/clean
+clean: CMakeFiles/function.dir/clean
+clean: CMakeFiles/reference.dir/clean
+clean: CMakeFiles/array_as_parameter.dir/clean
+clean: CMakeFiles/intro.dir/clean
+clean: CMakeFiles/static_global_variables.dir/clean
+clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/taylor_series_recursion.dir/clean
+clean: CMakeFiles/tree_recursion.dir/clean
+clean: CMakeFiles/head_recursion.dir/clean
+clean: CMakeFiles/converting_c_to_cpp_class.dir/clean
+clean: CMakeFiles/indirect_recursion.dir/clean
+clean: CMakeFiles/nested_recursion.dir/clean
+clean: CMakeFiles/factorial_of_a_number.dir/clean
+clean: CMakeFiles/tail_recursion.dir/clean
+clean: CMakeFiles/sum_of_natural_numbers.dir/clean
+clean: CMakeFiles/power_function_with_recursion.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/power_function_with_recursion.dir
+# Target rules for target CMakeFiles/template_class.dir
 
 # All Build rule for target.
-CMakeFiles/power_function_with_recursion.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target power_function_with_recursion"
-.PHONY : CMakeFiles/power_function_with_recursion.dir/all
+CMakeFiles/template_class.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target template_class"
+.PHONY : CMakeFiles/template_class.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/power_function_with_recursion.dir/rule: cmake_check_build_system
+CMakeFiles/template_class.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/power_function_with_recursion.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/template_class.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/power_function_with_recursion.dir/rule
+.PHONY : CMakeFiles/template_class.dir/rule
 
 # Convenience name for target.
-power_function_with_recursion: CMakeFiles/power_function_with_recursion.dir/rule
+template_class: CMakeFiles/template_class.dir/rule
 
-.PHONY : power_function_with_recursion
-
-# clean rule for target.
-CMakeFiles/power_function_with_recursion.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/clean
-.PHONY : CMakeFiles/power_function_with_recursion.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/factorial_of_a_number.dir
-
-# All Build rule for target.
-CMakeFiles/factorial_of_a_number.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target factorial_of_a_number"
-.PHONY : CMakeFiles/factorial_of_a_number.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/factorial_of_a_number.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/factorial_of_a_number.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/factorial_of_a_number.dir/rule
-
-# Convenience name for target.
-factorial_of_a_number: CMakeFiles/factorial_of_a_number.dir/rule
-
-.PHONY : factorial_of_a_number
+.PHONY : template_class
 
 # clean rule for target.
-CMakeFiles/factorial_of_a_number.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/clean
-.PHONY : CMakeFiles/factorial_of_a_number.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/nested_recursion.dir
-
-# All Build rule for target.
-CMakeFiles/nested_recursion.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nested_recursion.dir/build.make CMakeFiles/nested_recursion.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nested_recursion.dir/build.make CMakeFiles/nested_recursion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target nested_recursion"
-.PHONY : CMakeFiles/nested_recursion.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/nested_recursion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nested_recursion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/nested_recursion.dir/rule
-
-# Convenience name for target.
-nested_recursion: CMakeFiles/nested_recursion.dir/rule
-
-.PHONY : nested_recursion
-
-# clean rule for target.
-CMakeFiles/nested_recursion.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nested_recursion.dir/build.make CMakeFiles/nested_recursion.dir/clean
-.PHONY : CMakeFiles/nested_recursion.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/indirect_recursion.dir
-
-# All Build rule for target.
-CMakeFiles/indirect_recursion.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target indirect_recursion"
-.PHONY : CMakeFiles/indirect_recursion.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/indirect_recursion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/indirect_recursion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/indirect_recursion.dir/rule
-
-# Convenience name for target.
-indirect_recursion: CMakeFiles/indirect_recursion.dir/rule
-
-.PHONY : indirect_recursion
-
-# clean rule for target.
-CMakeFiles/indirect_recursion.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/clean
-.PHONY : CMakeFiles/indirect_recursion.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/head_recursion.dir
-
-# All Build rule for target.
-CMakeFiles/head_recursion.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target head_recursion"
-.PHONY : CMakeFiles/head_recursion.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/head_recursion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/head_recursion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/head_recursion.dir/rule
-
-# Convenience name for target.
-head_recursion: CMakeFiles/head_recursion.dir/rule
-
-.PHONY : head_recursion
-
-# clean rule for target.
-CMakeFiles/head_recursion.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/clean
-.PHONY : CMakeFiles/head_recursion.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tail_recursion.dir
-
-# All Build rule for target.
-CMakeFiles/tail_recursion.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target tail_recursion"
-.PHONY : CMakeFiles/tail_recursion.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tail_recursion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tail_recursion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/tail_recursion.dir/rule
-
-# Convenience name for target.
-tail_recursion: CMakeFiles/tail_recursion.dir/rule
-
-.PHONY : tail_recursion
-
-# clean rule for target.
-CMakeFiles/tail_recursion.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/clean
-.PHONY : CMakeFiles/tail_recursion.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/static_global_variables.dir
-
-# All Build rule for target.
-CMakeFiles/static_global_variables.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target static_global_variables"
-.PHONY : CMakeFiles/static_global_variables.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/static_global_variables.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/static_global_variables.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/static_global_variables.dir/rule
-
-# Convenience name for target.
-static_global_variables: CMakeFiles/static_global_variables.dir/rule
-
-.PHONY : static_global_variables
-
-# clean rule for target.
-CMakeFiles/static_global_variables.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/clean
-.PHONY : CMakeFiles/static_global_variables.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/intro.dir
-
-# All Build rule for target.
-CMakeFiles/intro.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target intro"
-.PHONY : CMakeFiles/intro.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/intro.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/intro.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/intro.dir/rule
-
-# Convenience name for target.
-intro: CMakeFiles/intro.dir/rule
-
-.PHONY : intro
-
-# clean rule for target.
-CMakeFiles/intro.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/clean
-.PHONY : CMakeFiles/intro.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/reference.dir
-
-# All Build rule for target.
-CMakeFiles/reference.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target reference"
-.PHONY : CMakeFiles/reference.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/reference.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reference.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/reference.dir/rule
-
-# Convenience name for target.
-reference: CMakeFiles/reference.dir/rule
-
-.PHONY : reference
-
-# clean rule for target.
-CMakeFiles/reference.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/clean
-.PHONY : CMakeFiles/reference.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/function.dir
-
-# All Build rule for target.
-CMakeFiles/function.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target function"
-.PHONY : CMakeFiles/function.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/function.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/function.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/function.dir/rule
-
-# Convenience name for target.
-function: CMakeFiles/function.dir/rule
-
-.PHONY : function
-
-# clean rule for target.
-CMakeFiles/function.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/clean
-.PHONY : CMakeFiles/function.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tree_recursion.dir
-
-# All Build rule for target.
-CMakeFiles/tree_recursion.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target tree_recursion"
-.PHONY : CMakeFiles/tree_recursion.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tree_recursion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tree_recursion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/tree_recursion.dir/rule
-
-# Convenience name for target.
-tree_recursion: CMakeFiles/tree_recursion.dir/rule
-
-.PHONY : tree_recursion
-
-# clean rule for target.
-CMakeFiles/tree_recursion.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/clean
-.PHONY : CMakeFiles/tree_recursion.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/pointer.dir
-
-# All Build rule for target.
-CMakeFiles/pointer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target pointer"
-.PHONY : CMakeFiles/pointer.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/pointer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pointer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/pointer.dir/rule
-
-# Convenience name for target.
-pointer: CMakeFiles/pointer.dir/rule
-
-.PHONY : pointer
-
-# clean rule for target.
-CMakeFiles/pointer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/clean
-.PHONY : CMakeFiles/pointer.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/structure_as_parameter.dir
-
-# All Build rule for target.
-CMakeFiles/structure_as_parameter.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target structure_as_parameter"
-.PHONY : CMakeFiles/structure_as_parameter.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/structure_as_parameter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/structure_as_parameter.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/structure_as_parameter.dir/rule
-
-# Convenience name for target.
-structure_as_parameter: CMakeFiles/structure_as_parameter.dir/rule
-
-.PHONY : structure_as_parameter
-
-# clean rule for target.
-CMakeFiles/structure_as_parameter.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/clean
-.PHONY : CMakeFiles/structure_as_parameter.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/sum_of_natural_numbers.dir
-
-# All Build rule for target.
-CMakeFiles/sum_of_natural_numbers.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target sum_of_natural_numbers"
-.PHONY : CMakeFiles/sum_of_natural_numbers.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/sum_of_natural_numbers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sum_of_natural_numbers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/sum_of_natural_numbers.dir/rule
-
-# Convenience name for target.
-sum_of_natural_numbers: CMakeFiles/sum_of_natural_numbers.dir/rule
-
-.PHONY : sum_of_natural_numbers
-
-# clean rule for target.
-CMakeFiles/sum_of_natural_numbers.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/clean
-.PHONY : CMakeFiles/sum_of_natural_numbers.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/array_as_parameter.dir
-
-# All Build rule for target.
-CMakeFiles/array_as_parameter.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target array_as_parameter"
-.PHONY : CMakeFiles/array_as_parameter.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/array_as_parameter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/array_as_parameter.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/array_as_parameter.dir/rule
-
-# Convenience name for target.
-array_as_parameter: CMakeFiles/array_as_parameter.dir/rule
-
-.PHONY : array_as_parameter
-
-# clean rule for target.
-CMakeFiles/array_as_parameter.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/clean
-.PHONY : CMakeFiles/array_as_parameter.dir/clean
+CMakeFiles/template_class.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/clean
+.PHONY : CMakeFiles/template_class.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/struct.dir
@@ -557,31 +181,31 @@ CMakeFiles/struct.dir/clean:
 .PHONY : CMakeFiles/struct.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/structure_as_parameter.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/structure_as_parameter.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target structure_as_parameter"
+.PHONY : CMakeFiles/structure_as_parameter.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
+CMakeFiles/structure_as_parameter.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/structure_as_parameter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : CMakeFiles/structure_as_parameter.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
+structure_as_parameter: CMakeFiles/structure_as_parameter.dir/rule
 
-.PHONY : main
+.PHONY : structure_as_parameter
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/structure_as_parameter.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structure_as_parameter.dir/build.make CMakeFiles/structure_as_parameter.dir/clean
+.PHONY : CMakeFiles/structure_as_parameter.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/structure_and_functions.dir
@@ -611,6 +235,276 @@ CMakeFiles/structure_and_functions.dir/clean:
 .PHONY : CMakeFiles/structure_and_functions.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/pointer.dir
+
+# All Build rule for target.
+CMakeFiles/pointer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target pointer"
+.PHONY : CMakeFiles/pointer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pointer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pointer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/pointer.dir/rule
+
+# Convenience name for target.
+pointer: CMakeFiles/pointer.dir/rule
+
+.PHONY : pointer
+
+# clean rule for target.
+CMakeFiles/pointer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/clean
+.PHONY : CMakeFiles/pointer.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/function.dir
+
+# All Build rule for target.
+CMakeFiles/function.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target function"
+.PHONY : CMakeFiles/function.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/function.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/function.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/function.dir/rule
+
+# Convenience name for target.
+function: CMakeFiles/function.dir/rule
+
+.PHONY : function
+
+# clean rule for target.
+CMakeFiles/function.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/clean
+.PHONY : CMakeFiles/function.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/reference.dir
+
+# All Build rule for target.
+CMakeFiles/reference.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target reference"
+.PHONY : CMakeFiles/reference.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/reference.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reference.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/reference.dir/rule
+
+# Convenience name for target.
+reference: CMakeFiles/reference.dir/rule
+
+.PHONY : reference
+
+# clean rule for target.
+CMakeFiles/reference.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/clean
+.PHONY : CMakeFiles/reference.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/array_as_parameter.dir
+
+# All Build rule for target.
+CMakeFiles/array_as_parameter.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target array_as_parameter"
+.PHONY : CMakeFiles/array_as_parameter.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/array_as_parameter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/array_as_parameter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/array_as_parameter.dir/rule
+
+# Convenience name for target.
+array_as_parameter: CMakeFiles/array_as_parameter.dir/rule
+
+.PHONY : array_as_parameter
+
+# clean rule for target.
+CMakeFiles/array_as_parameter.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array_as_parameter.dir/build.make CMakeFiles/array_as_parameter.dir/clean
+.PHONY : CMakeFiles/array_as_parameter.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/intro.dir
+
+# All Build rule for target.
+CMakeFiles/intro.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target intro"
+.PHONY : CMakeFiles/intro.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/intro.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/intro.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/intro.dir/rule
+
+# Convenience name for target.
+intro: CMakeFiles/intro.dir/rule
+
+.PHONY : intro
+
+# clean rule for target.
+CMakeFiles/intro.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/clean
+.PHONY : CMakeFiles/intro.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/static_global_variables.dir
+
+# All Build rule for target.
+CMakeFiles/static_global_variables.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target static_global_variables"
+.PHONY : CMakeFiles/static_global_variables.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/static_global_variables.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/static_global_variables.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/static_global_variables.dir/rule
+
+# Convenience name for target.
+static_global_variables: CMakeFiles/static_global_variables.dir/rule
+
+.PHONY : static_global_variables
+
+# clean rule for target.
+CMakeFiles/static_global_variables.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_global_variables.dir/build.make CMakeFiles/static_global_variables.dir/clean
+.PHONY : CMakeFiles/static_global_variables.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+
+.PHONY : main
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/taylor_series_recursion.dir
+
+# All Build rule for target.
+CMakeFiles/taylor_series_recursion.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_recursion.dir/build.make CMakeFiles/taylor_series_recursion.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_recursion.dir/build.make CMakeFiles/taylor_series_recursion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target taylor_series_recursion"
+.PHONY : CMakeFiles/taylor_series_recursion.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/taylor_series_recursion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/taylor_series_recursion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/taylor_series_recursion.dir/rule
+
+# Convenience name for target.
+taylor_series_recursion: CMakeFiles/taylor_series_recursion.dir/rule
+
+.PHONY : taylor_series_recursion
+
+# clean rule for target.
+CMakeFiles/taylor_series_recursion.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_recursion.dir/build.make CMakeFiles/taylor_series_recursion.dir/clean
+.PHONY : CMakeFiles/taylor_series_recursion.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tree_recursion.dir
+
+# All Build rule for target.
+CMakeFiles/tree_recursion.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target tree_recursion"
+.PHONY : CMakeFiles/tree_recursion.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tree_recursion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tree_recursion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tree_recursion.dir/rule
+
+# Convenience name for target.
+tree_recursion: CMakeFiles/tree_recursion.dir/rule
+
+.PHONY : tree_recursion
+
+# clean rule for target.
+CMakeFiles/tree_recursion.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/clean
+.PHONY : CMakeFiles/tree_recursion.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/head_recursion.dir
+
+# All Build rule for target.
+CMakeFiles/head_recursion.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target head_recursion"
+.PHONY : CMakeFiles/head_recursion.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/head_recursion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/head_recursion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/head_recursion.dir/rule
+
+# Convenience name for target.
+head_recursion: CMakeFiles/head_recursion.dir/rule
+
+.PHONY : head_recursion
+
+# clean rule for target.
+CMakeFiles/head_recursion.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/head_recursion.dir/build.make CMakeFiles/head_recursion.dir/clean
+.PHONY : CMakeFiles/head_recursion.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/converting_c_to_cpp_class.dir
 
 # All Build rule for target.
@@ -638,31 +532,166 @@ CMakeFiles/converting_c_to_cpp_class.dir/clean:
 .PHONY : CMakeFiles/converting_c_to_cpp_class.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/template_class.dir
+# Target rules for target CMakeFiles/indirect_recursion.dir
 
 # All Build rule for target.
-CMakeFiles/template_class.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target template_class"
-.PHONY : CMakeFiles/template_class.dir/all
+CMakeFiles/indirect_recursion.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target indirect_recursion"
+.PHONY : CMakeFiles/indirect_recursion.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/template_class.dir/rule: cmake_check_build_system
+CMakeFiles/indirect_recursion.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/template_class.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/indirect_recursion.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/template_class.dir/rule
+.PHONY : CMakeFiles/indirect_recursion.dir/rule
 
 # Convenience name for target.
-template_class: CMakeFiles/template_class.dir/rule
+indirect_recursion: CMakeFiles/indirect_recursion.dir/rule
 
-.PHONY : template_class
+.PHONY : indirect_recursion
 
 # clean rule for target.
-CMakeFiles/template_class.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/clean
-.PHONY : CMakeFiles/template_class.dir/clean
+CMakeFiles/indirect_recursion.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/clean
+.PHONY : CMakeFiles/indirect_recursion.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/nested_recursion.dir
+
+# All Build rule for target.
+CMakeFiles/nested_recursion.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nested_recursion.dir/build.make CMakeFiles/nested_recursion.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nested_recursion.dir/build.make CMakeFiles/nested_recursion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target nested_recursion"
+.PHONY : CMakeFiles/nested_recursion.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/nested_recursion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nested_recursion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/nested_recursion.dir/rule
+
+# Convenience name for target.
+nested_recursion: CMakeFiles/nested_recursion.dir/rule
+
+.PHONY : nested_recursion
+
+# clean rule for target.
+CMakeFiles/nested_recursion.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nested_recursion.dir/build.make CMakeFiles/nested_recursion.dir/clean
+.PHONY : CMakeFiles/nested_recursion.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/factorial_of_a_number.dir
+
+# All Build rule for target.
+CMakeFiles/factorial_of_a_number.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target factorial_of_a_number"
+.PHONY : CMakeFiles/factorial_of_a_number.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/factorial_of_a_number.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/factorial_of_a_number.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/factorial_of_a_number.dir/rule
+
+# Convenience name for target.
+factorial_of_a_number: CMakeFiles/factorial_of_a_number.dir/rule
+
+.PHONY : factorial_of_a_number
+
+# clean rule for target.
+CMakeFiles/factorial_of_a_number.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/clean
+.PHONY : CMakeFiles/factorial_of_a_number.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tail_recursion.dir
+
+# All Build rule for target.
+CMakeFiles/tail_recursion.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target tail_recursion"
+.PHONY : CMakeFiles/tail_recursion.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tail_recursion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tail_recursion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tail_recursion.dir/rule
+
+# Convenience name for target.
+tail_recursion: CMakeFiles/tail_recursion.dir/rule
+
+.PHONY : tail_recursion
+
+# clean rule for target.
+CMakeFiles/tail_recursion.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tail_recursion.dir/build.make CMakeFiles/tail_recursion.dir/clean
+.PHONY : CMakeFiles/tail_recursion.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sum_of_natural_numbers.dir
+
+# All Build rule for target.
+CMakeFiles/sum_of_natural_numbers.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target sum_of_natural_numbers"
+.PHONY : CMakeFiles/sum_of_natural_numbers.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sum_of_natural_numbers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sum_of_natural_numbers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/sum_of_natural_numbers.dir/rule
+
+# Convenience name for target.
+sum_of_natural_numbers: CMakeFiles/sum_of_natural_numbers.dir/rule
+
+.PHONY : sum_of_natural_numbers
+
+# clean rule for target.
+CMakeFiles/sum_of_natural_numbers.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sum_of_natural_numbers.dir/build.make CMakeFiles/sum_of_natural_numbers.dir/clean
+.PHONY : CMakeFiles/sum_of_natural_numbers.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/power_function_with_recursion.dir
+
+# All Build rule for target.
+CMakeFiles/power_function_with_recursion.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target power_function_with_recursion"
+.PHONY : CMakeFiles/power_function_with_recursion.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/power_function_with_recursion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/power_function_with_recursion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/power_function_with_recursion.dir/rule
+
+# Convenience name for target.
+power_function_with_recursion: CMakeFiles/power_function_with_recursion.dir/rule
+
+.PHONY : power_function_with_recursion
+
+# clean rule for target.
+CMakeFiles/power_function_with_recursion.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/clean
+.PHONY : CMakeFiles/power_function_with_recursion.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

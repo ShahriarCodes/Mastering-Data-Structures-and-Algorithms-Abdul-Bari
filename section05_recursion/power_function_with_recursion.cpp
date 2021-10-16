@@ -33,10 +33,10 @@ int powFast(int m, int n) {
 
     if (n % 2 == 0) {
         // even
-        return pow(m * m, n / 2);
+        return powFast(m * m, n / 2);
     } else {
         // odd
-        return m * pow(m * m, (n - 1) / 2);
+        return m * powFast(m * m, (n - 1) / 2);
     }
 }
 
