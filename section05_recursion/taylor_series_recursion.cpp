@@ -19,7 +19,7 @@ double factorial(int n) {
     }
 }
 
-double powFast(int m, int n) {
+double powFast(double m, int n) {
     if (n == 0) {
         return 1;
     }
@@ -38,7 +38,20 @@ double e(int x, int n) {
     double r;
 
     if (n == 0) return 1;
-//    return e(x, n - 1) + powFast(x, n) / factorial(n);
+    return e(x, n - 1) + powFast(x, n) / factorial(n);
+    r = e(x, n - 1);
+    p = p * x;
+    f = f * n;
+    return r + p / f;
+}
+
+// From lecture
+double eFast(int x, int n) {
+    static double p = 1, f = 1;
+    double r;
+
+    if (n == 0) return 1;
+
     r = e(x, n - 1);
     p = p * x;
     f = f * n;
@@ -47,6 +60,6 @@ double e(int x, int n) {
 
 
 int main() {
-    cout << e(4, 10);
+    cout << e(6, 100);
 }
 
