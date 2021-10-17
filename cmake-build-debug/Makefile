@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named fibonacci_series
+
+# Build rule for target.
+fibonacci_series: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fibonacci_series
+.PHONY : fibonacci_series
+
+# fast build rule for target.
+fibonacci_series/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fibonacci_series.dir/build.make CMakeFiles/fibonacci_series.dir/build
+.PHONY : fibonacci_series/fast
+
+#=============================================================================
 # Target rules for targets named template_class
 
 # Build rule for target.
@@ -712,6 +725,33 @@ section05_recursion/factorial_of_a_number.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorial_of_a_number.dir/build.make CMakeFiles/factorial_of_a_number.dir/section05_recursion/factorial_of_a_number.cpp.s
 .PHONY : section05_recursion/factorial_of_a_number.cpp.s
 
+section05_recursion/fibonacci_series.o: section05_recursion/fibonacci_series.cpp.o
+
+.PHONY : section05_recursion/fibonacci_series.o
+
+# target to build an object file
+section05_recursion/fibonacci_series.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fibonacci_series.dir/build.make CMakeFiles/fibonacci_series.dir/section05_recursion/fibonacci_series.cpp.o
+.PHONY : section05_recursion/fibonacci_series.cpp.o
+
+section05_recursion/fibonacci_series.i: section05_recursion/fibonacci_series.cpp.i
+
+.PHONY : section05_recursion/fibonacci_series.i
+
+# target to preprocess a source file
+section05_recursion/fibonacci_series.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fibonacci_series.dir/build.make CMakeFiles/fibonacci_series.dir/section05_recursion/fibonacci_series.cpp.i
+.PHONY : section05_recursion/fibonacci_series.cpp.i
+
+section05_recursion/fibonacci_series.s: section05_recursion/fibonacci_series.cpp.s
+
+.PHONY : section05_recursion/fibonacci_series.s
+
+# target to generate assembly for a file
+section05_recursion/fibonacci_series.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fibonacci_series.dir/build.make CMakeFiles/fibonacci_series.dir/section05_recursion/fibonacci_series.cpp.s
+.PHONY : section05_recursion/fibonacci_series.cpp.s
+
 section05_recursion/head_recursion.o: section05_recursion/head_recursion.cpp.o
 
 .PHONY : section05_recursion/head_recursion.o
@@ -1020,6 +1060,7 @@ help:
 	@echo "... array_as_parameter"
 	@echo "... converting_c_to_cpp_class"
 	@echo "... factorial_of_a_number"
+	@echo "... fibonacci_series"
 	@echo "... function"
 	@echo "... head_recursion"
 	@echo "... indirect_recursion"
@@ -1072,6 +1113,9 @@ help:
 	@echo "... section05_recursion/factorial_of_a_number.o"
 	@echo "... section05_recursion/factorial_of_a_number.i"
 	@echo "... section05_recursion/factorial_of_a_number.s"
+	@echo "... section05_recursion/fibonacci_series.o"
+	@echo "... section05_recursion/fibonacci_series.i"
+	@echo "... section05_recursion/fibonacci_series.s"
 	@echo "... section05_recursion/head_recursion.o"
 	@echo "... section05_recursion/head_recursion.i"
 	@echo "... section05_recursion/head_recursion.s"
