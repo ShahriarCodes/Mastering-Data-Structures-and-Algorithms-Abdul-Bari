@@ -27,9 +27,26 @@ int nCr(int n, int r) {
 }
 
 
+// from pascal triangle
+// recursive definition
+// nCr = (n-1)C(r-1) + (n-1)Cr
+// nCr = { 1                        n = 0
+//       { 1                        r = 0
+//       { 1                        n = r
+//       { (n-1)C(r-1) + (n-1)Cr    r < n
+//
+
+int nCrRecursive(int n, int r) {
+    if (n == 0) return 1;
+    if (n == r) return 1;
+    if (r == 0) return 1;
+
+    return nCrRecursive(n - 1, r - 1) + nCrRecursive(n - 1, r);
+}
+
 
 int main() {
     cout << nCr(4, 2) << endl;
-
+    cout << nCrRecursive(4, 2) << endl;
 }
 
