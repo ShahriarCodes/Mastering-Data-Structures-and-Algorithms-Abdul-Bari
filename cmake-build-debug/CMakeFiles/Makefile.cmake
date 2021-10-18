@@ -46,6 +46,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/exercise_problems.dir/DependInfo.cmake"
+  "CMakeFiles/tower_of_hanoi.dir/DependInfo.cmake"
   "CMakeFiles/nCr_recursion.dir/DependInfo.cmake"
   "CMakeFiles/fibonacci_series.dir/DependInfo.cmake"
   "CMakeFiles/template_class.dir/DependInfo.cmake"

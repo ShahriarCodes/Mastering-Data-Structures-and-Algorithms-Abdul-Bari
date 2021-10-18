@@ -27,3 +27,5 @@ add_executable(taylor_series_recursion section05_recursion/taylor_series_recursi
 add_executable(taylor_series_horners_rule section05_recursion/taylor_series_horners_rule.cpp)
 add_executable(fibonacci_series section05_recursion/fibonacci_series.cpp)
 add_executable(nCr_recursion section05_recursion/nCr_recursion.cpp)
+add_executable(tower_of_hanoi section05_recursion/tower_of_hanoi.cpp)
+add_executable(exercise_problems section05_recursion/exercise/exercise_problems.cpp)

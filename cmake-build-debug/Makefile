@@ -130,6 +130,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named exercise_problems
+
+# Build rule for target.
+exercise_problems: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exercise_problems
+.PHONY : exercise_problems
+
+# fast build rule for target.
+exercise_problems/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_problems.dir/build.make CMakeFiles/exercise_problems.dir/build
+.PHONY : exercise_problems/fast
+
+#=============================================================================
+# Target rules for targets named tower_of_hanoi
+
+# Build rule for target.
+tower_of_hanoi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tower_of_hanoi
+.PHONY : tower_of_hanoi
+
+# fast build rule for target.
+tower_of_hanoi/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tower_of_hanoi.dir/build.make CMakeFiles/tower_of_hanoi.dir/build
+.PHONY : tower_of_hanoi/fast
+
+#=============================================================================
 # Target rules for targets named nCr_recursion
 
 # Build rule for target.
@@ -711,6 +737,33 @@ section02_essential_c_and_cpp_concepts/template_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_class.dir/build.make CMakeFiles/template_class.dir/section02_essential_c_and_cpp_concepts/template_class.cpp.s
 .PHONY : section02_essential_c_and_cpp_concepts/template_class.cpp.s
 
+section05_recursion/exercise/exercise_problems.o: section05_recursion/exercise/exercise_problems.cpp.o
+
+.PHONY : section05_recursion/exercise/exercise_problems.o
+
+# target to build an object file
+section05_recursion/exercise/exercise_problems.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_problems.dir/build.make CMakeFiles/exercise_problems.dir/section05_recursion/exercise/exercise_problems.cpp.o
+.PHONY : section05_recursion/exercise/exercise_problems.cpp.o
+
+section05_recursion/exercise/exercise_problems.i: section05_recursion/exercise/exercise_problems.cpp.i
+
+.PHONY : section05_recursion/exercise/exercise_problems.i
+
+# target to preprocess a source file
+section05_recursion/exercise/exercise_problems.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_problems.dir/build.make CMakeFiles/exercise_problems.dir/section05_recursion/exercise/exercise_problems.cpp.i
+.PHONY : section05_recursion/exercise/exercise_problems.cpp.i
+
+section05_recursion/exercise/exercise_problems.s: section05_recursion/exercise/exercise_problems.cpp.s
+
+.PHONY : section05_recursion/exercise/exercise_problems.s
+
+# target to generate assembly for a file
+section05_recursion/exercise/exercise_problems.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_problems.dir/build.make CMakeFiles/exercise_problems.dir/section05_recursion/exercise/exercise_problems.cpp.s
+.PHONY : section05_recursion/exercise/exercise_problems.cpp.s
+
 section05_recursion/factorial_of_a_number.o: section05_recursion/factorial_of_a_number.cpp.o
 
 .PHONY : section05_recursion/factorial_of_a_number.o
@@ -1062,6 +1115,33 @@ section05_recursion/taylor_series_recursion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/taylor_series_recursion.dir/build.make CMakeFiles/taylor_series_recursion.dir/section05_recursion/taylor_series_recursion.cpp.s
 .PHONY : section05_recursion/taylor_series_recursion.cpp.s
 
+section05_recursion/tower_of_hanoi.o: section05_recursion/tower_of_hanoi.cpp.o
+
+.PHONY : section05_recursion/tower_of_hanoi.o
+
+# target to build an object file
+section05_recursion/tower_of_hanoi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tower_of_hanoi.dir/build.make CMakeFiles/tower_of_hanoi.dir/section05_recursion/tower_of_hanoi.cpp.o
+.PHONY : section05_recursion/tower_of_hanoi.cpp.o
+
+section05_recursion/tower_of_hanoi.i: section05_recursion/tower_of_hanoi.cpp.i
+
+.PHONY : section05_recursion/tower_of_hanoi.i
+
+# target to preprocess a source file
+section05_recursion/tower_of_hanoi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tower_of_hanoi.dir/build.make CMakeFiles/tower_of_hanoi.dir/section05_recursion/tower_of_hanoi.cpp.i
+.PHONY : section05_recursion/tower_of_hanoi.cpp.i
+
+section05_recursion/tower_of_hanoi.s: section05_recursion/tower_of_hanoi.cpp.s
+
+.PHONY : section05_recursion/tower_of_hanoi.s
+
+# target to generate assembly for a file
+section05_recursion/tower_of_hanoi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tower_of_hanoi.dir/build.make CMakeFiles/tower_of_hanoi.dir/section05_recursion/tower_of_hanoi.cpp.s
+.PHONY : section05_recursion/tower_of_hanoi.cpp.s
+
 section05_recursion/tree_recursion.o: section05_recursion/tree_recursion.cpp.o
 
 .PHONY : section05_recursion/tree_recursion.o
@@ -1099,6 +1179,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... array_as_parameter"
 	@echo "... converting_c_to_cpp_class"
+	@echo "... exercise_problems"
 	@echo "... factorial_of_a_number"
 	@echo "... fibonacci_series"
 	@echo "... function"
@@ -1120,6 +1201,7 @@ help:
 	@echo "... taylor_series_horners_rule"
 	@echo "... taylor_series_recursion"
 	@echo "... template_class"
+	@echo "... tower_of_hanoi"
 	@echo "... tree_recursion"
 	@echo "... main.o"
 	@echo "... main.i"
@@ -1151,6 +1233,9 @@ help:
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.o"
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.i"
 	@echo "... section02_essential_c_and_cpp_concepts/template_class.s"
+	@echo "... section05_recursion/exercise/exercise_problems.o"
+	@echo "... section05_recursion/exercise/exercise_problems.i"
+	@echo "... section05_recursion/exercise/exercise_problems.s"
 	@echo "... section05_recursion/factorial_of_a_number.o"
 	@echo "... section05_recursion/factorial_of_a_number.i"
 	@echo "... section05_recursion/factorial_of_a_number.s"
@@ -1190,6 +1275,9 @@ help:
 	@echo "... section05_recursion/taylor_series_recursion.o"
 	@echo "... section05_recursion/taylor_series_recursion.i"
 	@echo "... section05_recursion/taylor_series_recursion.s"
+	@echo "... section05_recursion/tower_of_hanoi.o"
+	@echo "... section05_recursion/tower_of_hanoi.i"
+	@echo "... section05_recursion/tower_of_hanoi.s"
 	@echo "... section05_recursion/tree_recursion.o"
 	@echo "... section05_recursion/tree_recursion.i"
 	@echo "... section05_recursion/tree_recursion.s"
