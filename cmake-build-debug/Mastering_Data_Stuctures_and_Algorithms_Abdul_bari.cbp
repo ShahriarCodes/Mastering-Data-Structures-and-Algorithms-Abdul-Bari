@@ -1227,9 +1227,6 @@
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section05_recursion/indirect_recursion.cpp">
 			<Option target="indirect_recursion"/>
 		</Unit>
-		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section05_recursion/intro.cpp">
-			<Option target="intro"/>
-		</Unit>
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section05_recursion/nCr_recursion.cpp">
 			<Option target="nCr_recursion"/>
 		</Unit>
@@ -1259,6 +1256,9 @@
 		</Unit>
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section05_recursion/tree_recursion.cpp">
 			<Option target="tree_recursion"/>
+		</Unit>
+		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section06_arrays_representation/intro.cpp">
+			<Option target="intro"/>
 		</Unit>
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

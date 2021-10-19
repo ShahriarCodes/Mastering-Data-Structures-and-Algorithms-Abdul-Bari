@@ -872,33 +872,6 @@ section05_recursion/indirect_recursion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/indirect_recursion.dir/build.make CMakeFiles/indirect_recursion.dir/section05_recursion/indirect_recursion.cpp.s
 .PHONY : section05_recursion/indirect_recursion.cpp.s
 
-section05_recursion/intro.o: section05_recursion/intro.cpp.o
-
-.PHONY : section05_recursion/intro.o
-
-# target to build an object file
-section05_recursion/intro.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section05_recursion/intro.cpp.o
-.PHONY : section05_recursion/intro.cpp.o
-
-section05_recursion/intro.i: section05_recursion/intro.cpp.i
-
-.PHONY : section05_recursion/intro.i
-
-# target to preprocess a source file
-section05_recursion/intro.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section05_recursion/intro.cpp.i
-.PHONY : section05_recursion/intro.cpp.i
-
-section05_recursion/intro.s: section05_recursion/intro.cpp.s
-
-.PHONY : section05_recursion/intro.s
-
-# target to generate assembly for a file
-section05_recursion/intro.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section05_recursion/intro.cpp.s
-.PHONY : section05_recursion/intro.cpp.s
-
 section05_recursion/nCr_recursion.o: section05_recursion/nCr_recursion.cpp.o
 
 .PHONY : section05_recursion/nCr_recursion.o
@@ -1169,6 +1142,33 @@ section05_recursion/tree_recursion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/section05_recursion/tree_recursion.cpp.s
 .PHONY : section05_recursion/tree_recursion.cpp.s
 
+section06_arrays_representation/intro.o: section06_arrays_representation/intro.cpp.o
+
+.PHONY : section06_arrays_representation/intro.o
+
+# target to build an object file
+section06_arrays_representation/intro.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section06_arrays_representation/intro.cpp.o
+.PHONY : section06_arrays_representation/intro.cpp.o
+
+section06_arrays_representation/intro.i: section06_arrays_representation/intro.cpp.i
+
+.PHONY : section06_arrays_representation/intro.i
+
+# target to preprocess a source file
+section06_arrays_representation/intro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section06_arrays_representation/intro.cpp.i
+.PHONY : section06_arrays_representation/intro.cpp.i
+
+section06_arrays_representation/intro.s: section06_arrays_representation/intro.cpp.s
+
+.PHONY : section06_arrays_representation/intro.s
+
+# target to generate assembly for a file
+section06_arrays_representation/intro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section06_arrays_representation/intro.cpp.s
+.PHONY : section06_arrays_representation/intro.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1248,9 +1248,6 @@ help:
 	@echo "... section05_recursion/indirect_recursion.o"
 	@echo "... section05_recursion/indirect_recursion.i"
 	@echo "... section05_recursion/indirect_recursion.s"
-	@echo "... section05_recursion/intro.o"
-	@echo "... section05_recursion/intro.i"
-	@echo "... section05_recursion/intro.s"
 	@echo "... section05_recursion/nCr_recursion.o"
 	@echo "... section05_recursion/nCr_recursion.i"
 	@echo "... section05_recursion/nCr_recursion.s"
@@ -1281,6 +1278,9 @@ help:
 	@echo "... section05_recursion/tree_recursion.o"
 	@echo "... section05_recursion/tree_recursion.i"
 	@echo "... section05_recursion/tree_recursion.s"
+	@echo "... section06_arrays_representation/intro.o"
+	@echo "... section06_arrays_representation/intro.i"
+	@echo "... section06_arrays_representation/intro.s"
 .PHONY : help
 
 
