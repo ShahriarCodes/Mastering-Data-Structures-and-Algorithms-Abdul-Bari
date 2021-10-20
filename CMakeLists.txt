@@ -29,3 +29,5 @@ add_executable(fibonacci_series section05_recursion/fibonacci_series.cpp)
 add_executable(nCr_recursion section05_recursion/nCr_recursion.cpp)
 add_executable(tower_of_hanoi section05_recursion/tower_of_hanoi.cpp)
 add_executable(exercise_problems section05_recursion/exercise/exercise_problems.cpp)
+
+add_executable(static_vs_dynamic_array section06_arrays_representation/static_vs_dynamic_array.cpp)

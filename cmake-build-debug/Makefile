@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named static_vs_dynamic_array
+
+# Build rule for target.
+static_vs_dynamic_array: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 static_vs_dynamic_array
+.PHONY : static_vs_dynamic_array
+
+# fast build rule for target.
+static_vs_dynamic_array/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_vs_dynamic_array.dir/build.make CMakeFiles/static_vs_dynamic_array.dir/build
+.PHONY : static_vs_dynamic_array/fast
+
+#=============================================================================
 # Target rules for targets named exercise_problems
 
 # Build rule for target.
@@ -1169,6 +1182,33 @@ section06_arrays_representation/intro.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section06_arrays_representation/intro.cpp.s
 .PHONY : section06_arrays_representation/intro.cpp.s
 
+section06_arrays_representation/static_vs_dynamic_array.o: section06_arrays_representation/static_vs_dynamic_array.cpp.o
+
+.PHONY : section06_arrays_representation/static_vs_dynamic_array.o
+
+# target to build an object file
+section06_arrays_representation/static_vs_dynamic_array.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_vs_dynamic_array.dir/build.make CMakeFiles/static_vs_dynamic_array.dir/section06_arrays_representation/static_vs_dynamic_array.cpp.o
+.PHONY : section06_arrays_representation/static_vs_dynamic_array.cpp.o
+
+section06_arrays_representation/static_vs_dynamic_array.i: section06_arrays_representation/static_vs_dynamic_array.cpp.i
+
+.PHONY : section06_arrays_representation/static_vs_dynamic_array.i
+
+# target to preprocess a source file
+section06_arrays_representation/static_vs_dynamic_array.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_vs_dynamic_array.dir/build.make CMakeFiles/static_vs_dynamic_array.dir/section06_arrays_representation/static_vs_dynamic_array.cpp.i
+.PHONY : section06_arrays_representation/static_vs_dynamic_array.cpp.i
+
+section06_arrays_representation/static_vs_dynamic_array.s: section06_arrays_representation/static_vs_dynamic_array.cpp.s
+
+.PHONY : section06_arrays_representation/static_vs_dynamic_array.s
+
+# target to generate assembly for a file
+section06_arrays_representation/static_vs_dynamic_array.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_vs_dynamic_array.dir/build.make CMakeFiles/static_vs_dynamic_array.dir/section06_arrays_representation/static_vs_dynamic_array.cpp.s
+.PHONY : section06_arrays_representation/static_vs_dynamic_array.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1193,6 +1233,7 @@ help:
 	@echo "... power_function_with_recursion"
 	@echo "... reference"
 	@echo "... static_global_variables"
+	@echo "... static_vs_dynamic_array"
 	@echo "... struct"
 	@echo "... structure_and_functions"
 	@echo "... structure_as_parameter"
@@ -1281,6 +1322,9 @@ help:
 	@echo "... section06_arrays_representation/intro.o"
 	@echo "... section06_arrays_representation/intro.i"
 	@echo "... section06_arrays_representation/intro.s"
+	@echo "... section06_arrays_representation/static_vs_dynamic_array.o"
+	@echo "... section06_arrays_representation/static_vs_dynamic_array.i"
+	@echo "... section06_arrays_representation/static_vs_dynamic_array.s"
 .PHONY : help
 
 
