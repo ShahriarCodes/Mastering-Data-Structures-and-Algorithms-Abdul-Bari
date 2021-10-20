@@ -429,6 +429,19 @@ indirect_recursion/fast:
 .PHONY : indirect_recursion/fast
 
 #=============================================================================
+# Target rules for targets named 2d_array
+
+# Build rule for target.
+2d_array: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 2d_array
+.PHONY : 2d_array
+
+# fast build rule for target.
+2d_array/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d_array.dir/build.make CMakeFiles/2d_array.dir/build
+.PHONY : 2d_array/fast
+
+#=============================================================================
 # Target rules for targets named nested_recursion
 
 # Build rule for target.
@@ -1155,6 +1168,33 @@ section05_recursion/tree_recursion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tree_recursion.dir/build.make CMakeFiles/tree_recursion.dir/section05_recursion/tree_recursion.cpp.s
 .PHONY : section05_recursion/tree_recursion.cpp.s
 
+section06_arrays_representation/2d_array.o: section06_arrays_representation/2d_array.cpp.o
+
+.PHONY : section06_arrays_representation/2d_array.o
+
+# target to build an object file
+section06_arrays_representation/2d_array.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d_array.dir/build.make CMakeFiles/2d_array.dir/section06_arrays_representation/2d_array.cpp.o
+.PHONY : section06_arrays_representation/2d_array.cpp.o
+
+section06_arrays_representation/2d_array.i: section06_arrays_representation/2d_array.cpp.i
+
+.PHONY : section06_arrays_representation/2d_array.i
+
+# target to preprocess a source file
+section06_arrays_representation/2d_array.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d_array.dir/build.make CMakeFiles/2d_array.dir/section06_arrays_representation/2d_array.cpp.i
+.PHONY : section06_arrays_representation/2d_array.cpp.i
+
+section06_arrays_representation/2d_array.s: section06_arrays_representation/2d_array.cpp.s
+
+.PHONY : section06_arrays_representation/2d_array.s
+
+# target to generate assembly for a file
+section06_arrays_representation/2d_array.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d_array.dir/build.make CMakeFiles/2d_array.dir/section06_arrays_representation/2d_array.cpp.s
+.PHONY : section06_arrays_representation/2d_array.cpp.s
+
 section06_arrays_representation/intro.o: section06_arrays_representation/intro.cpp.o
 
 .PHONY : section06_arrays_representation/intro.o
@@ -1217,6 +1257,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... 2d_array"
 	@echo "... array_as_parameter"
 	@echo "... converting_c_to_cpp_class"
 	@echo "... exercise_problems"
@@ -1319,6 +1360,9 @@ help:
 	@echo "... section05_recursion/tree_recursion.o"
 	@echo "... section05_recursion/tree_recursion.i"
 	@echo "... section05_recursion/tree_recursion.s"
+	@echo "... section06_arrays_representation/2d_array.o"
+	@echo "... section06_arrays_representation/2d_array.i"
+	@echo "... section06_arrays_representation/2d_array.s"
 	@echo "... section06_arrays_representation/intro.o"
 	@echo "... section06_arrays_representation/intro.i"
 	@echo "... section06_arrays_representation/intro.s"

@@ -69,6 +69,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/head_recursion.dir/DependInfo.cmake"
   "CMakeFiles/converting_c_to_cpp_class.dir/DependInfo.cmake"
   "CMakeFiles/indirect_recursion.dir/DependInfo.cmake"
+  "CMakeFiles/2d_array.dir/DependInfo.cmake"
   "CMakeFiles/nested_recursion.dir/DependInfo.cmake"
   "CMakeFiles/factorial_of_a_number.dir/DependInfo.cmake"
   "CMakeFiles/sum_of_natural_numbers.dir/DependInfo.cmake"
