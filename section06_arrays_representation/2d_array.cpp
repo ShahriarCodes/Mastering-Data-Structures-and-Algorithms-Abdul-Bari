@@ -69,7 +69,7 @@ int main() {
     // Addr(A[i][j][k]) = L0 + [i * m * n + j * n + k] * w
 
     // col major 3d array A[l][m][n]
-    // Addr(A[i][j][k]) = L0 + [k * l * m + l * n + m] * w
+    // Addr(A[i][j][k]) = L0 + [k * l * m + j * l + i] * w
 
     int D[5] = {3, 2, 10, 5, 6};
     cout << *(D + 2) << endl;

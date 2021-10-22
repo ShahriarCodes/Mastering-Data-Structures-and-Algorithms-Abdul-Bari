@@ -273,6 +273,19 @@ pointer/fast:
 .PHONY : pointer/fast
 
 #=============================================================================
+# Target rules for targets named quiz
+
+# Build rule for target.
+quiz: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quiz
+.PHONY : quiz
+
+# fast build rule for target.
+quiz/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/build
+.PHONY : quiz/fast
+
+#=============================================================================
 # Target rules for targets named function
 
 # Build rule for target.
@@ -1195,6 +1208,33 @@ section06_arrays_representation/2d_array.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2d_array.dir/build.make CMakeFiles/2d_array.dir/section06_arrays_representation/2d_array.cpp.s
 .PHONY : section06_arrays_representation/2d_array.cpp.s
 
+section06_arrays_representation/exercise/quiz.o: section06_arrays_representation/exercise/quiz.cpp.o
+
+.PHONY : section06_arrays_representation/exercise/quiz.o
+
+# target to build an object file
+section06_arrays_representation/exercise/quiz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/section06_arrays_representation/exercise/quiz.cpp.o
+.PHONY : section06_arrays_representation/exercise/quiz.cpp.o
+
+section06_arrays_representation/exercise/quiz.i: section06_arrays_representation/exercise/quiz.cpp.i
+
+.PHONY : section06_arrays_representation/exercise/quiz.i
+
+# target to preprocess a source file
+section06_arrays_representation/exercise/quiz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/section06_arrays_representation/exercise/quiz.cpp.i
+.PHONY : section06_arrays_representation/exercise/quiz.cpp.i
+
+section06_arrays_representation/exercise/quiz.s: section06_arrays_representation/exercise/quiz.cpp.s
+
+.PHONY : section06_arrays_representation/exercise/quiz.s
+
+# target to generate assembly for a file
+section06_arrays_representation/exercise/quiz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/section06_arrays_representation/exercise/quiz.cpp.s
+.PHONY : section06_arrays_representation/exercise/quiz.cpp.s
+
 section06_arrays_representation/intro.o: section06_arrays_representation/intro.cpp.o
 
 .PHONY : section06_arrays_representation/intro.o
@@ -1272,6 +1312,7 @@ help:
 	@echo "... nested_recursion"
 	@echo "... pointer"
 	@echo "... power_function_with_recursion"
+	@echo "... quiz"
 	@echo "... reference"
 	@echo "... static_global_variables"
 	@echo "... static_vs_dynamic_array"
@@ -1363,6 +1404,9 @@ help:
 	@echo "... section06_arrays_representation/2d_array.o"
 	@echo "... section06_arrays_representation/2d_array.i"
 	@echo "... section06_arrays_representation/2d_array.s"
+	@echo "... section06_arrays_representation/exercise/quiz.o"
+	@echo "... section06_arrays_representation/exercise/quiz.i"
+	@echo "... section06_arrays_representation/exercise/quiz.s"
 	@echo "... section06_arrays_representation/intro.o"
 	@echo "... section06_arrays_representation/intro.i"
 	@echo "... section06_arrays_representation/intro.s"

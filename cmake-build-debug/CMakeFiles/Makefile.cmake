@@ -57,6 +57,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/structure_as_parameter.dir/DependInfo.cmake"
   "CMakeFiles/structure_and_functions.dir/DependInfo.cmake"
   "CMakeFiles/pointer.dir/DependInfo.cmake"
+  "CMakeFiles/quiz.dir/DependInfo.cmake"
   "CMakeFiles/function.dir/DependInfo.cmake"
   "CMakeFiles/reference.dir/DependInfo.cmake"
   "CMakeFiles/array_as_parameter.dir/DependInfo.cmake"

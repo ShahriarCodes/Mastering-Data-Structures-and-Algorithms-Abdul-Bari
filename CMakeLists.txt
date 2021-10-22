@@ -32,3 +32,4 @@ add_executable(exercise_problems section05_recursion/exercise/exercise_problems.
 
 add_executable(static_vs_dynamic_array section06_arrays_representation/static_vs_dynamic_array.cpp)
 add_executable(2d_array section06_arrays_representation/2d_array.cpp)
+add_executable(quiz section06_arrays_representation/exercise/quiz.cpp)
