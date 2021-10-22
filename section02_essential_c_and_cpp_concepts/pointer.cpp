@@ -17,7 +17,7 @@ int main() {
     p = &a; // assignment or initialization
     cout << "a: " << a << endl;
     cout << "p: " << p << endl;
-    cout << "*p: " << *p << endl; // dereferencing
+    cout << "*p: " << ++(*p)<< endl; // dereferencing and incrementing
 
     // dynamic memory allocation with malloc which returns a void pointer (c lang)
     int *b = (int *) malloc(5 * sizeof(int));
