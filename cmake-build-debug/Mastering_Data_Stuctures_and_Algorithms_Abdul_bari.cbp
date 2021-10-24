@@ -1395,11 +1395,11 @@
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section06_arrays_representation/exercise/quiz.cpp">
 			<Option target="quiz"/>
 		</Unit>
-		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section06_arrays_representation/intro.cpp">
-			<Option target="intro"/>
-		</Unit>
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section06_arrays_representation/static_vs_dynamic_array.cpp">
 			<Option target="static_vs_dynamic_array"/>
+		</Unit>
+		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/intro.cpp">
+			<Option target="intro"/>
 		</Unit>
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

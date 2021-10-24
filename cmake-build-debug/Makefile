@@ -1235,33 +1235,6 @@ section06_arrays_representation/exercise/quiz.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/section06_arrays_representation/exercise/quiz.cpp.s
 .PHONY : section06_arrays_representation/exercise/quiz.cpp.s
 
-section06_arrays_representation/intro.o: section06_arrays_representation/intro.cpp.o
-
-.PHONY : section06_arrays_representation/intro.o
-
-# target to build an object file
-section06_arrays_representation/intro.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section06_arrays_representation/intro.cpp.o
-.PHONY : section06_arrays_representation/intro.cpp.o
-
-section06_arrays_representation/intro.i: section06_arrays_representation/intro.cpp.i
-
-.PHONY : section06_arrays_representation/intro.i
-
-# target to preprocess a source file
-section06_arrays_representation/intro.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section06_arrays_representation/intro.cpp.i
-.PHONY : section06_arrays_representation/intro.cpp.i
-
-section06_arrays_representation/intro.s: section06_arrays_representation/intro.cpp.s
-
-.PHONY : section06_arrays_representation/intro.s
-
-# target to generate assembly for a file
-section06_arrays_representation/intro.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section06_arrays_representation/intro.cpp.s
-.PHONY : section06_arrays_representation/intro.cpp.s
-
 section06_arrays_representation/static_vs_dynamic_array.o: section06_arrays_representation/static_vs_dynamic_array.cpp.o
 
 .PHONY : section06_arrays_representation/static_vs_dynamic_array.o
@@ -1288,6 +1261,33 @@ section06_arrays_representation/static_vs_dynamic_array.s: section06_arrays_repr
 section06_arrays_representation/static_vs_dynamic_array.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_vs_dynamic_array.dir/build.make CMakeFiles/static_vs_dynamic_array.dir/section06_arrays_representation/static_vs_dynamic_array.cpp.s
 .PHONY : section06_arrays_representation/static_vs_dynamic_array.cpp.s
+
+section07_array_adt/intro.o: section07_array_adt/intro.cpp.o
+
+.PHONY : section07_array_adt/intro.o
+
+# target to build an object file
+section07_array_adt/intro.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section07_array_adt/intro.cpp.o
+.PHONY : section07_array_adt/intro.cpp.o
+
+section07_array_adt/intro.i: section07_array_adt/intro.cpp.i
+
+.PHONY : section07_array_adt/intro.i
+
+# target to preprocess a source file
+section07_array_adt/intro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section07_array_adt/intro.cpp.i
+.PHONY : section07_array_adt/intro.cpp.i
+
+section07_array_adt/intro.s: section07_array_adt/intro.cpp.s
+
+.PHONY : section07_array_adt/intro.s
+
+# target to generate assembly for a file
+section07_array_adt/intro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section07_array_adt/intro.cpp.s
+.PHONY : section07_array_adt/intro.cpp.s
 
 # Help Target
 help:
@@ -1407,12 +1407,12 @@ help:
 	@echo "... section06_arrays_representation/exercise/quiz.o"
 	@echo "... section06_arrays_representation/exercise/quiz.i"
 	@echo "... section06_arrays_representation/exercise/quiz.s"
-	@echo "... section06_arrays_representation/intro.o"
-	@echo "... section06_arrays_representation/intro.i"
-	@echo "... section06_arrays_representation/intro.s"
 	@echo "... section06_arrays_representation/static_vs_dynamic_array.o"
 	@echo "... section06_arrays_representation/static_vs_dynamic_array.i"
 	@echo "... section06_arrays_representation/static_vs_dynamic_array.s"
+	@echo "... section07_array_adt/intro.o"
+	@echo "... section07_array_adt/intro.i"
+	@echo "... section07_array_adt/intro.s"
 .PHONY : help
 
 
