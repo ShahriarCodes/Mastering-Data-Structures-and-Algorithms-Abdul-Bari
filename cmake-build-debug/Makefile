@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named linear_search
+
+# Build rule for target.
+linear_search: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linear_search
+.PHONY : linear_search
+
+# fast build rule for target.
+linear_search/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_search.dir/build.make CMakeFiles/linear_search.dir/build
+.PHONY : linear_search/fast
+
+#=============================================================================
 # Target rules for targets named static_vs_dynamic_array
 
 # Build rule for target.
@@ -1289,6 +1302,33 @@ section07_array_adt/intro.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/intro.dir/build.make CMakeFiles/intro.dir/section07_array_adt/intro.cpp.s
 .PHONY : section07_array_adt/intro.cpp.s
 
+section07_array_adt/linear_search.o: section07_array_adt/linear_search.cpp.o
+
+.PHONY : section07_array_adt/linear_search.o
+
+# target to build an object file
+section07_array_adt/linear_search.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_search.dir/build.make CMakeFiles/linear_search.dir/section07_array_adt/linear_search.cpp.o
+.PHONY : section07_array_adt/linear_search.cpp.o
+
+section07_array_adt/linear_search.i: section07_array_adt/linear_search.cpp.i
+
+.PHONY : section07_array_adt/linear_search.i
+
+# target to preprocess a source file
+section07_array_adt/linear_search.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_search.dir/build.make CMakeFiles/linear_search.dir/section07_array_adt/linear_search.cpp.i
+.PHONY : section07_array_adt/linear_search.cpp.i
+
+section07_array_adt/linear_search.s: section07_array_adt/linear_search.cpp.s
+
+.PHONY : section07_array_adt/linear_search.s
+
+# target to generate assembly for a file
+section07_array_adt/linear_search.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_search.dir/build.make CMakeFiles/linear_search.dir/section07_array_adt/linear_search.cpp.s
+.PHONY : section07_array_adt/linear_search.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1307,6 +1347,7 @@ help:
 	@echo "... head_recursion"
 	@echo "... indirect_recursion"
 	@echo "... intro"
+	@echo "... linear_search"
 	@echo "... main"
 	@echo "... nCr_recursion"
 	@echo "... nested_recursion"
@@ -1413,6 +1454,9 @@ help:
 	@echo "... section07_array_adt/intro.o"
 	@echo "... section07_array_adt/intro.i"
 	@echo "... section07_array_adt/intro.s"
+	@echo "... section07_array_adt/linear_search.o"
+	@echo "... section07_array_adt/linear_search.i"
+	@echo "... section07_array_adt/linear_search.s"
 .PHONY : help
 
 

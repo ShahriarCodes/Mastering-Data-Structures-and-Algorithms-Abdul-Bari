@@ -8,6 +8,7 @@ using namespace std;
 
 struct Array {
     int A[10];
+//    int *A;
     int size;
     int length;
 
@@ -45,6 +46,29 @@ void del(struct Array *arr, int index) {
     }
 }
 
+void swap(int *x, int *y) {
+    int temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+int LinearSearch(struct Array *arr, int key) {
+    for (int i = 0; i < (*arr).length; i++) {
+        if (key == (*arr).A[i]) {
+
+            // bring the value at one index forward
+            // swap(&(*arr).A[i], &(*arr).A[i]);
+
+            // bring it at the first index
+            // swap(&(*arr).A[i], &(*arr).A[0]);
+
+            return i;
+        }
+    }
+    return -1;
+}
+
 int main() {
     struct Array arr;
     int n, i;
@@ -73,6 +97,8 @@ int main() {
 
     // // delete
     del(&arr, 3);
+
+    cout << LinearSearch(&arr, 7) << endl;
 
     display(arr);
 }

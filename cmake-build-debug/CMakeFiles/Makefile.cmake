@@ -46,6 +46,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/linear_search.dir/DependInfo.cmake"
   "CMakeFiles/static_vs_dynamic_array.dir/DependInfo.cmake"
   "CMakeFiles/exercise_problems.dir/DependInfo.cmake"
   "CMakeFiles/tower_of_hanoi.dir/DependInfo.cmake"
