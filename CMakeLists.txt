@@ -3,7 +3,7 @@ project(Mastering_Data_Stuctures_and_Algorithms_Abdul_bari)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(main main.cpp)
+add_executable(main section07_array_adt/main.cpp)
 add_executable(struct section02_essential_c_and_cpp_concepts/struct.cpp)
 add_executable(pointer section02_essential_c_and_cpp_concepts/pointer.cpp)
 add_executable(reference section02_essential_c_and_cpp_concepts/reference.cpp)
@@ -35,3 +35,4 @@ add_executable(2d_array section06_arrays_representation/2d_array.cpp)
 add_executable(quiz section06_arrays_representation/exercise/quiz.cpp)
 
 add_executable(linear_search section07_array_adt/linear_search.cpp)
+add_executable(get_set_avg_max section07_array_adt/get_set_avg_max.cpp)

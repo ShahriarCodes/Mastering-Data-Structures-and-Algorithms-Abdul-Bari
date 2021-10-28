@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named get_set_avg_max
+
+# Build rule for target.
+get_set_avg_max: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 get_set_avg_max
+.PHONY : get_set_avg_max
+
+# fast build rule for target.
+get_set_avg_max/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_set_avg_max.dir/build.make CMakeFiles/get_set_avg_max.dir/build
+.PHONY : get_set_avg_max/fast
+
+#=============================================================================
 # Target rules for targets named linear_search
 
 # Build rule for target.
@@ -518,33 +531,6 @@ power_function_with_recursion: cmake_check_build_system
 power_function_with_recursion/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/power_function_with_recursion.dir/build.make CMakeFiles/power_function_with_recursion.dir/build
 .PHONY : power_function_with_recursion/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 section02_essential_c_and_cpp_concepts/array_as_parameter.o: section02_essential_c_and_cpp_concepts/array_as_parameter.cpp.o
 
@@ -1275,6 +1261,33 @@ section06_arrays_representation/static_vs_dynamic_array.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_vs_dynamic_array.dir/build.make CMakeFiles/static_vs_dynamic_array.dir/section06_arrays_representation/static_vs_dynamic_array.cpp.s
 .PHONY : section06_arrays_representation/static_vs_dynamic_array.cpp.s
 
+section07_array_adt/get_set_avg_max.o: section07_array_adt/get_set_avg_max.cpp.o
+
+.PHONY : section07_array_adt/get_set_avg_max.o
+
+# target to build an object file
+section07_array_adt/get_set_avg_max.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_set_avg_max.dir/build.make CMakeFiles/get_set_avg_max.dir/section07_array_adt/get_set_avg_max.cpp.o
+.PHONY : section07_array_adt/get_set_avg_max.cpp.o
+
+section07_array_adt/get_set_avg_max.i: section07_array_adt/get_set_avg_max.cpp.i
+
+.PHONY : section07_array_adt/get_set_avg_max.i
+
+# target to preprocess a source file
+section07_array_adt/get_set_avg_max.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_set_avg_max.dir/build.make CMakeFiles/get_set_avg_max.dir/section07_array_adt/get_set_avg_max.cpp.i
+.PHONY : section07_array_adt/get_set_avg_max.cpp.i
+
+section07_array_adt/get_set_avg_max.s: section07_array_adt/get_set_avg_max.cpp.s
+
+.PHONY : section07_array_adt/get_set_avg_max.s
+
+# target to generate assembly for a file
+section07_array_adt/get_set_avg_max.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_set_avg_max.dir/build.make CMakeFiles/get_set_avg_max.dir/section07_array_adt/get_set_avg_max.cpp.s
+.PHONY : section07_array_adt/get_set_avg_max.cpp.s
+
 section07_array_adt/intro.o: section07_array_adt/intro.cpp.o
 
 .PHONY : section07_array_adt/intro.o
@@ -1329,6 +1342,33 @@ section07_array_adt/linear_search.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear_search.dir/build.make CMakeFiles/linear_search.dir/section07_array_adt/linear_search.cpp.s
 .PHONY : section07_array_adt/linear_search.cpp.s
 
+section07_array_adt/main.o: section07_array_adt/main.cpp.o
+
+.PHONY : section07_array_adt/main.o
+
+# target to build an object file
+section07_array_adt/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/section07_array_adt/main.cpp.o
+.PHONY : section07_array_adt/main.cpp.o
+
+section07_array_adt/main.i: section07_array_adt/main.cpp.i
+
+.PHONY : section07_array_adt/main.i
+
+# target to preprocess a source file
+section07_array_adt/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/section07_array_adt/main.cpp.i
+.PHONY : section07_array_adt/main.cpp.i
+
+section07_array_adt/main.s: section07_array_adt/main.cpp.s
+
+.PHONY : section07_array_adt/main.s
+
+# target to generate assembly for a file
+section07_array_adt/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/section07_array_adt/main.cpp.s
+.PHONY : section07_array_adt/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1344,6 +1384,7 @@ help:
 	@echo "... factorial_of_a_number"
 	@echo "... fibonacci_series"
 	@echo "... function"
+	@echo "... get_set_avg_max"
 	@echo "... head_recursion"
 	@echo "... indirect_recursion"
 	@echo "... intro"
@@ -1367,9 +1408,6 @@ help:
 	@echo "... template_class"
 	@echo "... tower_of_hanoi"
 	@echo "... tree_recursion"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... section02_essential_c_and_cpp_concepts/array_as_parameter.o"
 	@echo "... section02_essential_c_and_cpp_concepts/array_as_parameter.i"
 	@echo "... section02_essential_c_and_cpp_concepts/array_as_parameter.s"
@@ -1451,12 +1489,18 @@ help:
 	@echo "... section06_arrays_representation/static_vs_dynamic_array.o"
 	@echo "... section06_arrays_representation/static_vs_dynamic_array.i"
 	@echo "... section06_arrays_representation/static_vs_dynamic_array.s"
+	@echo "... section07_array_adt/get_set_avg_max.o"
+	@echo "... section07_array_adt/get_set_avg_max.i"
+	@echo "... section07_array_adt/get_set_avg_max.s"
 	@echo "... section07_array_adt/intro.o"
 	@echo "... section07_array_adt/intro.i"
 	@echo "... section07_array_adt/intro.s"
 	@echo "... section07_array_adt/linear_search.o"
 	@echo "... section07_array_adt/linear_search.i"
 	@echo "... section07_array_adt/linear_search.s"
+	@echo "... section07_array_adt/main.o"
+	@echo "... section07_array_adt/main.i"
+	@echo "... section07_array_adt/main.s"
 .PHONY : help
 
 
