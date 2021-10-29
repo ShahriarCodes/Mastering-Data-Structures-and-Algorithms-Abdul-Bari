@@ -3,7 +3,7 @@ project(Mastering_Data_Stuctures_and_Algorithms_Abdul_bari)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(main section07_array_adt/main.cpp)
+
 add_executable(struct section02_essential_c_and_cpp_concepts/struct.cpp)
 add_executable(pointer section02_essential_c_and_cpp_concepts/pointer.cpp)
 add_executable(reference section02_essential_c_and_cpp_concepts/reference.cpp)
@@ -13,7 +13,7 @@ add_executable(structure_as_parameter section02_essential_c_and_cpp_concepts/str
 add_executable(structure_and_functions section02_essential_c_and_cpp_concepts/structure_and_functions.cpp)
 add_executable(converting_c_to_cpp_class section02_essential_c_and_cpp_concepts/converting_c_to_cpp_class.cpp)
 add_executable(template_class section02_essential_c_and_cpp_concepts/template_class.cpp)
-add_executable(intro section07_array_adt/intro.cpp)
+
 add_executable(static_global_variables section05_recursion/static_global_variables.cpp)
 add_executable(tail_recursion section05_recursion/tail_recursion.cpp)
 add_executable(head_recursion section05_recursion/head_recursion.cpp)
@@ -34,5 +34,8 @@ add_executable(static_vs_dynamic_array section06_arrays_representation/static_vs
 add_executable(2d_array section06_arrays_representation/2d_array.cpp)
 add_executable(quiz section06_arrays_representation/exercise/quiz.cpp)
 
+add_executable(intro_array_adt section07_array_adt/intro_array_adt.cpp)
 add_executable(linear_search section07_array_adt/linear_search.cpp)
 add_executable(get_set_avg_max section07_array_adt/get_set_avg_max.cpp)
+
+add_executable(main_array_adt section07_array_adt/main_array_adt.cpp)

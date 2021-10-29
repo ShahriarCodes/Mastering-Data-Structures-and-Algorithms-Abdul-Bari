@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "intro.cpp"
+#include "intro_array_adt.cpp"
 
 using namespace std;
 
@@ -48,12 +48,12 @@ int sum(struct Array arr) {
 // length = arr.length - 1
 int Rsum(struct Array arr, int length) {
 //    static int length = arr.length - 1;
-    if (length < 0) return 0;
-    return (arr, length - 1) + arr.A[length];
+    if (length <= 0) return 0;
+    return (arr, length - 1) + arr.A[length - 1];
 }
 
 
 float avg(struct Array arr) {
-    return (float) sum(arr) / arr.length;
+    return  (float) sum(arr) / arr.length;
 }
 

@@ -3,7 +3,8 @@
 //
 
 #include <iostream>
-#include "intro.cpp"
+#include "get_set_avg_max.cpp"
+#include "linear_search.cpp"
 
 using namespace std;
 
@@ -29,10 +30,10 @@ int main() {
     arr = {{1, 2, 4, 5, 6, 7}, 10, 6};
 
     /* append */
-//    append(&arr, 10);
+    append(&arr, 10);
 
     // // insert
-//    insert(&arr, 5, 20);
+    insert(&arr, 5, 20);
 
     // // delete
     del(&arr, 3);
@@ -40,6 +41,12 @@ int main() {
     cout << LinearSearch(&arr, 7) << endl;
     cout << BinarySearch(arr, 2) << endl;
     cout << RBinarySearch(arr, 2) << endl;
+
+    cout << max(arr) << endl;
+    cout << min(arr) << endl;
+    cout << avg(arr) << endl;
+    cout << sum(arr) << endl;
+    cout << Rsum(arr, arr.length) << endl;
 
     display(arr);
 }
