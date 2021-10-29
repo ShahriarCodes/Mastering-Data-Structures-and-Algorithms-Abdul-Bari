@@ -3,8 +3,7 @@
 //
 
 #include <iostream>
-#include "get_set_avg_max.cpp"
-#include "linear_search.cpp"
+#include "stdafx.h"
 
 using namespace std;
 

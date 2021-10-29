@@ -38,4 +38,8 @@ add_executable(intro_array_adt section07_array_adt/intro_array_adt.cpp)
 add_executable(linear_search section07_array_adt/linear_search.cpp)
 add_executable(get_set_avg_max section07_array_adt/get_set_avg_max.cpp)
 
-add_executable(main_array_adt section07_array_adt/main_array_adt.cpp)
+add_executable(main_array_adt section07_array_adt/main_array_adt.cpp
+        section07_array_adt/intro_array_adt.cpp
+        section07_array_adt/linear_search.cpp
+        section07_array_adt/get_set_avg_max.cpp
+        )

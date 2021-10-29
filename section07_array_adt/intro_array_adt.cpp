@@ -3,16 +3,17 @@
 //
 
 #include <iostream>
+#include "stdafx.h"
 
 using namespace std;
 
-struct Array {
-    int A[10];
-//    int *A;
-    int size;
-    int length;
-
-};
+//struct Array {
+//    int A[10];
+////    int *A;
+//    int size;
+//    int length;
+//
+//};
 
 void display(struct Array arr) {
     int i;

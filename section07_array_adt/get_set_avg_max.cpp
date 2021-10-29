@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "intro_array_adt.cpp"
+#include "stdafx.h"
 
 using namespace std;
 
