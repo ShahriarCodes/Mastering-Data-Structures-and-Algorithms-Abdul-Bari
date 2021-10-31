@@ -47,6 +47,9 @@ int main() {
     cout << sum(arr) << endl;
     cout << Rsum(arr, arr.length) << endl;
 
+    reverse(&arr);
+    reverse2(&arr);
+
     display(arr);
 }
 

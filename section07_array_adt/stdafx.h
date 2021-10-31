@@ -30,4 +30,7 @@ int sum(struct Array arr);
 int Rsum(struct Array arr, int length);
 float avg(struct Array arr);
 
+void reverse(struct Array *arr);
+void reverse2(struct Array *arr);
+
 #endif
