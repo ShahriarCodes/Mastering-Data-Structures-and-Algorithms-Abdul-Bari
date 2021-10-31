@@ -32,5 +32,7 @@ float avg(struct Array arr);
 
 void reverse(struct Array *arr);
 void reverse2(struct Array *arr);
+void leftShift(struct Array *arr);
+void rotate(struct Array *arr);
 
 #endif

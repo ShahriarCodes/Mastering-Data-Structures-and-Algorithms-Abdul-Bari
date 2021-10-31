@@ -47,9 +47,22 @@ int main() {
     cout << sum(arr) << endl;
     cout << Rsum(arr, arr.length) << endl;
 
-    reverse(&arr);
-    reverse2(&arr);
 
+    reverse(&arr);
+    cout << "After reversing : ";
+    display(arr);
+
+    reverse2(&arr);
+    cout << endl << "After reversing : ";
+    display(arr);
+
+
+    leftShift(&arr);
+    cout << endl << "After left shift: ";
+    display(arr);
+
+    rotate(&arr);
+    cout << endl << "After rotate : ";
     display(arr);
 }
 

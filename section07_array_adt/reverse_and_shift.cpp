@@ -34,3 +34,22 @@ void reverse2(struct Array *arr) {
     }
 }
 
+void leftShift(struct Array *arr) {
+    if (arr->length > 0) {
+        for (int i = 0; i < arr->length - 2; i++) {
+            arr->A[i] = arr->A[i + 1];
+        }
+        arr->A[arr->length - 1] = 0;
+    }
+}
+
+void rotate(struct Array *arr) {
+    if (arr->length > 0) {
+        int temp = arr->A[0];
+
+        for (int i = 0; i < arr->length - 2; i++) {
+            arr->A[i] = arr->A[i + 1];
+        }
+        arr->A[arr->length - 1] = temp;
+    }
+}
