@@ -64,6 +64,9 @@ int main() {
     rotate(&arr);
     cout << endl << "After rotate : ";
     display(arr);
+
+    insertSort(&arr, 20);
+    display(arr);
 }
 
 
