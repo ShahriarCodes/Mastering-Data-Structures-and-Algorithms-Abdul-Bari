@@ -67,6 +67,8 @@ int main() {
 
     insertSort(&arr, 20);
     display(arr);
+
+    isSorted(arr);
 }
 
 

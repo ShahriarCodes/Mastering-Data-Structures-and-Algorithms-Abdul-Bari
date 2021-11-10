@@ -36,5 +36,6 @@ void leftShift(struct Array *arr);
 void rotate(struct Array *arr);
 
 void insertSort(struct Array *arr, int x);
+int isSorted(struct Array arr);
 
 #endif
