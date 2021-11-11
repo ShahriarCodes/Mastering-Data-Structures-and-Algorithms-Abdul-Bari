@@ -27,4 +27,16 @@ int isSorted(struct Array arr) {
     return 1;
 }
 
+void rearrange(struct Array *arr) {
+    int i, j;
+    i = 0;
+    j = arr->length - 1;
+
+    while (i < j) {
+        while (arr->A[i] < 0) i++;
+        while (arr->A[i] >= 0) j--;
+        if (i < j) swap(&arr->A[i], &arr->A[j]);
+    }
+}
+
 

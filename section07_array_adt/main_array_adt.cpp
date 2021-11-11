@@ -26,7 +26,7 @@ int main() {
 //    for (i = 0; i < n; i++) scanf("%d", &arr.A[i]);
 //    arr.length = n;
 
-    arr = {{1, 2, 4, 5, 6, 7}, 10, 6};
+    arr = {{1, 2, 4, 5, 6, 7, -1, -2, -3}, 10, 6};
 
     /* append */
     append(&arr, 10);
@@ -68,7 +68,9 @@ int main() {
     insertSort(&arr, 20);
     display(arr);
 
-    isSorted(arr);
+//    cout << "is sorted" << isSorted(arr) << endl;
+//    rearrange(&arr);
+//    display(arr);
 }
 
 
