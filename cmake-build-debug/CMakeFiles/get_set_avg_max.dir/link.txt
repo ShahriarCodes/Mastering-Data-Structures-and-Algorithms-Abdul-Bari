@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/get_set_avg_max.dir/section07_array_adt/get_set_avg_max.cpp.o -o get_set_avg_max 

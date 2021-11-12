@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/static_global_variables.dir/section05_recursion/static_global_variables.cpp.o -o static_global_variables 

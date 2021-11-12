@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/structure_as_parameter.dir/section02_essential_c_and_cpp_concepts/structure_as_parameter.cpp.o -o structure_as_parameter 

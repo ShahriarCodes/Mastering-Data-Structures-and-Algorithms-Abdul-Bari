@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/template_class.dir/section02_essential_c_and_cpp_concepts/template_class.cpp.o -o template_class 

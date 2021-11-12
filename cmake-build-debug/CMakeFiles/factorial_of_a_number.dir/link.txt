@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/factorial_of_a_number.dir/section05_recursion/factorial_of_a_number.cpp.o -o factorial_of_a_number 

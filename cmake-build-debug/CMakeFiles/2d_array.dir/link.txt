@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/2d_array.dir/section06_arrays_representation/2d_array.cpp.o -o 2d_array 

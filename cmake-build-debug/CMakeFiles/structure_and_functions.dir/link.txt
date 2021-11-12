@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/structure_and_functions.dir/section02_essential_c_and_cpp_concepts/structure_and_functions.cpp.o -o structure_and_functions 

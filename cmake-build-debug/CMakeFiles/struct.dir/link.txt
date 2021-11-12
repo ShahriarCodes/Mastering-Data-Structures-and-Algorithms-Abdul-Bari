@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/struct.dir/section02_essential_c_and_cpp_concepts/struct.cpp.o -o struct 

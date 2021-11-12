@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/main_arr.dir/section07_array_adt/main_array_adt.cpp.o -o main_arr 

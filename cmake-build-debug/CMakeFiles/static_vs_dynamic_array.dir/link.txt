@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/static_vs_dynamic_array.dir/section06_arrays_representation/static_vs_dynamic_array.cpp.o -o static_vs_dynamic_array 
