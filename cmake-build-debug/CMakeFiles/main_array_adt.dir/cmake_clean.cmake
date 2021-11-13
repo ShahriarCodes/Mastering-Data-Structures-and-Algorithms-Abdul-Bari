@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main_array_adt.dir/section07_array_adt/intro_array_adt.cpp.o"
   "CMakeFiles/main_array_adt.dir/section07_array_adt/linear_search.cpp.o"
   "CMakeFiles/main_array_adt.dir/section07_array_adt/main_array_adt.cpp.o"
+  "CMakeFiles/main_array_adt.dir/section07_array_adt/merging_arrays.cpp.o"
   "CMakeFiles/main_array_adt.dir/section07_array_adt/reverse_and_shift.cpp.o"
   "main_array_adt"
   "main_array_adt.pdb"

@@ -1501,6 +1501,9 @@
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/main_array_adt.cpp">
 			<Option target="main_array_adt"/>
 		</Unit>
+		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/merging_arrays.cpp">
+			<Option target="main_array_adt"/>
+		</Unit>
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/reverse_and_shift.cpp">
 			<Option target="main_array_adt"/>
 		</Unit>

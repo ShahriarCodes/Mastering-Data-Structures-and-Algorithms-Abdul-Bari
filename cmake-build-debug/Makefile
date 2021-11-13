@@ -1405,6 +1405,33 @@ section07_array_adt/main_array_adt.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/main_array_adt.cpp.s
 .PHONY : section07_array_adt/main_array_adt.cpp.s
 
+section07_array_adt/merging_arrays.o: section07_array_adt/merging_arrays.cpp.o
+
+.PHONY : section07_array_adt/merging_arrays.o
+
+# target to build an object file
+section07_array_adt/merging_arrays.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/merging_arrays.cpp.o
+.PHONY : section07_array_adt/merging_arrays.cpp.o
+
+section07_array_adt/merging_arrays.i: section07_array_adt/merging_arrays.cpp.i
+
+.PHONY : section07_array_adt/merging_arrays.i
+
+# target to preprocess a source file
+section07_array_adt/merging_arrays.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/merging_arrays.cpp.i
+.PHONY : section07_array_adt/merging_arrays.cpp.i
+
+section07_array_adt/merging_arrays.s: section07_array_adt/merging_arrays.cpp.s
+
+.PHONY : section07_array_adt/merging_arrays.s
+
+# target to generate assembly for a file
+section07_array_adt/merging_arrays.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/merging_arrays.cpp.s
+.PHONY : section07_array_adt/merging_arrays.cpp.s
+
 section07_array_adt/reverse_and_shift.o: section07_array_adt/reverse_and_shift.cpp.o
 
 .PHONY : section07_array_adt/reverse_and_shift.o
@@ -1567,6 +1594,9 @@ help:
 	@echo "... section07_array_adt/main_array_adt.o"
 	@echo "... section07_array_adt/main_array_adt.i"
 	@echo "... section07_array_adt/main_array_adt.s"
+	@echo "... section07_array_adt/merging_arrays.o"
+	@echo "... section07_array_adt/merging_arrays.i"
+	@echo "... section07_array_adt/merging_arrays.s"
 	@echo "... section07_array_adt/reverse_and_shift.o"
 	@echo "... section07_array_adt/reverse_and_shift.i"
 	@echo "... section07_array_adt/reverse_and_shift.s"
