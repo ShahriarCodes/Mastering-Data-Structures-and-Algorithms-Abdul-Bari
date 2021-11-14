@@ -39,4 +39,7 @@ void insertSort(struct Array *arr, int x);
 int isSorted(struct Array arr);
 void rearrange(struct Array *arr);
 
+struct Array *merge(struct Array *arr1, struct Array *arr2);
+
+
 #endif

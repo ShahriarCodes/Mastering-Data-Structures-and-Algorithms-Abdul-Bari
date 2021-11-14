@@ -71,6 +71,15 @@ int main() {
 //    cout << "is sorted" << isSorted(arr) << endl;
 //    rearrange(&arr);
 //    display(arr);
+
+    Array arr1 = {{2, 4, 6, 8, 10}, 10, 5};
+    Array arr2 = {{1, 3, 5, 7, 9}, 10, 5};
+    Array *arr3 = merge(&arr1, &arr2);
+    cout << endl << "After merging arr1 and arr2: ";
+    for (int acc = 0; acc < arr3->length - 1; acc++) {
+        cout << arr3->A[acc] << " ";
+    }
+    cout << endl;
 }
 
 
