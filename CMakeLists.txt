@@ -42,4 +42,4 @@ add_executable(main_array_adt section07_array_adt/main_array_adt.cpp
         section07_array_adt/intro_array_adt.cpp
         section07_array_adt/linear_search.cpp
         section07_array_adt/get_set_avg_max.cpp
-        section07_array_adt/reverse_and_shift.cpp section07_array_adt/check_array_if_sorted.cpp section07_array_adt/merging_arrays.cpp)
+        section07_array_adt/reverse_and_shift.cpp section07_array_adt/check_array_if_sorted.cpp section07_array_adt/merging_arrays.cpp section07_array_adt/set_union_intersection_difference.cpp)

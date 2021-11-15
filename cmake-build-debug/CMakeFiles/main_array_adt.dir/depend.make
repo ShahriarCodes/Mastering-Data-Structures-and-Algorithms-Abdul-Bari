@@ -21,3 +21,6 @@ CMakeFiles/main_array_adt.dir/section07_array_adt/merging_arrays.cpp.o: ../secti
 CMakeFiles/main_array_adt.dir/section07_array_adt/reverse_and_shift.cpp.o: ../section07_array_adt/reverse_and_shift.cpp
 CMakeFiles/main_array_adt.dir/section07_array_adt/reverse_and_shift.cpp.o: ../section07_array_adt/stdafx.h
 
+CMakeFiles/main_array_adt.dir/section07_array_adt/set_union_intersection_difference.cpp.o: ../section07_array_adt/set_union_intersection_difference.cpp
+CMakeFiles/main_array_adt.dir/section07_array_adt/set_union_intersection_difference.cpp.o: ../section07_array_adt/stdafx.h
+

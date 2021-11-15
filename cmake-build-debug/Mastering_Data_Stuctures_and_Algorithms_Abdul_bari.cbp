@@ -1507,6 +1507,9 @@
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/reverse_and_shift.cpp">
 			<Option target="main_array_adt"/>
 		</Unit>
+		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/set_union_intersection_difference.cpp">
+			<Option target="main_array_adt"/>
+		</Unit>
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

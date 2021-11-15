@@ -1459,6 +1459,33 @@ section07_array_adt/reverse_and_shift.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/reverse_and_shift.cpp.s
 .PHONY : section07_array_adt/reverse_and_shift.cpp.s
 
+section07_array_adt/set_union_intersection_difference.o: section07_array_adt/set_union_intersection_difference.cpp.o
+
+.PHONY : section07_array_adt/set_union_intersection_difference.o
+
+# target to build an object file
+section07_array_adt/set_union_intersection_difference.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/set_union_intersection_difference.cpp.o
+.PHONY : section07_array_adt/set_union_intersection_difference.cpp.o
+
+section07_array_adt/set_union_intersection_difference.i: section07_array_adt/set_union_intersection_difference.cpp.i
+
+.PHONY : section07_array_adt/set_union_intersection_difference.i
+
+# target to preprocess a source file
+section07_array_adt/set_union_intersection_difference.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/set_union_intersection_difference.cpp.i
+.PHONY : section07_array_adt/set_union_intersection_difference.cpp.i
+
+section07_array_adt/set_union_intersection_difference.s: section07_array_adt/set_union_intersection_difference.cpp.s
+
+.PHONY : section07_array_adt/set_union_intersection_difference.s
+
+# target to generate assembly for a file
+section07_array_adt/set_union_intersection_difference.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/set_union_intersection_difference.cpp.s
+.PHONY : section07_array_adt/set_union_intersection_difference.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1600,6 +1627,9 @@ help:
 	@echo "... section07_array_adt/reverse_and_shift.o"
 	@echo "... section07_array_adt/reverse_and_shift.i"
 	@echo "... section07_array_adt/reverse_and_shift.s"
+	@echo "... section07_array_adt/set_union_intersection_difference.o"
+	@echo "... section07_array_adt/set_union_intersection_difference.i"
+	@echo "... section07_array_adt/set_union_intersection_difference.s"
 .PHONY : help
 
 

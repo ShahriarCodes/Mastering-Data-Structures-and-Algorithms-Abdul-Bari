@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/main_array_adt.cpp" "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles/main_array_adt.dir/section07_array_adt/main_array_adt.cpp.o"
   "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/merging_arrays.cpp" "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles/main_array_adt.dir/section07_array_adt/merging_arrays.cpp.o"
   "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/reverse_and_shift.cpp" "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles/main_array_adt.dir/section07_array_adt/reverse_and_shift.cpp.o"
+  "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/set_union_intersection_difference.cpp" "/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/cmake-build-debug/CMakeFiles/main_array_adt.dir/section07_array_adt/set_union_intersection_difference.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
