@@ -61,33 +61,30 @@ struct Array *Intersection(struct Array *arr1, struct Array
 }
 
 
-struct Array* Difference(struct Array *arr1,struct Array
-*arr2)
-{
-    int i,j,k;
-    i=j=k=0;
+struct Array *Difference(struct Array *arr1, struct Array
+*arr2) {
+    int i, j, k;
+    i = j = k = 0;
 
-    struct Array *arr3=(struct Array *)malloc(sizeof(struct
+    struct Array *arr3 = (struct Array *) malloc(sizeof(struct
             Array));
 
-    while(i<arr1->length && j<arr2->length)
-    {
-        if(arr1->A[i]<arr2->A[j])
-            arr3->A[k++]=arr1->A[i++];
-        else if(arr2->A[j]<arr1->A[i])
+    while (i < arr1->length && j < arr2->length) {
+        if (arr1->A[i] < arr2->A[j])
+            arr3->A[k++] = arr1->A[i++];
+        else if (arr2->A[j] < arr1->A[i])
             j++;
-        else
-        {
+        else {
             i++;
             j++;
         }
     }
-    for(;i<arr1->length;i++)
-        arr3->A[k++]=arr1->A[i];
+    for (; i < arr1->length; i++)
+        arr3->A[k++] = arr1->A[i];
 
 
-    arr3->length=k;
-    arr3->size=10;
+    arr3->length = k;
+    arr3->size = 10;
 
     return arr3;
 }

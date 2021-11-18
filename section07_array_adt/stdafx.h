@@ -42,6 +42,7 @@ void rearrange(struct Array *arr);
 struct Array *merge(struct Array *arr1, struct Array *arr2);
 
 struct Array *Union(struct Array *arr1, struct Array *arr2);
-
+struct Array *Intersection(struct Array *arr1, struct Array *arr2);
+struct Array* Difference(struct Array *arr1,struct Array *arr2);
 
 #endif
