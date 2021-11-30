@@ -14,7 +14,7 @@ struct Array
 
 void display(struct Array arr);
 void append(struct Array *arr, int x);
-void del(struct Array *arr, int index);
+int del(struct Array *arr, int index);
 void insert(struct Array *arr, int index, int x);
 
 void swap(int *x, int *y);

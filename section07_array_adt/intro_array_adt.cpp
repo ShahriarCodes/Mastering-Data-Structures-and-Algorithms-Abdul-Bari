@@ -37,7 +37,8 @@ void insert(struct Array *arr, int index, int x) {
     }
 }
 
-void del(struct Array *arr, int index) {
+int del(struct Array *arr, int index) {
+    int deleter = arr->A[index];
     if (index >= 0 && index <= arr->length) {
         // no need to go to the last index in shifting sor length - 1
         for (int i = index; i < arr->length - 1; i++) {
@@ -45,6 +46,7 @@ void del(struct Array *arr, int index) {
         }
         arr->length--;
     }
+    return deleter;
 }
 
 void swap(int *x, int *y) {

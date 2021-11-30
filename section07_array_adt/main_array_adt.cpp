@@ -72,10 +72,10 @@ int main() {
 //    rearrange(&arr);
 //    display(arr);
 
-    Array arr1 = {{2, 4, 6,  11, 12}, 10, 5};
-    Array arr2 = {{1, 3, 5, 7, 9,9}, 10, 5};
+    Array arr1 = {{2, 4, 6, 11, 12}, 10, 5};
+    Array arr2 = {{1, 3, 5, 7, 9, 9}, 10, 5};
     Array *arr3 = merge(&arr1, &arr2);
-    cout << endl << "After merging arr1 and arr2: ";
+    cout << endl << "After merging arr4 and arr2: ";
     for (int acc = 0; acc < arr3->length - 1; acc++) {
         cout << arr3->A[acc] << " ";
     }
@@ -87,6 +87,55 @@ int main() {
         cout << arr3->A[acc] << " ";
     }
     cout << endl;
+
+
+    // driver code
+    struct Array arr4;
+    int ch;
+    int x, index;
+
+//    printf("Enter Size of Array");
+//    scanf("%d",&arr4.size);
+//    arr4.A=(int *)malloc(arr4.size*sizeof(int));
+    arr4.length = 0;
+    do {
+        printf("\n\nMenu\n");
+        printf("1. Insert\n");
+        printf("2. Delete\n");
+        printf("3. Search\n");
+        printf("4. Sum\n");
+        printf("5. Display\n");
+        printf("6.Exit\n");
+
+        printf("enter you choice ");
+        scanf("%d", &ch);
+
+        switch (ch) {
+            case 1:
+                printf("Enter an element and index");
+                scanf("%d%d", &x, &index);
+                insert(&arr4, index, x);
+                break;
+            case 2:
+                printf("Enter index ");
+                scanf("%d", &index);
+                x = del(&arr4, index);
+                printf("Deleted Element is %d\n", x);
+                break;
+            case 3:
+                printf("Enter element to search ");
+                scanf("%d", &x);
+                index = LinearSearch(&arr4, x);
+                printf("Element index %d", index);
+                break;
+            case 4:
+                printf("Sum is %d\n", sum(arr4));
+                break;
+            case 5:
+                display(arr4);
+
+        }
+    } while (ch < 6);
 }
 
 
