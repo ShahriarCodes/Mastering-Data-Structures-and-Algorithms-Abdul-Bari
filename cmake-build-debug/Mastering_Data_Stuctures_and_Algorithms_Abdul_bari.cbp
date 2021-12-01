@@ -1483,6 +1483,9 @@
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section06_arrays_representation/static_vs_dynamic_array.cpp">
 			<Option target="static_vs_dynamic_array"/>
 		</Unit>
+		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/c_to_cpp.cpp">
+			<Option target="main_array_adt"/>
+		</Unit>
 		<Unit filename="/home/sal/CLionProjects/Mastering_Data_Stuctures_and_Algorithms_Abdul_bari/section07_array_adt/check_array_if_sorted.cpp">
 			<Option target="main_array_adt"/>
 		</Unit>

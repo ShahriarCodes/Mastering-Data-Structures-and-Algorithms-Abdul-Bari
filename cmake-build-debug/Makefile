@@ -1261,6 +1261,33 @@ section06_arrays_representation/static_vs_dynamic_array.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_vs_dynamic_array.dir/build.make CMakeFiles/static_vs_dynamic_array.dir/section06_arrays_representation/static_vs_dynamic_array.cpp.s
 .PHONY : section06_arrays_representation/static_vs_dynamic_array.cpp.s
 
+section07_array_adt/c_to_cpp.o: section07_array_adt/c_to_cpp.cpp.o
+
+.PHONY : section07_array_adt/c_to_cpp.o
+
+# target to build an object file
+section07_array_adt/c_to_cpp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/c_to_cpp.cpp.o
+.PHONY : section07_array_adt/c_to_cpp.cpp.o
+
+section07_array_adt/c_to_cpp.i: section07_array_adt/c_to_cpp.cpp.i
+
+.PHONY : section07_array_adt/c_to_cpp.i
+
+# target to preprocess a source file
+section07_array_adt/c_to_cpp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/c_to_cpp.cpp.i
+.PHONY : section07_array_adt/c_to_cpp.cpp.i
+
+section07_array_adt/c_to_cpp.s: section07_array_adt/c_to_cpp.cpp.s
+
+.PHONY : section07_array_adt/c_to_cpp.s
+
+# target to generate assembly for a file
+section07_array_adt/c_to_cpp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/c_to_cpp.cpp.s
+.PHONY : section07_array_adt/c_to_cpp.cpp.s
+
 section07_array_adt/check_array_if_sorted.o: section07_array_adt/check_array_if_sorted.cpp.o
 
 .PHONY : section07_array_adt/check_array_if_sorted.o
@@ -1606,6 +1633,9 @@ help:
 	@echo "... section06_arrays_representation/static_vs_dynamic_array.o"
 	@echo "... section06_arrays_representation/static_vs_dynamic_array.i"
 	@echo "... section06_arrays_representation/static_vs_dynamic_array.s"
+	@echo "... section07_array_adt/c_to_cpp.o"
+	@echo "... section07_array_adt/c_to_cpp.i"
+	@echo "... section07_array_adt/c_to_cpp.s"
 	@echo "... section07_array_adt/check_array_if_sorted.o"
 	@echo "... section07_array_adt/check_array_if_sorted.i"
 	@echo "... section07_array_adt/check_array_if_sorted.s"

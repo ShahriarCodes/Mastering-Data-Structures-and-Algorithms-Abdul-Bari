@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main_array_adt.dir/section07_array_adt/c_to_cpp.cpp.o"
   "CMakeFiles/main_array_adt.dir/section07_array_adt/check_array_if_sorted.cpp.o"
   "CMakeFiles/main_array_adt.dir/section07_array_adt/get_set_avg_max.cpp.o"
   "CMakeFiles/main_array_adt.dir/section07_array_adt/intro_array_adt.cpp.o"
