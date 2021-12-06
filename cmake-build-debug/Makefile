@@ -130,19 +130,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named st_chllng
-
-# Build rule for target.
-st_chllng: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 st_chllng
-.PHONY : st_chllng
-
-# fast build rule for target.
-st_chllng/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng.dir/build.make CMakeFiles/st_chllng.dir/build
-.PHONY : st_chllng/fast
-
-#=============================================================================
 # Target rules for targets named get_set_avg_max
 
 # Build rule for target.
@@ -325,6 +312,19 @@ static_global_variables/fast:
 .PHONY : static_global_variables/fast
 
 #=============================================================================
+# Target rules for targets named st_chllng_duplicate
+
+# Build rule for target.
+st_chllng_duplicate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 st_chllng_duplicate
+.PHONY : st_chllng_duplicate
+
+# fast build rule for target.
+st_chllng_duplicate/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_duplicate.dir/build.make CMakeFiles/st_chllng_duplicate.dir/build
+.PHONY : st_chllng_duplicate/fast
+
+#=============================================================================
 # Target rules for targets named taylor_series_recursion
 
 # Build rule for target.
@@ -375,6 +375,19 @@ function: cmake_check_build_system
 function/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/function.dir/build.make CMakeFiles/function.dir/build
 .PHONY : function/fast
+
+#=============================================================================
+# Target rules for targets named st_chllng_missing
+
+# Build rule for target.
+st_chllng_missing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 st_chllng_missing
+.PHONY : st_chllng_missing
+
+# fast build rule for target.
+st_chllng_missing/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_missing.dir/build.make CMakeFiles/st_chllng_missing.dir/build
+.PHONY : st_chllng_missing/fast
 
 #=============================================================================
 # Target rules for targets named tail_recursion
@@ -1526,13 +1539,40 @@ section07_array_adt/set_union_intersection_difference.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_array_adt.dir/build.make CMakeFiles/main_array_adt.dir/section07_array_adt/set_union_intersection_difference.cpp.s
 .PHONY : section07_array_adt/set_union_intersection_difference.cpp.s
 
+section07_array_adt/student_challenge/find_duplicate_elements.o: section07_array_adt/student_challenge/find_duplicate_elements.cpp.o
+
+.PHONY : section07_array_adt/student_challenge/find_duplicate_elements.o
+
+# target to build an object file
+section07_array_adt/student_challenge/find_duplicate_elements.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_duplicate.dir/build.make CMakeFiles/st_chllng_duplicate.dir/section07_array_adt/student_challenge/find_duplicate_elements.cpp.o
+.PHONY : section07_array_adt/student_challenge/find_duplicate_elements.cpp.o
+
+section07_array_adt/student_challenge/find_duplicate_elements.i: section07_array_adt/student_challenge/find_duplicate_elements.cpp.i
+
+.PHONY : section07_array_adt/student_challenge/find_duplicate_elements.i
+
+# target to preprocess a source file
+section07_array_adt/student_challenge/find_duplicate_elements.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_duplicate.dir/build.make CMakeFiles/st_chllng_duplicate.dir/section07_array_adt/student_challenge/find_duplicate_elements.cpp.i
+.PHONY : section07_array_adt/student_challenge/find_duplicate_elements.cpp.i
+
+section07_array_adt/student_challenge/find_duplicate_elements.s: section07_array_adt/student_challenge/find_duplicate_elements.cpp.s
+
+.PHONY : section07_array_adt/student_challenge/find_duplicate_elements.s
+
+# target to generate assembly for a file
+section07_array_adt/student_challenge/find_duplicate_elements.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_duplicate.dir/build.make CMakeFiles/st_chllng_duplicate.dir/section07_array_adt/student_challenge/find_duplicate_elements.cpp.s
+.PHONY : section07_array_adt/student_challenge/find_duplicate_elements.cpp.s
+
 section07_array_adt/student_challenge/find_missing_elements.o: section07_array_adt/student_challenge/find_missing_elements.cpp.o
 
 .PHONY : section07_array_adt/student_challenge/find_missing_elements.o
 
 # target to build an object file
 section07_array_adt/student_challenge/find_missing_elements.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng.dir/build.make CMakeFiles/st_chllng.dir/section07_array_adt/student_challenge/find_missing_elements.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_missing.dir/build.make CMakeFiles/st_chllng_missing.dir/section07_array_adt/student_challenge/find_missing_elements.cpp.o
 .PHONY : section07_array_adt/student_challenge/find_missing_elements.cpp.o
 
 section07_array_adt/student_challenge/find_missing_elements.i: section07_array_adt/student_challenge/find_missing_elements.cpp.i
@@ -1541,7 +1581,7 @@ section07_array_adt/student_challenge/find_missing_elements.i: section07_array_a
 
 # target to preprocess a source file
 section07_array_adt/student_challenge/find_missing_elements.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng.dir/build.make CMakeFiles/st_chllng.dir/section07_array_adt/student_challenge/find_missing_elements.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_missing.dir/build.make CMakeFiles/st_chllng_missing.dir/section07_array_adt/student_challenge/find_missing_elements.cpp.i
 .PHONY : section07_array_adt/student_challenge/find_missing_elements.cpp.i
 
 section07_array_adt/student_challenge/find_missing_elements.s: section07_array_adt/student_challenge/find_missing_elements.cpp.s
@@ -1550,7 +1590,7 @@ section07_array_adt/student_challenge/find_missing_elements.s: section07_array_a
 
 # target to generate assembly for a file
 section07_array_adt/student_challenge/find_missing_elements.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng.dir/build.make CMakeFiles/st_chllng.dir/section07_array_adt/student_challenge/find_missing_elements.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_missing.dir/build.make CMakeFiles/st_chllng_missing.dir/section07_array_adt/student_challenge/find_missing_elements.cpp.s
 .PHONY : section07_array_adt/student_challenge/find_missing_elements.cpp.s
 
 # Help Target
@@ -1580,7 +1620,8 @@ help:
 	@echo "... power_function_with_recursion"
 	@echo "... quiz"
 	@echo "... reference"
-	@echo "... st_chllng"
+	@echo "... st_chllng_duplicate"
+	@echo "... st_chllng_missing"
 	@echo "... static_global_variables"
 	@echo "... static_vs_dynamic_array"
 	@echo "... struct"
@@ -1701,6 +1742,9 @@ help:
 	@echo "... section07_array_adt/set_union_intersection_difference.o"
 	@echo "... section07_array_adt/set_union_intersection_difference.i"
 	@echo "... section07_array_adt/set_union_intersection_difference.s"
+	@echo "... section07_array_adt/student_challenge/find_duplicate_elements.o"
+	@echo "... section07_array_adt/student_challenge/find_duplicate_elements.i"
+	@echo "... section07_array_adt/student_challenge/find_duplicate_elements.s"
 	@echo "... section07_array_adt/student_challenge/find_missing_elements.o"
 	@echo "... section07_array_adt/student_challenge/find_missing_elements.i"
 	@echo "... section07_array_adt/student_challenge/find_missing_elements.s"

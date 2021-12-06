@@ -46,7 +46,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/st_chllng.dir/DependInfo.cmake"
   "CMakeFiles/get_set_avg_max.dir/DependInfo.cmake"
   "CMakeFiles/linear_search.dir/DependInfo.cmake"
   "CMakeFiles/static_vs_dynamic_array.dir/DependInfo.cmake"
@@ -61,10 +60,12 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/pointer.dir/DependInfo.cmake"
   "CMakeFiles/array_as_parameter.dir/DependInfo.cmake"
   "CMakeFiles/static_global_variables.dir/DependInfo.cmake"
+  "CMakeFiles/st_chllng_duplicate.dir/DependInfo.cmake"
   "CMakeFiles/taylor_series_recursion.dir/DependInfo.cmake"
   "CMakeFiles/reference.dir/DependInfo.cmake"
   "CMakeFiles/quiz.dir/DependInfo.cmake"
   "CMakeFiles/function.dir/DependInfo.cmake"
+  "CMakeFiles/st_chllng_missing.dir/DependInfo.cmake"
   "CMakeFiles/tail_recursion.dir/DependInfo.cmake"
   "CMakeFiles/tree_recursion.dir/DependInfo.cmake"
   "CMakeFiles/head_recursion.dir/DependInfo.cmake"

@@ -46,4 +46,5 @@ add_executable(main_array_adt section07_array_adt/main_array_adt.cpp
 add_executable(2d_array
         section06_arrays_representation/2d_array.cpp)
 
-add_executable(st_chllng section07_array_adt/student_challenge/find_missing_elements.cpp)
+add_executable(st_chllng_missing section07_array_adt/student_challenge/find_missing_elements.cpp)
+add_executable(st_chllng_duplicate section07_array_adt/student_challenge/find_duplicate_elements.cpp)
