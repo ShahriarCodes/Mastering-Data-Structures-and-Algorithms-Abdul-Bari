@@ -31,7 +31,7 @@ void find_duplicates_count(int A[], int n) {
     }
 }
 
-
+// time O(n)
 void find_duplicates_count_hashTable(int A[], int n, int high) {
     int B[high + 1];
     // initialize the array(hashtable) with zeros
@@ -50,6 +50,21 @@ void find_duplicates_count_hashTable(int A[], int n, int high) {
     };
 }
 
+void find_duplicates_unsorted(int A[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int count = 1;
+        if(A[i] != -1) {
+            for (int j = i + 1; j < n - 2; j++) {
+                if (A[i] == A[j]) {
+                    count++;
+                    A[j] = -1;
+                }
+            }
+        }
+        if (count > 1) printf("%d %d ", A[i], count);
+    }
+}
+
 int main() {
     int A[10] = {3, 6, 8, 8, 10, 12, 15, 15, 15, 20};
     cout << "Duplicate no are: ";
@@ -62,6 +77,11 @@ int main() {
 
     cout << "Duplicate no are: " << endl;
     find_duplicates_count_hashTable(A, 10, 20);
+    cout << endl;
+
+    int A2[10] = {8, 3, 6, 4, 6, 5, 6, 8, 2, 7};
+    cout << "Duplicate no are: " << endl;
+    find_duplicates_unsorted(A2, 10);
     cout << endl;
 }
 
