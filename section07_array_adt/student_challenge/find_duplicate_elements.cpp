@@ -50,10 +50,11 @@ void find_duplicates_count_hashTable(int A[], int n, int high) {
     };
 }
 
+// time O(n^2)
 void find_duplicates_unsorted(int A[], int n) {
     for (int i = 0; i < n - 1; i++) {
         int count = 1;
-        if(A[i] != -1) {
+        if (A[i] != -1) {
             for (int j = i + 1; j < n - 2; j++) {
                 if (A[i] == A[j]) {
                     count++;
@@ -61,9 +62,29 @@ void find_duplicates_unsorted(int A[], int n) {
                 }
             }
         }
-        if (count > 1) printf("%d %d ", A[i], count);
+        if (count > 1) printf("%d appearing %d times; ", A[i], count);
     }
 }
+
+void find_duplicates_unsorted_hashTable(int A[10], int n, int high) {
+    int B[high + 1];
+    // initialize the array(hashtable) with zeros
+    for (int i = 0; i <= high; i++) {
+        B[i] = 0;
+    }
+
+    for (int i = 0; i < n; i++) {
+        B[A[i]] = B[A[i]] +1 ;
+
+    };
+
+    for (int i = 0; i <= high; i++) {
+        if (B[i] > 1) {
+            cout << "---- " << i << " is appearing " << B[i] << " times; " << "----";
+        }
+    };
+}
+
 
 int main() {
     int A[10] = {3, 6, 8, 8, 10, 12, 15, 15, 15, 20};
@@ -83,5 +104,13 @@ int main() {
     cout << "Duplicate no are: " << endl;
     find_duplicates_unsorted(A2, 10);
     cout << endl;
+
+    int A3[10] = {8, 3, 6, 4, 6, 5, 6, 8, 2, 7};
+    cout << "Duplicate no are: " << endl;
+    find_duplicates_unsorted_hashTable(A3, 10, 8);
+    cout << endl;
+
+
+
 }
 
