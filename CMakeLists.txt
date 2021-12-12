@@ -48,3 +48,4 @@ add_executable(2d_array
 
 add_executable(st_chllng_missing section07_array_adt/student_challenge/find_missing_elements.cpp)
 add_executable(st_chllng_duplicate section07_array_adt/student_challenge/find_duplicate_elements.cpp)
+add_executable(st_chllng_pair section07_array_adt/student_challenge/find_pair_of_elements.cpp)

@@ -46,6 +46,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/st_chllng_pair.dir/DependInfo.cmake"
   "CMakeFiles/get_set_avg_max.dir/DependInfo.cmake"
   "CMakeFiles/linear_search.dir/DependInfo.cmake"
   "CMakeFiles/static_vs_dynamic_array.dir/DependInfo.cmake"

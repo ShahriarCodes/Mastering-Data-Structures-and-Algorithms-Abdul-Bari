@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named st_chllng_pair
+
+# Build rule for target.
+st_chllng_pair: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 st_chllng_pair
+.PHONY : st_chllng_pair
+
+# fast build rule for target.
+st_chllng_pair/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_pair.dir/build.make CMakeFiles/st_chllng_pair.dir/build
+.PHONY : st_chllng_pair/fast
+
+#=============================================================================
 # Target rules for targets named get_set_avg_max
 
 # Build rule for target.
@@ -1593,6 +1606,33 @@ section07_array_adt/student_challenge/find_missing_elements.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_missing.dir/build.make CMakeFiles/st_chllng_missing.dir/section07_array_adt/student_challenge/find_missing_elements.cpp.s
 .PHONY : section07_array_adt/student_challenge/find_missing_elements.cpp.s
 
+section07_array_adt/student_challenge/find_pair_of_elements.o: section07_array_adt/student_challenge/find_pair_of_elements.cpp.o
+
+.PHONY : section07_array_adt/student_challenge/find_pair_of_elements.o
+
+# target to build an object file
+section07_array_adt/student_challenge/find_pair_of_elements.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_pair.dir/build.make CMakeFiles/st_chllng_pair.dir/section07_array_adt/student_challenge/find_pair_of_elements.cpp.o
+.PHONY : section07_array_adt/student_challenge/find_pair_of_elements.cpp.o
+
+section07_array_adt/student_challenge/find_pair_of_elements.i: section07_array_adt/student_challenge/find_pair_of_elements.cpp.i
+
+.PHONY : section07_array_adt/student_challenge/find_pair_of_elements.i
+
+# target to preprocess a source file
+section07_array_adt/student_challenge/find_pair_of_elements.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_pair.dir/build.make CMakeFiles/st_chllng_pair.dir/section07_array_adt/student_challenge/find_pair_of_elements.cpp.i
+.PHONY : section07_array_adt/student_challenge/find_pair_of_elements.cpp.i
+
+section07_array_adt/student_challenge/find_pair_of_elements.s: section07_array_adt/student_challenge/find_pair_of_elements.cpp.s
+
+.PHONY : section07_array_adt/student_challenge/find_pair_of_elements.s
+
+# target to generate assembly for a file
+section07_array_adt/student_challenge/find_pair_of_elements.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_pair.dir/build.make CMakeFiles/st_chllng_pair.dir/section07_array_adt/student_challenge/find_pair_of_elements.cpp.s
+.PHONY : section07_array_adt/student_challenge/find_pair_of_elements.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1622,6 +1662,7 @@ help:
 	@echo "... reference"
 	@echo "... st_chllng_duplicate"
 	@echo "... st_chllng_missing"
+	@echo "... st_chllng_pair"
 	@echo "... static_global_variables"
 	@echo "... static_vs_dynamic_array"
 	@echo "... struct"
@@ -1748,6 +1789,9 @@ help:
 	@echo "... section07_array_adt/student_challenge/find_missing_elements.o"
 	@echo "... section07_array_adt/student_challenge/find_missing_elements.i"
 	@echo "... section07_array_adt/student_challenge/find_missing_elements.s"
+	@echo "... section07_array_adt/student_challenge/find_pair_of_elements.o"
+	@echo "... section07_array_adt/student_challenge/find_pair_of_elements.i"
+	@echo "... section07_array_adt/student_challenge/find_pair_of_elements.s"
 .PHONY : help
 
 
