@@ -55,6 +55,16 @@ void find_pair_with_sum_k_sorted2(int A[], int n, int k) {
     }
 }
 
+void max_min(int A[], int n) {
+    int min = A[0], max = A[0];
+    for (int i = 1; i < n; i++) {
+        if (A[i] < min) min = A[i];
+        else if (A[i] > max) max = A[i];
+    }
+
+    cout << "min: " << min << "max: " << max;
+}
+
 int main() {
     int A[10] = {6, 3, 8, 10, 16, 7, 5, 2, 9, 14};
     find_pair_with_sum_k(A, 10, 10);
@@ -65,5 +75,9 @@ int main() {
     cout << endl;
     int A2[10] = {1, 3, 4, 5, 6, 8, 9, 10, 12, 14};
     find_pair_with_sum_k_sorted(A2, 10, 10);
+
+    cout << endl;
+    int A3[10] = {5, 8, 3, 9, 6, 2, 10, 7, -1, 4};
+    max_min(A3, 10);
 }
 
