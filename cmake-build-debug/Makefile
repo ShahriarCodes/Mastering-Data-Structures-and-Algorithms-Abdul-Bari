@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named quiz_array_adt
+
+# Build rule for target.
+quiz_array_adt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quiz_array_adt
+.PHONY : quiz_array_adt
+
+# fast build rule for target.
+quiz_array_adt/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_array_adt.dir/build.make CMakeFiles/quiz_array_adt.dir/build
+.PHONY : quiz_array_adt/fast
+
+#=============================================================================
 # Target rules for targets named st_chllng_pair
 
 # Build rule for target.
@@ -1633,6 +1646,33 @@ section07_array_adt/student_challenge/find_pair_of_elements.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/st_chllng_pair.dir/build.make CMakeFiles/st_chllng_pair.dir/section07_array_adt/student_challenge/find_pair_of_elements.cpp.s
 .PHONY : section07_array_adt/student_challenge/find_pair_of_elements.cpp.s
 
+section07_array_adt/student_challenge/quiz_array_adt.o: section07_array_adt/student_challenge/quiz_array_adt.cpp.o
+
+.PHONY : section07_array_adt/student_challenge/quiz_array_adt.o
+
+# target to build an object file
+section07_array_adt/student_challenge/quiz_array_adt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_array_adt.dir/build.make CMakeFiles/quiz_array_adt.dir/section07_array_adt/student_challenge/quiz_array_adt.cpp.o
+.PHONY : section07_array_adt/student_challenge/quiz_array_adt.cpp.o
+
+section07_array_adt/student_challenge/quiz_array_adt.i: section07_array_adt/student_challenge/quiz_array_adt.cpp.i
+
+.PHONY : section07_array_adt/student_challenge/quiz_array_adt.i
+
+# target to preprocess a source file
+section07_array_adt/student_challenge/quiz_array_adt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_array_adt.dir/build.make CMakeFiles/quiz_array_adt.dir/section07_array_adt/student_challenge/quiz_array_adt.cpp.i
+.PHONY : section07_array_adt/student_challenge/quiz_array_adt.cpp.i
+
+section07_array_adt/student_challenge/quiz_array_adt.s: section07_array_adt/student_challenge/quiz_array_adt.cpp.s
+
+.PHONY : section07_array_adt/student_challenge/quiz_array_adt.s
+
+# target to generate assembly for a file
+section07_array_adt/student_challenge/quiz_array_adt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_array_adt.dir/build.make CMakeFiles/quiz_array_adt.dir/section07_array_adt/student_challenge/quiz_array_adt.cpp.s
+.PHONY : section07_array_adt/student_challenge/quiz_array_adt.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1659,6 +1699,7 @@ help:
 	@echo "... pointer"
 	@echo "... power_function_with_recursion"
 	@echo "... quiz"
+	@echo "... quiz_array_adt"
 	@echo "... reference"
 	@echo "... st_chllng_duplicate"
 	@echo "... st_chllng_missing"
@@ -1792,6 +1833,9 @@ help:
 	@echo "... section07_array_adt/student_challenge/find_pair_of_elements.o"
 	@echo "... section07_array_adt/student_challenge/find_pair_of_elements.i"
 	@echo "... section07_array_adt/student_challenge/find_pair_of_elements.s"
+	@echo "... section07_array_adt/student_challenge/quiz_array_adt.o"
+	@echo "... section07_array_adt/student_challenge/quiz_array_adt.i"
+	@echo "... section07_array_adt/student_challenge/quiz_array_adt.s"
 .PHONY : help
 
 
