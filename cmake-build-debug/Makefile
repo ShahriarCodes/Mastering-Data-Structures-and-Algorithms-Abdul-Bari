@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named string_basic
+
+# Build rule for target.
+string_basic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string_basic
+.PHONY : string_basic
+
+# fast build rule for target.
+string_basic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string_basic.dir/build.make CMakeFiles/string_basic.dir/build
+.PHONY : string_basic/fast
+
+#=============================================================================
 # Target rules for targets named quiz_array_adt
 
 # Build rule for target.
@@ -1673,6 +1686,33 @@ section07_array_adt/student_challenge/quiz_array_adt.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz_array_adt.dir/build.make CMakeFiles/quiz_array_adt.dir/section07_array_adt/student_challenge/quiz_array_adt.cpp.s
 .PHONY : section07_array_adt/student_challenge/quiz_array_adt.cpp.s
 
+section08_strings/string_basic.o: section08_strings/string_basic.cpp.o
+
+.PHONY : section08_strings/string_basic.o
+
+# target to build an object file
+section08_strings/string_basic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string_basic.dir/build.make CMakeFiles/string_basic.dir/section08_strings/string_basic.cpp.o
+.PHONY : section08_strings/string_basic.cpp.o
+
+section08_strings/string_basic.i: section08_strings/string_basic.cpp.i
+
+.PHONY : section08_strings/string_basic.i
+
+# target to preprocess a source file
+section08_strings/string_basic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string_basic.dir/build.make CMakeFiles/string_basic.dir/section08_strings/string_basic.cpp.i
+.PHONY : section08_strings/string_basic.cpp.i
+
+section08_strings/string_basic.s: section08_strings/string_basic.cpp.s
+
+.PHONY : section08_strings/string_basic.s
+
+# target to generate assembly for a file
+section08_strings/string_basic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string_basic.dir/build.make CMakeFiles/string_basic.dir/section08_strings/string_basic.cpp.s
+.PHONY : section08_strings/string_basic.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1706,6 +1746,7 @@ help:
 	@echo "... st_chllng_pair"
 	@echo "... static_global_variables"
 	@echo "... static_vs_dynamic_array"
+	@echo "... string_basic"
 	@echo "... struct"
 	@echo "... structure_and_functions"
 	@echo "... structure_as_parameter"
@@ -1836,6 +1877,9 @@ help:
 	@echo "... section07_array_adt/student_challenge/quiz_array_adt.o"
 	@echo "... section07_array_adt/student_challenge/quiz_array_adt.i"
 	@echo "... section07_array_adt/student_challenge/quiz_array_adt.s"
+	@echo "... section08_strings/string_basic.o"
+	@echo "... section08_strings/string_basic.i"
+	@echo "... section08_strings/string_basic.s"
 .PHONY : help
 
 
