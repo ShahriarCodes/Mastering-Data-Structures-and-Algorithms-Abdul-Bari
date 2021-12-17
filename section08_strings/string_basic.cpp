@@ -24,6 +24,12 @@ int main() {
 
     printf("%s\n", name);
     scanf("%s", name);
-    printf("%s", name);
+    printf("%s\n", name);
+
+    char s[] = "welcome";
+    int i;
+    for (i = 0; s[i] != '\0'; i++);
+    printf("\nlength of string %d", i);
+
 }
 
