@@ -6,6 +6,16 @@
 
 using namespace std;
 
+char *lowerToUppercase(const char lower[], int n) {
+    char *a = (char *) malloc(sizeof(char) * n);
+    for (int i = 0; i < n; i++) {
+        if ((int) lower[i] >= 90) {
+            a[i] = lower[i] - 32;
+        } else a[i] = lower[i];
+    }
+    return a;
+}
+
 int main() {
     // char
     char a = 'a'; // only single quote is acceptable
@@ -23,13 +33,14 @@ int main() {
     char name3[] = "John";
 
     printf("%s\n", name);
-    scanf("%s", name);
-    printf("%s\n", name);
+//    scanf("%s", name);
+//    printf("%s\n", name);
 
     char s[] = "welcome";
     int i;
     for (i = 0; s[i] != '\0'; i++);
     printf("\nlength of string %d", i);
 
+    printf("\n%s to %s ", s, lowerToUppercase(s, i));
 }
 
