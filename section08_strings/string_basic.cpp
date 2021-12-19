@@ -26,6 +26,25 @@ char *toggleCases(const char string[], int n) {
     return a;
 }
 
+int countVowels(const char string[], int n) {
+    char vowel[10] = {'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'};
+    int count = 0;
+    for (int i = 0; i < n; i++)
+        for (char j : vowel) if (string[i] == j) count++;
+    return count;
+}
+
+int countConsonents(const char string[], int n) {
+    char vowel[10] = {'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'};
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        for (char j : vowel) if (string[i] == j) count--;
+        if ((string[i] >= 65 && string[i] <= 90)
+        || (string[i] >= 97 && string[i] <= 122)) count++;
+    }
+    return count;
+}
+
 int main() {
     // char
     char a = 'a'; // only single quote is acceptable
@@ -55,5 +74,7 @@ int main() {
 
     char r[] = "wElCoMe";
     printf("\n%s to %s ", r, toggleCases(r, i));
+    cout << endl << "vowels in wElCoMe: " << countVowels(r, i);
+    cout << endl << "consonents in wElCoMe: " << countConsonents(r, i);
 }
 
