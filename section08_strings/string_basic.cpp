@@ -16,6 +16,16 @@ char *lowerToUppercase(const char lower[], int n) {
     return a;
 }
 
+char *toggleCases(const char string[], int n) {
+    char *a = (char *) malloc(sizeof(char) * n);
+    for (int i = 0; i < n; i++) {
+        if ((int) string[i] >= 90) {
+            a[i] = string[i] - 32;
+        } else a[i] = string[i] + 32;
+    }
+    return a;
+}
+
 int main() {
     // char
     char a = 'a'; // only single quote is acceptable
@@ -42,5 +52,8 @@ int main() {
     printf("\nlength of string %d", i);
 
     printf("\n%s to %s ", s, lowerToUppercase(s, i));
+
+    char r[] = "wElCoMe";
+    printf("\n%s to %s ", r, toggleCases(r, i));
 }
 
