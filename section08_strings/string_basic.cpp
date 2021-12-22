@@ -45,6 +45,14 @@ int countConsonents(const char string[], int n) {
     return count;
 }
 
+int countWords(char string[], int n) {
+    int word =1;
+    for (int i = 0; string[i] != '\0'; i++) {
+        if(string[i] == ' ' && string[i-1] != ' ') word++;
+    }
+    return word;
+}
+
 int main() {
     // char
     char a = 'a'; // only single quote is acceptable
@@ -76,5 +84,8 @@ int main() {
     printf("\n%s to %s ", r, toggleCases(r, i));
     cout << endl << "vowels in wElCoMe: " << countVowels(r, i);
     cout << endl << "consonents in wElCoMe: " << countConsonents(r, i);
+
+    char q[] = "How are  you  ?";
+    printf("\ntotal words: %d ", countWords(q, 12));
 }
 
