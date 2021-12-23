@@ -40,17 +40,32 @@ int countConsonents(const char string[], int n) {
     for (int i = 0; i < n; i++) {
         for (char j : vowel) if (string[i] == j) count--;
         if ((string[i] >= 65 && string[i] <= 90)
-        || (string[i] >= 97 && string[i] <= 122)) count++;
+            || (string[i] >= 97 && string[i] <= 122))
+            count++;
     }
     return count;
 }
 
 int countWords(char string[], int n) {
-    int word =1;
+    int word = 1;
     for (int i = 0; string[i] != '\0'; i++) {
-        if(string[i] == ' ' && string[i-1] != ' ') word++;
+        if (string[i] == ' ' && string[i - 1] != ' ') word++;
     }
     return word;
+}
+
+bool validString(const char string[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << i << " ";
+        cout << (int) string[i] << (int) string[i] << " ";
+        if (!((int) string[i] >= 65 && (int) string[i] <= 90)
+            || !((int) string[i] >= 97 && (int) string[i] <= 122)
+            || !((int) string[i] >= 48 && (int) string[i] <= 57)
+            || (int) string[i] != 32) {
+            return false;
+        }
+    }
+    return true;
 }
 
 int main() {
@@ -85,7 +100,9 @@ int main() {
     cout << endl << "vowels in wElCoMe: " << countVowels(r, i);
     cout << endl << "consonents in wElCoMe: " << countConsonents(r, i);
 
-    char q[] = "How are  you  ?";
-    printf("\ntotal words: %d ", countWords(q, 12));
+    char q[] = "How are you";
+    printf("\ntotal words: %d ", countWords(q, 11));
+
+    cout << validString(q, 11);
 }
 
