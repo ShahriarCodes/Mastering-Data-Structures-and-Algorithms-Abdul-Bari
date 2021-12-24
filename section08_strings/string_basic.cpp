@@ -56,17 +56,24 @@ int countWords(char string[], int n) {
 
 bool validString(const char string[], int n) {
     for (int i = 0; i < n; i++) {
-        cout << i << " ";
-        cout << (int) string[i] << (int) string[i] << " ";
-        if (!((int) string[i] >= 65 && (int) string[i] <= 90)
-            || !((int) string[i] >= 97 && (int) string[i] <= 122)
-            || !((int) string[i] >= 48 && (int) string[i] <= 57)
-            || (int) string[i] != 32) {
+        if (!(((int) string[i] >= 65 && (int) string[i] <= 90)
+              || ((int) string[i] >= 97 && (int) string[i] <= 122)
+              || ((int) string[i] >= 48 && (int) string[i] <= 57)
+              || (int) string[i] == 32)) {
             return false;
         }
     }
     return true;
 }
+
+char *reverseString(char string[], int n) {
+    char *a = (char *) malloc(sizeof(char) * n);
+    for (int i = n - 1, j = 0; i >= 0, j < n; i--, j++) {
+        a[j] = string[i];
+    }
+    return a;
+}
+
 
 int main() {
     // char
@@ -103,6 +110,8 @@ int main() {
     char q[] = "How are you";
     printf("\ntotal words: %d ", countWords(q, 11));
 
-    cout << validString(q, 11);
+    cout << endl << "valid string: " << validString(q, 11) << endl;
+
+    cout << reverseString(r, 7);
 }
 
