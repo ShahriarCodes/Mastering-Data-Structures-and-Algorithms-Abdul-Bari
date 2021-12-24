@@ -74,6 +74,13 @@ char *reverseString(char string[], int n) {
     return a;
 }
 
+void reverseString2(char string[], int n) {
+    for (int i = n - 1, j = 0; i >= 0, j < n; i--, j++) {
+        char temp = string[j];
+        string[j] = string[i];
+        string[i] = temp;
+    }
+}
 
 int main() {
     // char
@@ -112,6 +119,8 @@ int main() {
 
     cout << endl << "valid string: " << validString(q, 11) << endl;
 
-    cout << reverseString(r, 7);
+    cout << reverseString(r, 7) << endl;
+    reverseString2(r, 7);
+    cout << r;
 }
 
