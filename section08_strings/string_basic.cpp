@@ -82,6 +82,16 @@ void reverseString2(char string[], int n) {
     }
 }
 
+void compareStrings(char A[], char B[]) {
+    int i, j;
+    for (i = 0, j = 0; A[i] != '\0' && B[i] != '\0'; i++, j++) {
+        if (A[i] != B[j]) break;
+    }
+    if (A[i] == B[j]) cout << A << " == " << B << endl;
+    else if (A[i] < B[j]) cout << A << " is  smaller than " << B << endl;
+    if (A[i] > B[j]) cout << A << " is  greater than " << B << endl;
+}
+
 int main() {
     // char
     char a = 'a'; // only single quote is acceptable
@@ -121,6 +131,8 @@ int main() {
 
     cout << reverseString(r, 7) << endl;
     reverseString2(r, 7);
-    cout << r;
+    cout << r << endl;
+
+    compareStrings("HelloW", "HelloW");
 }
 
