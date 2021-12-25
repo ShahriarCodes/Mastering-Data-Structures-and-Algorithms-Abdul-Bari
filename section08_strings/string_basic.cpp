@@ -92,6 +92,18 @@ void compareStrings(char A[], char B[]) {
     if (A[i] > B[j]) cout << A << " is  greater than " << B << endl;
 }
 
+int checkPalindrome(char string[], int n) {
+    int i, j;
+    for (i = 0, j = n - 1; i < n / 2; i++, j--) {
+        if (string[i] != string[j]) {
+            cout << string << " is not palindrome" << endl;
+            return 0;
+        }
+    }
+    cout << string << " is palindrome";
+    return 1;
+}
+
 int main() {
     // char
     char a = 'a'; // only single quote is acceptable
@@ -134,5 +146,6 @@ int main() {
     cout << r << endl;
 
     compareStrings("HelloW", "HelloW");
+    checkPalindrome("madame", 6);
 }
 
