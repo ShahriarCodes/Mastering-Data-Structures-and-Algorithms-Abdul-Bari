@@ -104,6 +104,17 @@ int checkPalindrome(char string[], int n) {
     return 1;
 }
 
+void findDuplicates(char string[], int n) {
+    int i, j;
+    for (i = 0; i < n; i++) {
+        for (j = i +1; j < n-1; j++) {
+            if (string[i] == string[j]) {
+                cout << string[i];
+            }
+        }
+    }
+}
+
 int main() {
     // char
     char a = 'a'; // only single quote is acceptable
@@ -147,5 +158,7 @@ int main() {
 
     compareStrings("HelloW", "HelloW");
     checkPalindrome("madame", 6);
+
+    findDuplicates("Findingg", 7);
 }
 
