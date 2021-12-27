@@ -133,6 +133,16 @@ void findDuplicatesHashTable(char string[], int n) {
     };
 }
 
+void findDuplicatesBitwise(char string[], int n) {
+    long int H = 0, x = 0;
+    for (int i = 0; i < n; i++) {
+        x = 1;
+        x = x << (string[i] - 97);
+        if ((x & H) > 0) printf("%c is duplcate ", string[i]);
+        else H = x | H;
+    }
+}
+
 int main() {
     // char
     char a = 'a'; // only single quote is acceptable
@@ -180,6 +190,9 @@ int main() {
     findDuplicates("Fginding", 8);
     cout << endl;
     findDuplicatesHashTable("Fginding", 8);
+    cout << endl;
+
+    findDuplicatesBitwise("fginding", 8);
     cout << endl;
 }
 
