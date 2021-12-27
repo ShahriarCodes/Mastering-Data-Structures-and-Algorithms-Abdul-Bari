@@ -106,13 +106,31 @@ int checkPalindrome(char string[], int n) {
 
 void findDuplicates(char string[], int n) {
     int i, j;
-    for (i = 0; i < n; i++) {
-        for (j = i +1; j < n-1; j++) {
+    for (i = 0; i < n - 1; i++) {
+        for (j = i + 1; j < n; j++) {
             if (string[i] == string[j]) {
                 cout << string[i];
             }
         }
     }
+}
+
+void findDuplicatesHashTable(char string[], int n) {
+    int B[128];
+    // initialize the array(hashtable) with zeros
+    for (int i = 0; i < 128; i++) {
+        B[i] = 0;
+    }
+
+    for (int i = 0; i < n; i++) {
+        B[(unsigned int) ((unsigned char) (string[i]))]++;
+    };
+
+    for (int i = 0; i < 128; i++) {
+        if (B[i] > 1) {
+            cout << "---- " << (unsigned char) i << " is appearing " << B[i] << " times; " << "----";
+        }
+    };
 }
 
 int main() {
@@ -159,6 +177,9 @@ int main() {
     compareStrings("HelloW", "HelloW");
     checkPalindrome("madame", 6);
 
-    findDuplicates("Findingg", 7);
+    findDuplicates("Fginding", 8);
+    cout << endl;
+    findDuplicatesHashTable("Fginding", 8);
+    cout << endl;
 }
 
