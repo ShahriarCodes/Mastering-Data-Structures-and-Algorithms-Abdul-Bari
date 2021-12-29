@@ -6,6 +6,12 @@
 
 using namespace std;
 
+int findLength(char string[]) {
+    int i;
+    for (i = 0; string[i] != '\0'; i++);
+    return i;
+}
+
 char *lowerToUppercase(const char lower[], int n) {
     char *a = (char *) malloc(sizeof(char) * n);
     for (int i = 0; i < n; i++) {
@@ -138,9 +144,43 @@ void findDuplicatesBitwise(char string[], int n) {
     for (int i = 0; i < n; i++) {
         x = 1;
         x = x << (string[i] - 97);
+        // masking
         if ((x & H) > 0) printf("%c is duplcate ", string[i]);
+            // merging
         else H = x | H;
     }
+}
+
+int checkAnagram(char string1[], char string2[]) {
+   int len1 = findLength(string1);
+   int len2 = findLength(string2);
+    if (len1 != len2) {
+        cout << "Not Anagram";
+        return 0;
+    }
+
+    int B[128];
+    // initialize the array(hashtable) with zeros
+    for (int i = 0; i < 128; i++) {
+        B[i] = 0;
+    }
+
+    for(int i = 0; i < len1; i++) {
+        B[(unsigned int) ((unsigned char) (string1[i]))]++;
+    }
+
+    for(int i = 0; i < len1; i++) {
+        B[(unsigned int) ((unsigned char) (string1[i]))]--;
+    }
+
+    for (int i = 0; i < 128; i++) {
+        if(B[i] >0) cout << "Not anagram";
+        return 0;
+    }
+
+    cout << "Anagram";
+
+    return 1;
 }
 
 int main() {
@@ -194,5 +234,7 @@ int main() {
 
     findDuplicatesBitwise("fginding", 8);
     cout << endl;
+
+
 }
 
