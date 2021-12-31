@@ -152,8 +152,8 @@ void findDuplicatesBitwise(char string[], int n) {
 }
 
 int checkAnagram(char string1[], char string2[]) {
-   int len1 = findLength(string1);
-   int len2 = findLength(string2);
+    int len1 = findLength(string1);
+    int len2 = findLength(string2);
     if (len1 != len2) {
         cout << "Not Anagram";
         return 0;
@@ -165,17 +165,19 @@ int checkAnagram(char string1[], char string2[]) {
         B[i] = 0;
     }
 
-    for(int i = 0; i < len1; i++) {
+    for (int i = 0; i < len1; i++) {
         B[(unsigned int) ((unsigned char) (string1[i]))]++;
     }
 
-    for(int i = 0; i < len1; i++) {
-        B[(unsigned int) ((unsigned char) (string1[i]))]--;
+    for (int i = 0; i < len1; i++) {
+        B[(unsigned int) ((unsigned char) (string2[i]))]--;
     }
 
-    for (int i = 0; i < 128; i++) {
-        if(B[i] >0) cout << "Not anagram";
-        return 0;
+    for (int i : B) {
+        if (i > 0) {
+            cout << "Not anagram";
+            return 0;
+        }
     }
 
     cout << "Anagram";
@@ -235,6 +237,9 @@ int main() {
     findDuplicatesBitwise("fginding", 8);
     cout << endl;
 
-
+    checkAnagram("dhaka", "akahd");
+    cout << endl;
+    checkAnagram("Dhaka", "akahd");
+    cout << endl;
 }
 
