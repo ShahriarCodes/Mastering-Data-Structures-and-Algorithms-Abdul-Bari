@@ -151,6 +151,26 @@ void findDuplicatesBitwise(char string[], int n) {
     }
 }
 
+void permutation(char string[], int k) {
+    static int A[10] = {0};
+    static char Res[10] = {0};
+    int i;
+
+    if (string[k] == '\0') {
+        Res[k] = '\0';
+        printf("%s ", Res);
+    } else {
+        for (i = 0; string[i] != '\0'; i++) {
+            if (A[i] == 0) {
+                Res[k] = string[i];
+                A[i] = 1;
+                permutation(string, k + 1);
+                A[i] = 0;
+            }
+        }
+    }
+}
+
 int checkAnagram(char string1[], char string2[]) {
     int len1 = findLength(string1);
     int len2 = findLength(string2);
@@ -241,5 +261,7 @@ int main() {
     cout << endl;
     checkAnagram("Dhaka", "akahd");
     cout << endl;
+
+    permutation("ABCD", 0);
 }
 
